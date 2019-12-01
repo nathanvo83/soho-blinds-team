@@ -1,0 +1,55 @@
+.n-logo {
+  background: url("./images/SoHo-Logo-No-script3-300x166.png");
+  /* border: 2px solid black; */
+  /* padding: 25px;
+    background-repeat: no-repeat;
+    height: 300px; */
+  /* background-size: contain; */
+
+  /* Used if the image is unavailable */
+  background-color: #cccccc;
+  /* You must set a specified height */
+  height: 10%;
+  width: 100%;
+  /* Center the image */
+  background-position: center;
+  /* Do not repeat the image */
+  background-repeat: no-repeat;
+  /* Resize the background image to cover the entire container*/
+  background-size: cover;
+}
+
+.n-logo1 {
+  width: 70px;
+}
+
+.n-navbar {
+  background-color: #4c3c3c;
+  /* background-color: #2f2626; */
+}
+.n-branch-outter {
+  padding: 0px 50px 0px 10px;
+  margin: 0px;
+}
+.n-branch {
+  color: #ffffff;
+  font-size: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  border-bottom: 2px solid #ffffff;
+  padding: 0px;
+  margin: 0px;
+  /* text-decoration: underline; */
+}
+
+.n-branch .n-icon {
+  font-size: 40px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.n-contact {
+  font-size: 25px;
+  margin: 3px 15px;
+  cursor: pointer;
+}
