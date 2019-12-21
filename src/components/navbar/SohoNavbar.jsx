@@ -2,12 +2,10 @@ import React, { useState } from "react";
 import "./SohoNavBar.css";
 import { Link } from "react-router-dom";
 import {
-  faSearch,
   faPhone,
   faHome,
   faAddressBook,
   faShippingFast,
-  faBarcode,
   faReceipt
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -25,16 +23,15 @@ import logo from "./images/SoHo-Logo-No-script3-300x166.png";
 
 import { connect } from "react-redux";
 import { menuTypes } from "../../constants/menuTypes";
-import { actionTypes } from "../../constants/actionTypes";
 
 const SohoNavbar = props => {
   const { menu } = props;
   const [collapseOpen, setCollapseOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  // const [dropdownOpen, setDropdownOpen] = useState(false);
 
-  const handleDropDownOpen = () => {
-    setDropdownOpen(!dropdownOpen);
-  };
+  // const handleDropDownOpen = () => {
+  //   setDropdownOpen(!dropdownOpen);
+  // };
 
   const handleCollapseOpen = () => {
     setCollapseOpen(!collapseOpen);
@@ -60,7 +57,6 @@ const SohoNavbar = props => {
         <Nav navbar>
           <NavItem className="n-item">
             <NavLink
-              className="n-item"
               to="/"
               tag={Link}
               exact
@@ -77,7 +73,6 @@ const SohoNavbar = props => {
           </NavItem>
           <NavItem className="n-item">
             <NavLink
-              className="n-item"
               to="/product"
               tag={Link}
               // exact

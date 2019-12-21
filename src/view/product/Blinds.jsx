@@ -14,9 +14,6 @@ import {
   Button
 } from "shards-react";
 
-// import { Modal, Button } from "semantic-ui-react";
-
-import logo from "./images/nzwswe-1.jpe";
 import img01 from "./images/nzwswe-1.jpe";
 import img02 from "./images/blinds.jpeg";
 

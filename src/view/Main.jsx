@@ -7,7 +7,7 @@ import Shutter from "./product/Shutter";
 import QuoteMyJob from "./quote-my-job/QuoteMyJob";
 import ContactUs from "./contact-us/ContactUs";
 import Page404 from "./page-404/Page404";
-import { Route, Switch, Redirect } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 function Main() {
   return (

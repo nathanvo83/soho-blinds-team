@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import { Container, Button, Alert } from "shards-react";
+import { Alert } from "shards-react";
 
 function Footer() {
   return (

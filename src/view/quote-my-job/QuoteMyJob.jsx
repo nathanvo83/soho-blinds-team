@@ -3,10 +3,6 @@ import { connect } from "react-redux";
 import { menuTypes } from "../../constants/menuTypes";
 import { actionTypes } from "../../constants/actionTypes";
 
-import Footer from "../../components/footer/Footer";
-import Header from "../../components/header/Header";
-import NavExample from "../../components/navbar/SohoNavbar";
-
 const QuoteMyJob = props => {
   const { selectMenu } = props;
 
