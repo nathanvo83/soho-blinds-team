@@ -1,4 +1,5 @@
 import React from "react";
+import "./Footer.css";
 import { Container, Button, Alert } from "shards-react";
 
 function Footer() {
@@ -10,7 +11,9 @@ function Footer() {
         </Button>
       </Container> */}
       {/* <Alert theme="light"></Alert> */}
-      <Alert theme="light">2019 SohoBlinds NZ</Alert>
+      <Alert theme="light" className="f-body">
+        © 2019 SohoBlinds NZ | Website by Nathan Vo Design
+      </Alert>
     </React.Fragment>
   );
 }

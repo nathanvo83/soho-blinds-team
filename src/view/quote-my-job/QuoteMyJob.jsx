@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { connect } from "react-redux";
+import { menuTypes } from "../../constants/menuTypes";
+import { actionTypes } from "../../constants/actionTypes";
+
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
-import NavExample from "../../components/navbar/NavExample";
+import NavExample from "../../components/navbar/SohoNavbar";
 
-function QuoteMyJob() {
+const QuoteMyJob = props => {
+  const { selectMenu } = props;
+
+  useEffect(() => {
+    selectMenu(menuTypes.QUOTE);
+    return () => {
+      // clear
+    };
+  }, [selectMenu]);
+
   return (
     <div>Quote my job page</div>
     // <React.Fragment>
@@ -13,6 +26,14 @@ function QuoteMyJob() {
     //   <Footer></Footer>
     // </React.Fragment>
   );
-}
+};
 
-export default QuoteMyJob;
+const mapDispatchToProps = dispatch => ({
+  selectMenu: menu =>
+    dispatch({
+      type: actionTypes.CHANGE_MENU,
+      value: menu
+    })
+});
+
+export default connect(null, mapDispatchToProps)(QuoteMyJob);

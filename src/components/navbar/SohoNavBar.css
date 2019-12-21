@@ -24,8 +24,9 @@
 }
 
 .n-navbar {
-  background-color: #4c3c3c;
+  /* background-color: #4c3c3c; */
   /* background-color: #2f2626; */
+  background-color: #17c671;
 }
 .n-branch-outter {
   padding: 0px 50px 0px 10px;
@@ -52,4 +53,39 @@
   font-size: 25px;
   margin: 3px 15px;
   cursor: pointer;
+}
+
+.n-item {
+  /* padding: 0px 5px; */
+  /* color: red; */
+  /* margin: 0px; */
+  /* padding: 0px; */
+  margin-left: 5px;
+}
+
+.n-item:hover,
+.n-item:focus {
+  background-color: rgba(0, 0, 0, 0.5);
+  /* border-bottom: 2px solid #ffffff; */
+  /* text-decoration: underline; */
+}
+
+/* NavLink:active {
+  border: 1px solid red;
+} */
+
+.n-item-active {
+  /* background-color: sandybrown; */
+  /* background-color: rgba(0, 0, 0, 0.5); */
+
+  /* color: red; */
+  /* border: 1px solid red; */
+  /* color: #333333; */
+  /* border-left: 2px solid rgba(0, 0, 0, 0.5); */
+  font-weight: bolder;
+}
+
+.n-item-none {
+  /* background-color: transparent; */
+  /* color: red; */
 }

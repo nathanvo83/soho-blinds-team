@@ -1,0 +1,126 @@
+/* common */
+.h-section-title {
+  font-size: 35px;
+}
+
+.h-section-subtitle {
+  text-align: justify;
+}
+
+/* mobile */
+.h-section-img-m {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  background-color: #cccccc;
+  border: 10px solid #e9e6e0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 20px 0px 10px 0px;
+}
+
+.h-section-01-m {
+  background-color: #e9e6e0;
+  padding: 20px;
+}
+
+.h-section-02-m {
+  background-color: #57585b;
+  color: #b5b5b5;
+  padding: 20px;
+}
+
+.h-section-03-m {
+  background-color: #e9e6e0;
+  padding: 20px;
+}
+
+/* laptop, ipad */
+.h-section-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  background-color: #cccccc;
+  border: 10px solid #e9e6e0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.h-section-01 {
+  background-color: #e9e6e0;
+  padding: 50px 0px;
+}
+
+.h-section-02 {
+  background-color: #57585b;
+  color: #ffffff;
+  padding: 50px 20px;
+}
+
+.h-section-03 {
+  background-color: #e9e6e0;
+  padding: 50px 0px;
+}
+
+/* 
+
+header
+|_________________
+|col
+|_________________
+|icon  | title
+|      | subtitle
+
+*/
+
+.h-section-04 {
+  padding: 50px 0px;
+}
+
+.h-s04-header {
+  color: #57585b;
+}
+
+.h-s04-title {
+  /* color: #fbb040; */
+  color: #ffb400;
+  font-size: 22px;
+  font-weight: bolder;
+  line-height: 100%;
+  padding-bottom: 15px;
+}
+.h-s04-subtitle {
+  color: #666666;
+}
+
+.h-s04-col {
+  margin: 25px 0px;
+  display: inline-flex;
+  /* color: #fbb040; */
+  color: #ffb400;
+}
+.h-s04-icon {
+  display: inline-flex;
+  margin: 0px 5px;
+  font-size: 70px;
+  vertical-align: top;
+}
+.h-s04-body {
+  /* display: inline-flex; */
+}
+
+/* -------------------------- */
+.h-image01 {
+  background: url("./images/nzwswe-1.jpe");
+  /* Used if the image is unavailable */
+  background-color: #cccccc;
+  /* You must set a specified height */
+  height: 350px;
+  /* Center the image */
+  background-position: center;
+  /* Do not repeat the image */
+  background-repeat: no-repeat;
+  /* Resize the background image to cover the entire container*/
+  background-size: cover;
+
+  border: 10px solid #e9e6e0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
