@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css";
 import "./index.css";
-import App from "./view/App";
+import App from "./views/App";
 // import App from "./App";
 
 // import * as serviceWorker from "./serviceWorker";

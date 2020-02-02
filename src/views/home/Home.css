@@ -1,0 +1,151 @@
+/* common */
+.h-section-title {
+  font-size: 35px;
+  /* font-weight: bolder; */
+  /* font-size: 1.6rem; */
+  margin-top: 0.5rem;
+  /* margin-top: 0.5rem; */
+}
+
+.h-section-subtitle {
+  /* font-size: 0.9rem; */
+  /* margin-top: 0.5rem; */
+  /* margin-bottom: 0.5rem; */
+  text-align: justify;
+}
+
+.h-section-subtitle-item {
+  margin-top: 15px;
+  text-align: justify;
+}
+
+.h-section-01 {
+  /* background-color: #e9e6e0; */
+  padding: 30px 10px;
+}
+
+.h-section-02 {
+  background-color: #fff222;
+  color: #202429;
+  /* background-color: #202429; */
+  /* color: #b5b5b5; */
+  /* color: #dfdbd5; */
+  /* color: #d5d5d5; */
+  padding: 30px 10px;
+}
+
+.h-section-03 {
+  /* background-color: #e9e6e0; */
+  padding: 30px 10px;
+}
+
+/* mobile */
+.h-section-img-m {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  background-color: #cccccc;
+  border: 10px solid #e9e6e0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* margin: 20px 0px 10px 0px; */
+}
+
+/* tablet */
+.h-section-img-t {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  background-color: #cccccc;
+  border: 10px solid #e9e6e0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* margin: 20px 0px 10px 0px; */
+}
+
+/* desktop */
+.h-section-img-d {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  background-color: #cccccc;
+  border: 10px solid #e9e6e0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* 
+
+header
+|_________________
+|col
+|_________________
+|icon  | title
+|      | subtitle
+
+*/
+
+.h-section-04 {
+  /* background-color: #202429; */
+  background-color: #ededed;
+  padding: 30px 10px 100px;
+  border: 5 solid red;
+}
+
+.h-s04-header {
+  /* border-top: 2 solid red; */
+  padding: 20px 0px 15px;
+  /* color: #57585b; */
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.h-s04-title {
+  /* color: #fbb040; */
+  /* color: #ffb400; */
+  /* color: #b5b5b5; */
+  font-size: 20px;
+  /* font-weight: 500; */
+  font-weight: bold;
+  /* line-height: 100%; */
+  /* padding-bottom: 15px; */
+  /* text-align: justify; */
+}
+.h-s04-subtitle {
+  /* color: #b5b5b5; */
+  text-align: justify;
+}
+
+.h-s04-col {
+  margin: 15px 0px;
+  display: inline-flex;
+  /* color: #fbb040; */
+  /* color: #ffb400; */
+  /* color: #fff111; */
+  color: #6e6e6e;
+}
+.h-s04-icon {
+  display: inline-flex;
+  /* margin: 0px 10px; */
+  margin-right: 10px;
+  font-size: 40px;
+  vertical-align: top;
+}
+.h-s04-body {
+  /* display: inline-flex; */
+}
+
+/* -------------------------- */
+.h-image01 {
+  background: url("./images/nzwswe-1.jpe");
+  /* Used if the image is unavailable */
+  background-color: #cccccc;
+  /* You must set a specified height */
+  height: 350px;
+  /* Center the image */
+  background-position: center;
+  /* Do not repeat the image */
+  background-repeat: no-repeat;
+  /* Resize the background image to cover the entire container*/
+  background-size: cover;
+
+  border: 10px solid #e9e6e0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

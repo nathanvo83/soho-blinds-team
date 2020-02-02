@@ -44,7 +44,8 @@ const SohoNavbar = props => {
   return (
     <Navbar
       className="n-navbar"
-      type="dark"
+      type="light"
+      // type="dark"
       // theme="success"
       expand="md"
       sticky="top"
@@ -123,10 +124,10 @@ const SohoNavbar = props => {
         </Nav>
 
         <Nav navbar className="ml-auto">
-          <Badge theme="dark">
+          <Badge theme="light" className="n-x">
             <div className="n-contact">
               <FontAwesomeIcon icon={faPhone} />
-              <i> 0226713464 </i>
+              <i> 0800 765 567 </i>
             </div>
           </Badge>
         </Nav>

@@ -13,6 +13,8 @@ import img_h01 from "./images/nzwswe-1.jpe";
 import img_h02 from "./images/nzwswe-1.jpe";
 import img_h03 from "./images/nzwswe-1.jpe";
 
+import { home } from "../../data/home";
+
 const Home = props => {
   const { selectMenu } = props;
 
@@ -26,6 +28,134 @@ const Home = props => {
   return (
     <React.Fragment>
       <Header></Header>
+      <Container fluid>
+        <Segment.Group>
+          {/* mobile */}
+          <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
+            <Row>
+              <Col xs="12" className="col-01">
+                <div className="title">{home.col01.title}</div>
+                <div className="text">{home.col01.text}</div>
+              </Col>
+              <Col xs="12" className="col-02">
+                <div className="title">{home.col02.title}</div>
+                <div className="text">{home.col02.text}</div>
+              </Col>
+            </Row>
+          </Responsive>
+
+          {/* tablet */}
+          <Responsive
+            minWidth={Responsive.onlyTablet.minWidth}
+            maxWidth={Responsive.onlyTablet.maxWidth}
+          >
+            <Row>
+              <Col xs="6" className="col-01">
+                <div className="title">{home.col01.title}</div>
+                <div className="text">{home.col01.text}</div>
+              </Col>
+              <Col xs="6" className="col-02">
+                <div className="title">{home.col02.title}</div>
+                <div className="text">{home.col02.text}</div>
+              </Col>
+              <Col xs="6" className="col-02">
+                <div className="title">{home.col03.title}</div>
+                <div className="text">{home.col03.text}</div>
+              </Col>
+              <Col xs="6" className="col-01">
+                <div className="title">{home.col04.title}</div>
+                <div className="text">{home.col04.text}</div>
+              </Col>
+            </Row>
+          </Responsive>
+
+          {/* destop */}
+          <Responsive minWidth={Responsive.onlyComputer.minWidth}>
+            <Row>
+              <Col xs="3" className="col-01">
+                <div className="title">{home.col01.title}</div>
+                <div className="text">{home.col01.text}</div>
+              </Col>
+              <Col xs="3" className="col-02">
+                <div className="title">{home.col02.title}</div>
+                <div className="text">{home.col02.text}</div>
+              </Col>
+              <Col xs="3" className="col-01">
+                <div className="title">{home.col03.title}</div>
+                <div className="text">{home.col03.text}</div>
+              </Col>
+              <Col xs="3" className="col-02">
+                <div className="title">{home.col04.title}</div>
+                <div className="text">{home.col04.text}</div>
+              </Col>
+            </Row>
+          </Responsive>
+
+          <hr />
+
+          <Responsive maxWidth={767}>
+            <Row>
+              <Col xs="12" className="col-01">
+                <div className="title">{home.col01.title}</div>
+                <div className="text">{home.col01.text}</div>
+              </Col>
+              <Col xs="12" className="col-02">
+                <div className="title">{home.col02.title}</div>
+                <div className="text">{home.col02.text}</div>
+              </Col>
+              <Col xs="12" className="col-01">
+                <div className="title">{home.col03.title}</div>
+                <div className="text">{home.col03.text}</div>
+              </Col>
+              <Col xs="12" className="col-02">
+                <div className="title">{home.col04.title}</div>
+                <div className="text">{home.col04.text}</div>
+              </Col>
+            </Row>
+          </Responsive>
+          <Responsive minWidth={768} maxWidth={1365}>
+            <Row>
+              <Col xs="6" className="col-01">
+                <div className="title">{home.col01.title}</div>
+                <div className="text">{home.col01.text}</div>
+              </Col>
+              <Col xs="6" className="col-02">
+                <div className="title">{home.col02.title}</div>
+                <div className="text">{home.col02.text}</div>
+              </Col>
+              <Col xs="6" className="col-02">
+                <div className="title">{home.col03.title}</div>
+                <div className="text">{home.col03.text}</div>
+              </Col>
+              <Col xs="6" className="col-01">
+                <div className="title">{home.col04.title}</div>
+                <div className="text">{home.col04.text}</div>
+              </Col>
+            </Row>
+          </Responsive>
+          <Responsive minWidth={1366}>
+            <Row>
+              <Col xs="3" className="col-01">
+                <div className="title">{home.col01.title}</div>
+                <div className="text">{home.col01.text}</div>
+              </Col>
+              <Col xs="3" className="col-02">
+                <div className="title">{home.col02.title}</div>
+                <div className="text">{home.col02.text}</div>
+              </Col>
+              <Col xs="3" className="col-01">
+                <div className="title">{home.col03.title}</div>
+                <div className="text">{home.col03.text}</div>
+              </Col>
+              <Col xs="3" className="col-02">
+                <div className="title">{home.col04.title}</div>
+                <div className="text">{home.col04.text}</div>
+              </Col>
+            </Row>
+          </Responsive>
+        </Segment.Group>
+      </Container>
+
       <Segment.Group>
         <Responsive as={Segment} maxWidth={600}>
           <div className="h-section-01-m">
