@@ -14,17 +14,17 @@ import img_h02 from "./images/nzwswe-1.jpe";
 import img_h03 from "./images/nzwswe-1.jpe";
 // import s from "./style01.scss";
 // import Carousel from "nuka-carousel";
-import {
-  ButtonBack,
-  ButtonFirst,
-  ButtonLast,
-  ButtonNext,
-  CarouselProvider,
-  DotGroup,
-  ImageWithZoom,
-  Slide,
-  Slider
-} from "pure-react-carousel";
+// import {
+//   ButtonBack,
+//   ButtonFirst,
+//   ButtonLast,
+//   ButtonNext,
+//   CarouselProvider,
+//   DotGroup,
+//   ImageWithZoom,
+//   Slide,
+//   Slider
+// } from "pure-react-carousel";
 // import "pure-react-carousel/dist/react-carousel.es.css";
 
 import { home } from "../../data/home";
