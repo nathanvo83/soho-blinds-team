@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Menu, Segment } from "semantic-ui-react";
+import { Menu } from "semantic-ui-react";
 import "./Com02.css";
 import Tab01 from "./Tab01";
 import Tab02 from "./Tab02";
