@@ -145,34 +145,29 @@ function Main() {
       <Route path="/" exact component={Home} />
       <Route
         path="/product/blinds/roller"
-        exact
         component={renderProductBlindsRoller}
       />
       <Route
         path="/product/blinds/venetian"
-        exact
         component={renderProductBlindsVenetian}
       />
       <Route
         path="/product/blinds/vertical"
-        exact
         component={renderProductBlindsVertical}
       />
       <Route
         path="/product/blinds/zebra"
-        exact
         component={renderProductBlindsZebra}
       />
       <Route
         path="/product/shutter/alycore-plus-PVC"
-        exact
         component={renderProductShutterAlycorePlusPVC}
       />
       {/* <Route path="/product/blinds" exact component={Blinds} />
       <Route path="/product/curtain" exact component={Curtain} />
       <Route path="/product/shutter" exact component={Shutter} /> */}
-      <Route path="/quote-my-job" exact component={QuoteMyJob} />
-      <Route path="/contact-us" exact component={ContactUs} />
+      <Route path="/quote-my-job" component={QuoteMyJob} />
+      <Route path="/contact-us" component={ContactUs} />
       <Route component={Page404} />
 
       {/* <Redirect to="/" /> */}
