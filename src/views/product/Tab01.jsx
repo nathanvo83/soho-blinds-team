@@ -1,0 +1,70 @@
+import React from "react";
+import "./Tab.css";
+import { faAward } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+const Tab01 = props => {
+  const { content } = props;
+  return (
+    <div>
+      <div className="tab-col">
+        <div className="tab-icon">
+          <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
+        </div>
+        <div className="tab-body">
+          <div className="tab-title">{content.titles[0]}</div>
+          <div className="tab-content">{content.contents[0]}</div>
+        </div>
+      </div>
+      <div className="tab-col">
+        <div className="tab-icon">
+          <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
+        </div>
+        <div className="tab-body">
+          <div className="tab-title">{content.titles[1]}</div>
+          <div className="tab-content">{content.contents[1]}</div>
+        </div>
+      </div>
+      <div className="tab-col">
+        <div className="tab-icon">
+          <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
+        </div>
+        <div className="tab-body">
+          <div className="tab-title">{content.titles[2]}</div>
+          <div className="tab-content">{content.contents[2]}</div>
+        </div>
+      </div>
+      <div className="tab-col">
+        <div className="tab-icon">
+          <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
+        </div>
+        <div className="tab-body">
+          <div className="tab-title">{content.titles[3]}</div>
+          <div className="tab-content">{content.contents[3]}</div>
+        </div>
+      </div>
+
+      {/* <div className="tab-title" key="0">
+        {content.titles[0]}
+      </div>
+      <div key="1">{content.contents[0]}</div>
+
+      <div className="tab-title" key="2">
+        {content.titles[1]}
+      </div>
+      <div key="3">{content.contents[1]}</div>
+
+      <div className="tab-title" key="4">
+        {content.titles[2]}
+      </div>
+      <div key="5">{content.contents[2]}</div>
+
+      <div className="tab-title" key="6">
+        {content.titles[3]}
+      </div>
+      <div key="7">{content.contents[3]}</div> */}
+    </div>
+  );
+};
+
+export default Tab01;

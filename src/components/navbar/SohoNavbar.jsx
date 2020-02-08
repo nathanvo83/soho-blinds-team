@@ -9,16 +9,17 @@ import {
   faReceipt
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  Badge,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  Collapse
-} from "shards-react";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+// import {
+//   Badge,
+//   Navbar,
+//   NavbarToggler,
+//   NavbarBrand,
+//   Nav,
+//   NavItem,
+//   NavLink,
+//   Collapse
+// } from "shards-react";
 import logo from "./images/SoHo-Logo-No-script3-300x166.png";
 
 import { connect } from "react-redux";
@@ -42,97 +43,267 @@ const SohoNavbar = props => {
   };
 
   return (
-    <Navbar
-      className="n-navbar"
-      type="light"
-      // type="dark"
-      // theme="success"
-      expand="md"
-      sticky="top"
-    >
-      <NavbarBrand>
-        <img src={logo} alt="logo" className="n-logo1"></img>
-      </NavbarBrand>
-      <NavbarToggler onClick={handleCollapseOpen} />
-      <Collapse open={collapseOpen} navbar>
-        <Nav navbar>
-          <NavItem className="n-item">
-            <NavLink
-              to="/"
-              tag={Link}
-              exact
-              active={menu === menuTypes.HOME}
-              onClick={() => {
-                handleMenuClick();
-              }}
-              className={
-                menu === menuTypes.HOME ? "n-item-active" : "n-item-none"
-              }
-            >
-              <FontAwesomeIcon icon={faHome} /> Home
-            </NavLink>
-          </NavItem>
-          <NavItem className="n-item">
-            <NavLink
-              to="/product"
-              tag={Link}
-              // exact
-              active={menu === menuTypes.PRODUCT}
-              onClick={() => {
-                handleMenuClick();
-              }}
-              className={
-                menu === menuTypes.PRODUCT ? "n-item-active" : "n-item-none"
-              }
-            >
-              <FontAwesomeIcon icon={faReceipt} /> Product
-            </NavLink>
-          </NavItem>
-          <NavItem className="n-item">
-            <NavLink
-              to="/quote-my-job"
-              tag={Link}
-              // exact
-              active={menu === menuTypes.QUOTE}
-              onClick={() => {
-                handleMenuClick();
-              }}
-              className={
-                menu === menuTypes.QUOTE ? "n-item-active" : "n-item-none"
-              }
-            >
-              <FontAwesomeIcon icon={faShippingFast} /> Quote My Job
-            </NavLink>
-          </NavItem>
+    <div>
+      {/* <Navbar className="n-navbar" expand="md"></Navbar> */}
 
-          <NavItem className="n-item">
-            <NavLink
-              to="/contact-us"
-              tag={Link}
-              // exact
-              active={menu === menuTypes.CONTACTUS}
-              onClick={() => {
-                handleMenuClick();
-              }}
-              className={
-                menu === menuTypes.CONTACTUS ? "n-item-active" : "n-item-none"
-              }
-            >
-              <FontAwesomeIcon icon={faAddressBook} /> Contact us
-            </NavLink>
-          </NavItem>
-        </Nav>
+      {/* <Nav className="navbar navbar-default"></Nav> */}
 
-        <Nav navbar className="ml-auto">
-          <Badge theme="light" className="n-x">
-            <div className="n-contact">
-              <FontAwesomeIcon icon={faPhone} />
-              <i> 0800 765 567 </i>
-            </div>
-          </Badge>
-        </Nav>
-      </Collapse>
-    </Navbar>
+      <Navbar
+        // style={{ marginBottom: "0" }}
+        // style={{ backgroundColor: "#071740", position: "sticky" }}
+        className="n-navbar"
+        expand="md"
+        fixed="top"
+        // variant="light"
+      >
+        <Navbar.Brand href="/">
+          <img src={logo} alt="logo" className="n-logo1"></img>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link href="/" className="n-item-none">
+              Home
+            </Nav.Link>
+
+            <NavDropdown
+              title="Blinds"
+              id="basic-nav-dropdown"
+              className="n-item-none"
+            >
+              <NavDropdown.Item
+                href="/product/blinds/roller"
+                className="n-item-none"
+              >
+                Roller
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                href="/product/blinds/venetian"
+                className="n-item-none"
+              >
+                Venetian
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                href="/product/blinds/vertical"
+                className="n-item-none"
+              >
+                Vertical
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                href="/product/blinds/zebra"
+                className="n-item-none"
+              >
+                Zebra
+              </NavDropdown.Item>
+            </NavDropdown>
+
+            <NavDropdown
+              title="Curtain"
+              id="basic-nav-dropdown"
+              className="n-item-none"
+            >
+              <NavDropdown.Item
+                href="/product/curtain/wave"
+                className="n-item-none"
+              >
+                Wave
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                href="/product/curtain/eyelet"
+                className="n-item-none"
+              >
+                Eyelet
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                href="/product/curtain/pinch-pleat"
+                className="n-item-none"
+              >
+                Pinch Pleat
+              </NavDropdown.Item>
+            </NavDropdown>
+
+            <NavDropdown
+              title="Shutter"
+              id="basic-nav-dropdown"
+              className="n-item-none"
+            >
+              <NavDropdown.Item
+                href="/product/shutter-timber"
+                className="n-item-none"
+              >
+                Timber
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                href="/product/shutter/alycore-plus-PVC"
+                className="n-item-none"
+              >
+                Alycore plus PVC
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                href="/product/shutter-exterior"
+                className="n-item-none"
+              >
+                Exterior
+              </NavDropdown.Item>
+            </NavDropdown>
+
+            <Nav.Link href="/buying-guide" className="n-item-none">
+              Buying guide
+            </Nav.Link>
+
+            <Nav.Link href="/contact-us" className="n-item-none">
+              Contact us
+            </Nav.Link>
+          </Nav>
+          {/* <Form inline>
+            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+            <Button variant="outline-success">Search</Button>
+          </Form> */}
+        </Navbar.Collapse>
+      </Navbar>
+    </div>
+
+    // <Navbar
+    //   className="n-navbar"
+    //   type="light"
+    //   // type="dark"
+    //   // theme="success"
+    //   expand="md"
+    //   sticky="top"
+    // >
+    //   <NavbarBrand>
+    //     <img src={logo} alt="logo" className="n-logo1"></img>
+    //   </NavbarBrand>
+    //   <NavbarToggler onClick={handleCollapseOpen} />
+    //   <Collapse open={collapseOpen} navbar>
+    //     <Nav navbar>
+    //       <NavItem className="n-item">
+    //         <NavLink
+    //           to="/"
+    //           tag={Link}
+    //           exact
+    //           active={menu === menuTypes.HOME}
+    //           onClick={() => {
+    //             handleMenuClick();
+    //           }}
+    //           className={
+    //             menu === menuTypes.HOME ? "n-item-active" : "n-item-none"
+    //           }
+    //         >
+    //           <FontAwesomeIcon icon={faHome} /> Home
+    //         </NavLink>
+    //       </NavItem>
+    //       <NavItem className="n-item">
+    //         <NavLink
+    //           to="/product"
+    //           tag={Link}
+    //           // exact
+    //           active={menu === menuTypes.PRODUCT}
+    //           onClick={() => {
+    //             handleMenuClick();
+    //           }}
+    //           className={
+    //             menu === menuTypes.PRODUCT ? "n-item-active" : "n-item-none"
+    //           }
+    //         >
+    //           <FontAwesomeIcon icon={faReceipt} /> Product
+    //         </NavLink>
+    //       </NavItem>
+
+    //       <NavItem className="n-item">
+    //         <NavLink
+    //           to="/quote-my-job"
+    //           tag={Link}
+    //           // exact
+    //           active={menu === menuTypes.QUOTE}
+    //           onClick={() => {
+    //             handleMenuClick();
+    //           }}
+    //           className={
+    //             menu === menuTypes.QUOTE ? "n-item-active" : "n-item-none"
+    //           }
+    //         >
+    //           <FontAwesomeIcon icon={faShippingFast} /> Blinds
+    //         </NavLink>
+    //       </NavItem>
+    //       <NavItem className="n-item">
+    //         <NavLink
+    //           to="/quote-my-job"
+    //           tag={Link}
+    //           // exact
+    //           active={menu === menuTypes.QUOTE}
+    //           onClick={() => {
+    //             handleMenuClick();
+    //           }}
+    //           className={
+    //             menu === menuTypes.QUOTE ? "n-item-active" : "n-item-none"
+    //           }
+    //         >
+    //           <FontAwesomeIcon icon={faShippingFast} /> Curtain
+    //         </NavLink>
+    //       </NavItem>
+    //       <NavItem className="n-item">
+    //         <NavLink
+    //           to="/quote-my-job"
+    //           tag={Link}
+    //           // exact
+    //           active={menu === menuTypes.QUOTE}
+    //           onClick={() => {
+    //             handleMenuClick();
+    //           }}
+    //           className={
+    //             menu === menuTypes.QUOTE ? "n-item-active" : "n-item-none"
+    //           }
+    //         >
+    //           <FontAwesomeIcon icon={faShippingFast} /> Shutter
+    //         </NavLink>
+    //       </NavItem>
+
+    //       {/* <NavItem className="n-item">
+    //         <NavLink
+    //           to="/quote-my-job"
+    //           tag={Link}
+    //           // exact
+    //           active={menu === menuTypes.QUOTE}
+    //           onClick={() => {
+    //             handleMenuClick();
+    //           }}
+    //           className={
+    //             menu === menuTypes.QUOTE ? "n-item-active" : "n-item-none"
+    //           }
+    //         >
+    //           <FontAwesomeIcon icon={faShippingFast} /> Quote My Job
+    //         </NavLink>
+    //       </NavItem> */}
+
+    //       <NavItem className="n-item">
+    //         <NavLink
+    //           to="/contact-us"
+    //           tag={Link}
+    //           // exact
+    //           active={menu === menuTypes.CONTACTUS}
+    //           onClick={() => {
+    //             handleMenuClick();
+    //           }}
+    //           className={
+    //             menu === menuTypes.CONTACTUS ? "n-item-active" : "n-item-none"
+    //           }
+    //         >
+    //           <FontAwesomeIcon icon={faAddressBook} /> Contact us
+    //         </NavLink>
+    //       </NavItem>
+    //     </Nav>
+
+    //     {/* <Nav navbar className="ml-auto">
+    //       <Badge theme="light" className="n-x">
+    //         <div className="n-contact">
+    //           <FontAwesomeIcon icon={faPhone} />
+    //           <i> 0800 765 567 </i>
+    //         </div>
+    //       </Badge>
+    //     </Nav> */}
+    //   </Collapse>
+    // </Navbar>
   );
 };
 

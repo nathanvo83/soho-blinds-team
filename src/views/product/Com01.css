@@ -1,0 +1,9 @@
+.com01-content {
+  height: 65vh;
+}
+
+.com01-image {
+  height: 65vh;
+  width: 100%;
+  object-fit: cover;
+}

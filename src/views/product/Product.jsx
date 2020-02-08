@@ -2,16 +2,22 @@ import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { menuTypes } from "../../constants/menuTypes";
 import { actionTypes } from "../../constants/actionTypes";
-
-import "./Product.css";
-import "./Styles01.css";
-import { Link } from "react-router-dom";
-import Header from "./Header";
-import logo from "./images/nzwswe-1.jpe";
-import { Container, Row, Col, Badge } from "shards-react";
+import { Responsive } from "semantic-ui-react";
+import { Container, Row, Col } from "shards-react";
+import Com01 from "./Com01";
+import Com02 from "./Com02";
+import Com03 from "./Com03";
 
 const Product = props => {
-  const { selectMenu } = props;
+  const {
+    selectMenu,
+    title,
+    tab01,
+    tab02,
+    content01,
+    content02,
+    images
+  } = props;
 
   useEffect(() => {
     selectMenu(menuTypes.PRODUCT);
@@ -19,87 +25,35 @@ const Product = props => {
       // clear
     };
   }, [selectMenu]);
-
   return (
-    <React.Fragment>
-      <Header></Header>
+    <div>
+      <br />
 
-      <Container>
-        <div className="p-section-subtitle">
-          <div className="p-section-title">
-            quality, service and value for money
-          </div>
-          As blind manufacturers, we are dedicated to producing top quality made
-          to measure blinds at affordable prices. There are no middle men,
-          enabling us to produce our custom made blinds without additional
-          overheads. We pass these savings directly on to you, allowing us to
-          focus on what really matters…….
-          <br></br>
-        </div>
-
-        <Row>
-          <Col className="s-col" sm="4">
-            <div className="hovereffect s-section">
-              <div className="s-title">
-                <div>BLINDS</div>
-                <Badge theme="secondary">roller</Badge>{" "}
-                <Badge theme="secondary">timber venitin</Badge>{" "}
-                <Badge theme="secondary">vetical</Badge>{" "}
-                <Badge theme="secondary">panel</Badge>{" "}
-                <Badge theme="secondary">roman</Badge>{" "}
-                <Badge theme="secondary">cellular</Badge>{" "}
-              </div>
-              <img className="img-responsive img-size" src={logo} alt="" />
-
-              <div className="overlay">
-                <h2>BLINDS COLLECTION</h2>
-                <Link to="/product/blinds" tag={Link} exact>
-                  More
-                </Link>
-              </div>
-            </div>
-          </Col>
-          <Col className="s-col" sm="4">
-            <div className="hovereffect s-section">
-              <div className="s-title">
-                <div>CURTAIN</div>
-                <Badge theme="secondary">sheer</Badge>{" "}
-                <Badge theme="secondary">wavefold</Badge>{" "}
-              </div>
-              <img className="img-responsive img-size" src={logo} alt="" />
-
-              <div className="overlay">
-                <h2>CURTAIN COLLECTION</h2>
-                <Link to="/product/curtain" tag={Link} exact>
-                  More
-                </Link>
-              </div>
-            </div>
-          </Col>
-          <Col className="s-col" sm="4">
-            <div className="hovereffect s-section">
-              <div className="s-title">
-                <div>SHUTTER</div>
-                <Badge theme="secondary">timber</Badge>{" "}
-                <Badge theme="secondary">alycore plus PVC</Badge>{" "}
-                <Badge theme="secondary">exterior</Badge>
-              </div>
-              <img className="img-responsive img-size" src={logo} alt="" />
-
-              <div className="overlay">
-                <h2>SHUTTER COLLECTION</h2>
-                <Link to="/product/shutter" tag={Link} exact>
-                  More
-                </Link>
-              </div>
-            </div>
-          </Col>
-        </Row>
+      <Container fluid>
+        <Responsive>
+          <Row>
+            <Col xs={6}>
+              <Com01 images={images}></Com01>
+            </Col>
+            <Col xs={6}>
+              <Com02
+                title={title}
+                tab01={tab01}
+                tab02={tab02}
+                content01={content01}
+                content02={content02}
+              ></Com02>
+            </Col>
+          </Row>
+          <br />
+          <Row>
+            <Col xs={12}>
+              <Com03 images={images}></Com03>
+            </Col>
+          </Row>
+        </Responsive>
       </Container>
-      <br />
-      <br />
-      <br />
-    </React.Fragment>
+    </div>
   );
 };
 

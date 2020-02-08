@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { menuTypes } from "../../constants/menuTypes";
 import { actionTypes } from "../../constants/actionTypes";
-
+import Header from "../../components/header/Header";
 import "./ContactUs.css";
-import Header from "./Header";
+
 import {
   Form,
   FormInput,

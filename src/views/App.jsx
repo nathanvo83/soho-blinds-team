@@ -4,6 +4,7 @@ import SohoNavbar from "../components/navbar/SohoNavbar";
 import Main from "./Main";
 import Maintenance from "./maintenance/Maintenance";
 import { goLive } from "../config/config";
+import "./App.css";
 
 const renderMaintenance = () => {
   return <Maintenance></Maintenance>;
@@ -12,7 +13,10 @@ const renderGoLive = () => {
   return (
     <React.Fragment>
       <SohoNavbar location="home"></SohoNavbar>
-      <Main></Main>
+
+      <div className="x">
+        <Main></Main>
+      </div>
 
       <Footer></Footer>
     </React.Fragment>

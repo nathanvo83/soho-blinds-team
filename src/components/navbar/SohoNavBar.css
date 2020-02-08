@@ -20,13 +20,18 @@
 }
 
 .n-logo1 {
-  width: 70px;
+  width: 100px;
 }
+/* .sticky-nav {
+  position: sticky;
+  top: 0;
+} */
 
 .n-navbar {
   /* background-color: #4c3c3c; */
   /* background-color: #2f2626; */
   /* background-color: #17c671; */
+  height: 70px;
   background-color: #ffffff;
   border-bottom: 5px solid #ededed;
 }
@@ -90,7 +95,7 @@
   /* border: 1px solid red; */
   /* color: #333333; */
   /* border-left: 2px solid rgba(0, 0, 0, 0.5); */
-  font-weight: bolder;
+  font-weight: bold;
   border-bottom: solid 2px #000000;
   display: inline-block;
   padding-bottom: 2px;
@@ -100,5 +105,5 @@
   /* background-color: transparent; */
   /* color: red; */
   /* font-weight: 900; */
-  font-weight: bolder;
+  font-weight: bold;
 }

@@ -1,31 +1,43 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
+import Header from "../../components/header/Header";
+
 import { menuTypes } from "../../constants/menuTypes";
 import { actionTypes } from "../../constants/actionTypes";
 
 import "./Home.css";
-import Header from "./Header";
+// import Header from "./Header";
 import { Container, Row, Col } from "shards-react";
 import { faAward } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Responsive, Segment } from "semantic-ui-react";
-import img_h01 from "./images/nzwswe-1.jpe";
-import img_h02 from "./images/nzwswe-1.jpe";
-import img_h03 from "./images/nzwswe-1.jpe";
-// import s from "./style01.scss";
-// import Carousel from "nuka-carousel";
-// import {
-//   ButtonBack,
-//   ButtonFirst,
-//   ButtonLast,
-//   ButtonNext,
-//   CarouselProvider,
-//   DotGroup,
-//   ImageWithZoom,
-//   Slide,
-//   Slider
-// } from "pure-react-carousel";
-// import "pure-react-carousel/dist/react-carousel.es.css";
+import img_h01 from "../../assets/images/nzwswe-1.jpe";
+import img_h02 from "../../assets/images/nzwswe-1.jpe";
+import img_h03 from "../../assets/images/nzwswe-1.jpe";
+
+import roller01 from "../../assets/images/blinds/roller/roller01.png";
+import roller02 from "../../assets/images/blinds/roller/roller02.jpg";
+import roller03 from "../../assets/images/blinds/roller/roller03.png";
+import roller04 from "../../assets/images/blinds/roller/roller04.png";
+import roller05 from "../../assets/images/blinds/roller/roller05.jpeg";
+
+import timber01 from "../../assets/images/shutter/timber/timber01.png";
+import timber02 from "../../assets/images/shutter/timber/timber02.png";
+import timber03 from "../../assets/images/shutter/timber/timber03.png";
+import timber04 from "../../assets/images/shutter/timber/timber04.png";
+import timber05 from "../../assets/images/shutter/timber/timber05.png";
+import timber06 from "../../assets/images/shutter/timber/timber06.png";
+
+import zebra01 from "../../assets/images/blinds/zebra/zebra01.png";
+import zebra02 from "../../assets/images/blinds/zebra/zebra02.png";
+import zebra03 from "../../assets/images/blinds/zebra/zebra03.png";
+import zebra04 from "../../assets/images/blinds/zebra/zebra04.png";
+import zebra05 from "../../assets/images/blinds/zebra/zebra05.png";
+import zebra06 from "../../assets/images/blinds/zebra/zebra06.png";
+
+import h_01 from "../../assets/images/home/h-01.png";
+import h_02 from "../../assets/images/home/h-02.png";
+import h_03 from "../../assets/images/home/h-03.png";
 
 import { home } from "../../data/home";
 
@@ -41,538 +53,260 @@ const Home = props => {
 
   return (
     <React.Fragment>
-      <Header></Header>
-      {/* <Carousel
-        renderTopCenterControls={({ currentSlide }) => (
-          <div>Slide: {currentSlide}</div>
-        )}
-        renderCenterLeftControls={({ previousSlide }) => (
-          <button onClick={previousSlide}> {"<"} </button>
-        )}
-        renderCenterRightControls={({ nextSlide }) => (
-          <span onClick={nextSlide}>{"->"}</span>
-          // <button onClick={nextSlide}>{">"}</button>
-        )}
-      >
-        <img src={img_h01} />
-        <img src={img_h02} />
-        <img src={img_h03} />
-        <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide2" />
-        <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide3" />
-        <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide4" />
-        <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide5" />
-        <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide6" />
-      </Carousel> */}
+      {/* <div>
+        <img src={img_h03} className="test-header-image"></img>
+      </div>
+      <br />
+      <br />
+      <br /> */}
 
-      {/* <CarouselProvider
-        visibleSlides={1}
-        totalSlides={6}
-        step={1}
-        naturalSlideWidth={400}
-        naturalSlideHeight={500}
-        hasMasterSpinner
-        lockOnWindowScroll
-      >
-        <h2 className={s.headline}>
-          Carousel (lockOnWindowScroll set to TRUE)
-        </h2>
-        <p>
-          - When scrolling the browser, up and down, horizontal scrollers will
-          not scroll horizontally.
-        </p>
-        <p>
-          - When scrolling the browser, left and right, vertical scrollers will
-          not scroll vertically.
-        </p>
-        <p>
-          - This spinner will go away after all the images have loaded.
-          <br />
-        </p>
-        <Slider className={s.slider}>
-          <Slide index={0}>
-            <ImageWithZoom src={img_h01} />
-          </Slide>
-          <Slide index={1}>
-            <ImageWithZoom src={img_h01} />
-          </Slide>
-          <Slide index={2}>
-            <ImageWithZoom src={img_h01} />
-          </Slide>
-          <Slide index={3}>
-            <ImageWithZoom src={img_h01} />
-          </Slide>
-          <Slide index={4}>
-            <ImageWithZoom src={img_h01} />
-          </Slide>
-          <Slide index={5}>
-            <ImageWithZoom src={img_h01} />
-          </Slide>
-        </Slider>
-        <ButtonFirst>First</ButtonFirst>
-        <ButtonBack>Back</ButtonBack>
-        <ButtonNext>Next</ButtonNext>
-        <ButtonLast>Last</ButtonLast>
-        <DotGroup />
-      </CarouselProvider> */}
+      <Header></Header>
 
       <Container fluid>
-        <Segment.Group>
-          {/* mobile */}
-          <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
-            <Row className="h-section-01">
-              <Col xs="12">
-                <img
-                  className="h-section-img-m"
-                  src={img_h01}
-                  alt="img_h01"
-                ></img>
-              </Col>
-              <Col xs="12">
-                <div className="h-section-title">{home.section01.title}</div>
-                <div className="h-section-subtitle">
-                  {home.section01.content.map(item => (
-                    <div className="h-section-subtitle-item">{item}</div>
-                  ))}
-                </div>
-              </Col>
-            </Row>
-            <Row className="h-section-02">
-              <Col xs="12">
-                <img
-                  className="h-section-img-m"
-                  src={img_h02}
-                  alt="img_h02"
-                ></img>
-              </Col>
-              <Col xs="12">
-                <div className="h-section-title">{home.section02.title}</div>
-                <div className="h-section-subtitle">
-                  {home.section02.content.map(item => (
-                    <div className="h-section-subtitle-item">{item}</div>
-                  ))}
-                </div>
-              </Col>
-            </Row>
-            <Row className="h-section-03">
-              <Col xs="12">
-                <img
-                  className="h-section-img-m"
-                  src={img_h03}
-                  alt="img_h03"
-                ></img>
-              </Col>
-              <Col xs="12">
-                <div className="h-section-title">{home.section03.title}</div>
-                <div className="h-section-subtitle">
-                  {home.section03.content.map(item => (
-                    <div className="h-section-subtitle-item">{item}</div>
-                  ))}
-                </div>
-              </Col>
-            </Row>
-            <Row className="h-section-04">
-              <Col xs="12">
-                <div className="h-s04-header">About us</div>
-              </Col>
+        <Responsive>
+          <Row className="sectionA">
+            <Col xs="12">
+              <div className="sectionA-title">OUR WORKS</div>
+              <div className="sectionA-subtitle">
+                Featured Service that We Provide
+              </div>
+            </Col>
 
-              <Col xs="12">
-                <div className="h-s04-col">
-                  <div className="h-s04-icon">
-                    <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
-                  </div>
-                  <div className="h-s04-body">
-                    <div className="h-s04-title">
-                      {home.section04.aboutUs_01.title}
-                    </div>
-                    <div className="h-s04-subtitle">
-                      {home.section04.aboutUs_01.content}
-                    </div>
-                  </div>
+            <Col xs="4">
+              <div className="sectionA-container">
+                <img class="sectionA-image" src={h_01} alt="" />
+                <div className="sectionA-top-left">blinds</div>
+                <div className="sectionA-top-right">
+                  <div className="sectionA-promo-normal">up to</div>
+                  <div className="sectionA-promo-high">50% off</div>
+                  <div className="sectionA-promo-normal">on selected</div>
                 </div>
-              </Col>
-              <Col xs="12">
-                <div className="h-s04-col">
-                  <div className="h-s04-icon">
-                    <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
-                  </div>
-                  <div className="h-s04-body">
-                    <div className="h-s04-title">
-                      {home.section04.aboutUs_02.title}
-                    </div>
-                    <div className="h-s04-subtitle">
-                      {home.section04.aboutUs_02.content}
-                    </div>
-                  </div>
-                </div>
-              </Col>
-              <Col xs="12">
-                <div className="h-s04-col">
-                  <div className="h-s04-icon">
-                    <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
-                  </div>
-                  <div className="h-s04-body">
-                    <div className="h-s04-title">
-                      {home.section04.aboutUs_03.title}
-                    </div>
-                    <div className="h-s04-subtitle">
-                      {home.section04.aboutUs_03.content}
-                    </div>
-                  </div>
-                </div>
-              </Col>
-              <Col xs="12">
-                <div className="h-s04-col">
-                  <div className="h-s04-icon">
-                    <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
-                  </div>
-                  <div className="h-s04-body">
-                    <div className="h-s04-title">
-                      {home.section04.aboutUs_04.title}
-                    </div>
-                    <div className="h-s04-subtitle">
-                      {home.section04.aboutUs_04.content}
-                    </div>
-                  </div>
-                </div>
-              </Col>
-              <Col xs="12">
-                <div className="h-s04-col">
-                  <div className="h-s04-icon">
-                    <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
-                  </div>
-                  <div className="h-s04-body">
-                    <div className="h-s04-title">
-                      {home.section04.aboutUs_05.title}
-                    </div>
-                    <div className="h-s04-subtitle">
-                      {home.section04.aboutUs_05.content}
-                    </div>
-                  </div>
-                </div>
-              </Col>
-              <Col xs="12">
-                <div className="h-s04-col">
-                  <div className="h-s04-icon">
-                    <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
-                  </div>
-                  <div className="h-s04-body">
-                    <div className="h-s04-title">
-                      {home.section04.aboutUs_06.title}
-                    </div>
-                    <div className="h-s04-subtitle">
-                      {home.section04.aboutUs_06.content}
-                    </div>
-                  </div>
-                </div>
-              </Col>
-            </Row>
-          </Responsive>
+              </div>
+              <br></br>
+              <div>
+                <span className="sectionA-item">Roller</span>
+                {" / "}
+                <span className="sectionA-item">Venetian</span>
+                {" / "}
+                <span className="sectionA-item">Vertical</span>
+                {" / "}
+                <span className="sectionA-item">Zebra</span>
+                {/* <div className="sectionA-item">Roller -> </div>
+                <div className="sectionA-item">Venetian -> </div>
+                <div className="sectionA-item">Vetical -> </div>
+                <div className="sectionA-item">Cellular -> </div>
+                <div className="sectionA-item">Zebra -> </div> */}
+              </div>
+            </Col>
 
-          {/* tablet */}
-          <Responsive
-            minWidth={Responsive.onlyTablet.minWidth}
-            maxWidth={Responsive.onlyTablet.maxWidth}
-          >
-            <Row className="h-section-01">
-              <Col xs="6">
-                <img
-                  className="h-section-img-t"
-                  src={img_h01}
-                  alt="img_h01"
-                ></img>
-              </Col>
-              <Col xs="6">
-                <div className="h-section-title">{home.section01.title}</div>
-                <div className="h-section-subtitle">
-                  {home.section01.content.map(item => (
-                    <div className="h-section-subtitle-item">{item}</div>
-                  ))}
+            <Col xs="4">
+              <div className="sectionA-container">
+                <img class="sectionA-image" src={h_02} alt="" />
+                <div className="sectionA-top-left">curtain</div>
+                <div className="sectionA-top-right">
+                  <div className="sectionA-promo-normal">up to</div>
+                  <div className="sectionA-promo-high">50% off</div>
+                  <div className="sectionA-promo-normal">on selected</div>
                 </div>
-              </Col>
-            </Row>
-            <Row className="h-section-02">
-              <Col xs="6">
-                <div className="h-section-title">{home.section02.title}</div>
-                <div className="h-section-subtitle">
-                  {home.section02.content.map(item => (
-                    <div className="h-section-subtitle-item">{item}</div>
-                  ))}
+              </div>
+              <br></br>
+              <div>
+                <span className="sectionA-item">Wave</span>
+                {" / "}
+                <span className="sectionA-item">Eyelet</span>
+                {" / "}
+                <span className="sectionA-item">Pinch Pleat</span>
+              </div>
+            </Col>
+            <Col xs="4">
+              <div className="sectionA-container">
+                <img class="sectionA-image" src={h_03} alt="" />
+                <div className="sectionA-top-left">shutter</div>
+                <div className="sectionA-top-right">
+                  <div className="sectionA-promo-normal">up to</div>
+                  <div className="sectionA-promo-high">50% off</div>
+                  <div className="sectionA-promo-normal">on selected</div>
                 </div>
-              </Col>
-              <Col xs="6">
-                <img
-                  className="h-section-img-t"
-                  src={img_h02}
-                  alt="img_h02"
-                ></img>
-              </Col>
-            </Row>
-            <Row className="h-section-03">
-              <Col xs="6">
-                <img
-                  className="h-section-img-t"
-                  src={img_h03}
-                  alt="img_h03"
-                ></img>
-              </Col>
-              <Col xs="6">
-                <div className="h-section-title">{home.section03.title}</div>
-                <div className="h-section-subtitle">
-                  {home.section03.content.map(item => (
-                    <div className="h-section-subtitle-item">{item}</div>
-                  ))}
-                </div>
-              </Col>
-            </Row>
-            <Row className="h-section-04">
-              <Col xs="12">
-                <div className="h-s04-header">About us</div>
-              </Col>
-              <Col xs="6">
-                <div className="h-s04-col">
-                  <div className="h-s04-icon">
-                    <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
-                  </div>
-                  <div className="h-s04-body">
-                    <div className="h-s04-title">
-                      {home.section04.aboutUs_01.title}
-                    </div>
-                    <div className="h-s04-subtitle">
-                      {home.section04.aboutUs_01.content}
-                    </div>
-                  </div>
-                </div>
-              </Col>
-              <Col xs="6">
-                <div className="h-s04-col">
-                  <div className="h-s04-icon">
-                    <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
-                  </div>
-                  <div className="h-s04-body">
-                    <div className="h-s04-title">
-                      {home.section04.aboutUs_02.title}
-                    </div>
-                    <div className="h-s04-subtitle">
-                      {home.section04.aboutUs_02.content}
-                    </div>
-                  </div>
-                </div>
-              </Col>
-              <Col xs="6">
-                <div className="h-s04-col">
-                  <div className="h-s04-icon">
-                    <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
-                  </div>
-                  <div className="h-s04-body">
-                    <div className="h-s04-title">
-                      {home.section04.aboutUs_03.title}
-                    </div>
-                    <div className="h-s04-subtitle">
-                      {home.section04.aboutUs_03.content}
-                    </div>
-                  </div>
-                </div>
-              </Col>
-              <Col xs="6">
-                <div className="h-s04-col">
-                  <div className="h-s04-icon">
-                    <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
-                  </div>
-                  <div className="h-s04-body">
-                    <div className="h-s04-title">
-                      {home.section04.aboutUs_04.title}
-                    </div>
-                    <div className="h-s04-subtitle">
-                      {home.section04.aboutUs_04.content}
-                    </div>
-                  </div>
-                </div>
-              </Col>
-              <Col xs="6">
-                <div className="h-s04-col">
-                  <div className="h-s04-icon">
-                    <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
-                  </div>
-                  <div className="h-s04-body">
-                    <div className="h-s04-title">
-                      {home.section04.aboutUs_05.title}
-                    </div>
-                    <div className="h-s04-subtitle">
-                      {home.section04.aboutUs_05.content}
-                    </div>
-                  </div>
-                </div>
-              </Col>
-              <Col xs="6">
-                <div className="h-s04-col">
-                  <div className="h-s04-icon">
-                    <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
-                  </div>
-                  <div className="h-s04-body">
-                    <div className="h-s04-title">
-                      {home.section04.aboutUs_06.title}
-                    </div>
-                    <div className="h-s04-subtitle">
-                      {home.section04.aboutUs_06.content}
-                    </div>
-                  </div>
-                </div>
-              </Col>
-            </Row>
-          </Responsive>
+              </div>
+              <br></br>
+              <div>
+                <span className="sectionA-item">Timber</span>
+                {" / "}
+                <span className="sectionA-item">Alycore plus PVC</span>
+                {" / "}
+                <span className="sectionA-item">Exterior</span>{" "}
+              </div>
+            </Col>
+          </Row>
 
-          {/* destop */}
-          <Responsive minWidth={Responsive.onlyComputer.minWidth}>
-            <Row className="h-section-01">
-              <Col xs="6">
-                <img
-                  className="h-section-img-d"
-                  src={img_h01}
-                  alt="img_h01"
-                ></img>
-              </Col>
-              <Col xs="6">
-                <div className="h-section-title">{home.section01.title}</div>
-                <div className="h-section-subtitle">
-                  {home.section01.content.map(item => (
-                    <div className="h-section-subtitle-item">{item}</div>
-                  ))}
-                </div>
-              </Col>
-            </Row>
-            <Row className="h-section-02">
-              <Col xs="6">
-                <div className="h-section-title">{home.section02.title}</div>
-                <div className="h-section-subtitle">
-                  {home.section02.content.map(item => (
-                    <div className="h-section-subtitle-item">{item}</div>
-                  ))}
-                </div>
-              </Col>
-              <Col xs="6">
-                <img
-                  className="h-section-img-d"
-                  src={img_h02}
-                  alt="img_h02"
-                ></img>
-              </Col>
-            </Row>
-            <Row className="h-section-03">
-              <Col xs="6">
-                <img
-                  className="h-section-img-d"
-                  src={img_h03}
-                  alt="img_h03"
-                ></img>
-              </Col>
-              <Col xs="6">
-                <div className="h-section-title">{home.section03.title}</div>
-                <div className="h-section-subtitle">
-                  {home.section03.content.map(item => (
-                    <div className="h-section-subtitle-item">{item}</div>
-                  ))}
-                </div>
-              </Col>
-            </Row>
+          <Row>
+            <Col xs="6">
+              <div class="section01">
+                <img class="section01-image01" src={roller01} alt="" />
+                <img class="section01-image02" src={roller02} alt="" />
+                <img class="section01-image03" src={roller03} alt="" />
+                <img class="section01-image04" src={roller04} alt="" />
+              </div>
+            </Col>
+            <Col xs="6">
+              <div className="h-section-title">{home.section01.title}</div>
+              <div className="h-section-subtitle">
+                {home.section01.content.map(item => (
+                  <div className="h-section-subtitle-item">{item}</div>
+                ))}
+              </div>
+            </Col>
+          </Row>
 
-            <Row className="h-section-04">
-              <Col xs="12">
-                <div className="h-s04-header">About us</div>
-              </Col>
-              <Col xs="4">
-                <div className="h-s04-col">
-                  <div className="h-s04-icon">
-                    <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
+          <Row>
+            <Col xs="6">
+              <div className="h-section-title">{home.section02.title}</div>
+              <div className="h-section-subtitle">
+                {home.section02.content.map(item => (
+                  <div className="h-section-subtitle-item">{item}</div>
+                ))}
+              </div>
+            </Col>
+            <Col xs="6">
+              <div class="section02">
+                <img class="section02-image01" src={timber01} alt="" />
+                <img class="section02-image02" src={timber02} alt="" />
+                <img class="section02-image03" src={timber03} alt="" />
+                <img class="section02-image04" src={timber04} alt="" />
+              </div>
+            </Col>
+          </Row>
+
+          <Row>
+            <Col xs="6">
+              <div class="section01">
+                <img class="section01-image01" src={zebra01} alt="" />
+                <img class="section01-image02" src={zebra02} alt="" />
+                <img class="section01-image03" src={zebra03} alt="" />
+                <img class="section01-image04" src={zebra04} alt="" />
+              </div>
+            </Col>
+            <Col xs="6">
+              <div className="h-section-title">{home.section03.title}</div>
+              <div className="h-section-subtitle">
+                {home.section03.content.map(item => (
+                  <div className="h-section-subtitle-item">{item}</div>
+                ))}
+              </div>
+            </Col>
+          </Row>
+
+          <Row className="section-04">
+            <Col xs="12">
+              <div className="s04-header">About us</div>
+            </Col>
+            <Col xs="4">
+              <div className="s04-col">
+                <div className="s04-icon">
+                  <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
+                </div>
+                <div className="s04-body">
+                  <div className="s04-title">
+                    {home.section04.aboutUs_01.title}
                   </div>
-                  <div className="h-s04-body">
-                    <div className="h-s04-title">
-                      {home.section04.aboutUs_01.title}
-                    </div>
-                    <div className="h-s04-subtitle">
-                      {home.section04.aboutUs_01.content}
-                    </div>
+                  <div className="s04-subtitle">
+                    {home.section04.aboutUs_01.content}
                   </div>
                 </div>
-              </Col>
-              <Col xs="4">
-                <div className="h-s04-col">
-                  <div className="h-s04-icon">
-                    <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
+              </div>
+            </Col>
+            <Col xs="4">
+              <div className="s04-col">
+                <div className="s04-icon">
+                  <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
+                </div>
+                <div className="s04-body">
+                  <div className="s04-title">
+                    {home.section04.aboutUs_02.title}
                   </div>
-                  <div className="h-s04-body">
-                    <div className="h-s04-title">
-                      {home.section04.aboutUs_02.title}
-                    </div>
-                    <div className="h-s04-subtitle">
-                      {home.section04.aboutUs_02.content}
-                    </div>
+                  <div className="s04-subtitle">
+                    {home.section04.aboutUs_02.content}
                   </div>
                 </div>
-              </Col>
-              <Col xs="4">
-                <div className="h-s04-col">
-                  <div className="h-s04-icon">
-                    <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
+              </div>
+            </Col>
+            <Col xs="4">
+              <div className="s04-col">
+                <div className="s04-icon">
+                  <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
+                </div>
+                <div className="s04-body">
+                  <div className="s04-title">
+                    {home.section04.aboutUs_03.title}
                   </div>
-                  <div className="h-s04-body">
-                    <div className="h-s04-title">
-                      {home.section04.aboutUs_03.title}
-                    </div>
-                    <div className="h-s04-subtitle">
-                      {home.section04.aboutUs_03.content}
-                    </div>
+                  <div className="s04-subtitle">
+                    {home.section04.aboutUs_03.content}
                   </div>
                 </div>
-              </Col>
-              <Col xs="4">
-                <div className="h-s04-col">
-                  <div className="h-s04-icon">
-                    <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
+              </div>
+            </Col>
+            <Col xs="4">
+              <div className="s04-col">
+                <div className="s04-icon">
+                  <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
+                </div>
+                <div className="s04-body">
+                  <div className="s04-title">
+                    {home.section04.aboutUs_04.title}
                   </div>
-                  <div className="h-s04-body">
-                    <div className="h-s04-title">
-                      {home.section04.aboutUs_04.title}
-                    </div>
-                    <div className="h-s04-subtitle">
-                      {home.section04.aboutUs_04.content}
-                    </div>
+                  <div className="s04-subtitle">
+                    {home.section04.aboutUs_04.content}
                   </div>
                 </div>
-              </Col>
-              <Col xs="4">
-                <div className="h-s04-col">
-                  <div className="h-s04-icon">
-                    <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
+              </div>
+            </Col>
+            <Col xs="4">
+              <div className="s04-col">
+                <div className="s04-icon">
+                  <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
+                </div>
+                <div className="s04-body">
+                  <div className="s04-title">
+                    {home.section04.aboutUs_05.title}
                   </div>
-                  <div className="h-s04-body">
-                    <div className="h-s04-title">
-                      {home.section04.aboutUs_05.title}
-                    </div>
-                    <div className="h-s04-subtitle">
-                      {home.section04.aboutUs_05.content}
-                    </div>
+                  <div className="s04-subtitle">
+                    {home.section04.aboutUs_05.content}
                   </div>
                 </div>
-              </Col>
-              <Col xs="4">
-                <div className="h-s04-col">
-                  <div className="h-s04-icon">
-                    <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
+              </div>
+            </Col>
+            <Col xs="4">
+              <div className="s04-col">
+                <div className="s04-icon">
+                  <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
+                </div>
+                <div className="s04-body">
+                  <div className="s04-title">
+                    {home.section04.aboutUs_06.title}
                   </div>
-                  <div className="h-s04-body">
-                    <div className="h-s04-title">
-                      {home.section04.aboutUs_06.title}
-                    </div>
-                    <div className="h-s04-subtitle">
-                      {home.section04.aboutUs_06.content}
-                    </div>
+                  <div className="s04-subtitle">
+                    {home.section04.aboutUs_06.content}
                   </div>
                 </div>
-              </Col>
-            </Row>
-          </Responsive>
-        </Segment.Group>
+              </div>
+            </Col>
+          </Row>
+        </Responsive>
       </Container>
+
+      {/* <div class="parent">
+        <img class="image1" src={img_h01} alt="" />
+        <img class="image2" src={img_h02} alt="" />
+        <img class="image3" src={img_h01} alt="" />
+        <img class="image4" src={img_h02} alt="" />
+      </div> */}
+
+      {/* <div className="parents">
+        <div className="section01">
+          <img src={img_h01} alt="img_h01" className="section01-image01"></img>
+          <img src={img_h01} alt="img_h01" className="section01-image02"></img>
+        </div>
+      </div> */}
     </React.Fragment>
   );
 };

@@ -1,0 +1,35 @@
+.c-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./images/nzwswe-1.jpe");
+
+  /* Used if the image is unavailable */
+  background-color: #cccccc;
+  /* You must set a specified height */
+  height: 400px;
+  /* Center the image */
+  background-position: center;
+  /* Do not repeat the image */
+  background-repeat: no-repeat;
+  /* Resize the background image to cover the entire container*/
+  background-size: cover;
+  display: flex;
+}
+
+.c-header-text {
+  /* margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  color: #dddddd; */
+  margin: auto;
+  text-align: center;
+  color: #dddddd;
+}
+
+/* .p-header1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://www.placecage.com/c/460/300");
+} */
