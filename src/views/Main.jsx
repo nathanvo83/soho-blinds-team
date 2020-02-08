@@ -56,6 +56,7 @@ import alycore06 from "../assets/images/shutter/alycore-plus-PVC/alycore06.png";
 import alycore07 from "../assets/images/shutter/alycore-plus-PVC/alycore07.png";
 
 function Main() {
+  // -----blinds-----
   const renderProductBlindsRoller = () => (
     <Product
       title="Roller Blinds"
