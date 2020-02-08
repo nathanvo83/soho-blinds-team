@@ -4,10 +4,11 @@ import Product from "./product/Product";
 // import Blinds from "./product/Blinds";
 // import Curtain from "./product/Curtain";
 // import Shutter from "./product/Shutter";
-import QuoteMyJob from "./quote-my-job/QuoteMyJob";
+// import QuoteMyJob from "./quote-my-job/QuoteMyJob";
 import ContactUs from "./contact-us/ContactUs";
 import Page404 from "./page-404/Page404";
 import { Route, Switch } from "react-router-dom";
+import * as ROUTES from "../constants/routes";
 
 import { rollerBlinds } from "../data/roller-blinds";
 
@@ -143,32 +144,29 @@ function Main() {
 
   return (
     <Switch>
-      <Route path="/" exact component={Home} />
+      <Route path={ROUTES.HOME} exact component={Home} />
       <Route
-        path="/product/blinds/roller"
+        path={ROUTES.BLINDS_ROLLER}
         component={renderProductBlindsRoller}
       />
       <Route
-        path="/product/blinds/venetian"
+        path={ROUTES.BLINDS_VENETIAN}
         component={renderProductBlindsVenetian}
       />
       <Route
-        path="/product/blinds/vertical"
+        path={ROUTES.BLINDS_VERTICAL}
         component={renderProductBlindsVertical}
       />
+      <Route path={ROUTES.BLINDS_ZEBRA} component={renderProductBlindsZebra} />
       <Route
-        path="/product/blinds/zebra"
-        component={renderProductBlindsZebra}
-      />
-      <Route
-        path="/product/shutter/alycore-plus-PVC"
+        path={ROUTES.SHUTTER_ALYCOREPLUSPVC}
         component={renderProductShutterAlycorePlusPVC}
       />
       {/* <Route path="/product/blinds" exact component={Blinds} />
       <Route path="/product/curtain" exact component={Curtain} />
       <Route path="/product/shutter" exact component={Shutter} /> */}
-      <Route path="/quote-my-job" component={QuoteMyJob} />
-      <Route path="/contact-us" component={ContactUs} />
+      {/* <Route path="/quote-my-job" component={QuoteMyJob} /> */}
+      <Route path={ROUTES.CONTACTUS} component={ContactUs} />
       <Route component={Page404} />
 
       {/* <Redirect to="/" /> */}

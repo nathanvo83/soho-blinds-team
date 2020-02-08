@@ -24,6 +24,7 @@ import logo from "./images/SoHo-Logo-No-script3-300x166.png";
 
 import { connect } from "react-redux";
 // import { menuTypes } from "../../constants/menuTypes";
+import * as ROUTES from "../../constants/routes";
 
 const SohoNavbar = props => {
   // const { menu } = props;
@@ -56,13 +57,13 @@ const SohoNavbar = props => {
         fixed="top"
         // variant="light"
       >
-        <Navbar.Brand href="/">
+        <Navbar.Brand href={ROUTES.HOME}>
           <img src={logo} alt="logo" className="n-logo1"></img>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="/" className="n-item-none">
+            <Nav.Link href={ROUTES.HOME} className="n-item-none">
               Home
             </Nav.Link>
 
@@ -72,25 +73,25 @@ const SohoNavbar = props => {
               className="n-item-none"
             >
               <NavDropdown.Item
-                href="/product/blinds/roller"
+                href={ROUTES.BLINDS_ROLLER}
                 className="n-item-none"
               >
                 Roller
               </NavDropdown.Item>
               <NavDropdown.Item
-                href="/product/blinds/venetian"
+                href={ROUTES.BLINDS_VENETIAN}
                 className="n-item-none"
               >
                 Venetian
               </NavDropdown.Item>
               <NavDropdown.Item
-                href="/product/blinds/vertical"
+                href={ROUTES.BLINDS_VERTICAL}
                 className="n-item-none"
               >
                 Vertical
               </NavDropdown.Item>
               <NavDropdown.Item
-                href="/product/blinds/zebra"
+                href={ROUTES.BLINDS_ZEBRA}
                 className="n-item-none"
               >
                 Zebra
@@ -103,19 +104,19 @@ const SohoNavbar = props => {
               className="n-item-none"
             >
               <NavDropdown.Item
-                href="/product/curtain/wave"
+                href={ROUTES.CURTAIN_WAVE}
                 className="n-item-none"
               >
                 Wave
               </NavDropdown.Item>
               <NavDropdown.Item
-                href="/product/curtain/eyelet"
+                href={ROUTES.CURTAIN_EYELET}
                 className="n-item-none"
               >
                 Eyelet
               </NavDropdown.Item>
               <NavDropdown.Item
-                href="/product/curtain/pinch-pleat"
+                href={ROUTES.CURTAIN_PINCHPLEAT}
                 className="n-item-none"
               >
                 Pinch Pleat
@@ -128,30 +129,30 @@ const SohoNavbar = props => {
               className="n-item-none"
             >
               <NavDropdown.Item
-                href="/product/shutter-timber"
+                href={ROUTES.SHUTTER_TIMBER}
                 className="n-item-none"
               >
                 Timber
               </NavDropdown.Item>
               <NavDropdown.Item
-                href="/product/shutter/alycore-plus-PVC"
+                href={ROUTES.SHUTTER_ALYCOREPLUSPVC}
                 className="n-item-none"
               >
                 Alycore plus PVC
               </NavDropdown.Item>
               <NavDropdown.Item
-                href="/product/shutter-exterior"
+                href={ROUTES.SHUTTER_EXTERIOR}
                 className="n-item-none"
               >
                 Exterior
               </NavDropdown.Item>
             </NavDropdown>
 
-            <Nav.Link href="/buying-guide" className="n-item-none">
+            <Nav.Link href={ROUTES.BUYINGGUIDE} className="n-item-none">
               Buying guide
             </Nav.Link>
 
-            <Nav.Link href="/contact-us" className="n-item-none">
+            <Nav.Link href={ROUTES.CONTACTUS} className="n-item-none">
               Contact us
             </Nav.Link>
           </Nav>
