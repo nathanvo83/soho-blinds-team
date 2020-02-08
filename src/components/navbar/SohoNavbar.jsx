@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import "./SohoNavBar.css";
-import { Link } from "react-router-dom";
-import {
-  faPhone,
-  faHome,
-  faAddressBook,
-  faShippingFast,
-  faReceipt
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { Link } from "react-router-dom";
+// import {
+//   faPhone,
+//   faHome,
+//   faAddressBook,
+//   faShippingFast,
+//   faReceipt
+// } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 // import {
 //   Badge,
@@ -23,24 +23,24 @@ import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import logo from "./images/SoHo-Logo-No-script3-300x166.png";
 
 import { connect } from "react-redux";
-import { menuTypes } from "../../constants/menuTypes";
+// import { menuTypes } from "../../constants/menuTypes";
 
 const SohoNavbar = props => {
-  const { menu } = props;
-  const [collapseOpen, setCollapseOpen] = useState(false);
+  // const { menu } = props;
+  // const [collapseOpen, setCollapseOpen] = useState(false);
   // const [dropdownOpen, setDropdownOpen] = useState(false);
 
   // const handleDropDownOpen = () => {
   //   setDropdownOpen(!dropdownOpen);
   // };
 
-  const handleCollapseOpen = () => {
-    setCollapseOpen(!collapseOpen);
-  };
+  // const handleCollapseOpen = () => {
+  //   setCollapseOpen(!collapseOpen);
+  // };
 
-  const handleMenuClick = () => {
-    setCollapseOpen(false);
-  };
+  // const handleMenuClick = () => {
+  //   setCollapseOpen(false);
+  // };
 
   return (
     <div>

@@ -4,7 +4,7 @@ import "./Header.css";
 // import img_h02 from "../../assets/images/nzwswe-1.jpe";
 // import img_h03 from "../../assets/images/nzwswe-1.jpe";
 import { Carousel } from "react-bootstrap";
-import { Responsive, Segment } from "semantic-ui-react";
+import { Responsive } from "semantic-ui-react";
 import { Container, Row, Col } from "shards-react";
 
 import img_h01 from "../../assets/images/header/img01.png";

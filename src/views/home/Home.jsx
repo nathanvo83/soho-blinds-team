@@ -10,30 +10,30 @@ import "./Home.css";
 import { Container, Row, Col } from "shards-react";
 import { faAward } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Responsive, Segment } from "semantic-ui-react";
-import img_h01 from "../../assets/images/nzwswe-1.jpe";
-import img_h02 from "../../assets/images/nzwswe-1.jpe";
-import img_h03 from "../../assets/images/nzwswe-1.jpe";
+import { Responsive } from "semantic-ui-react";
+// import img_h01 from "../../assets/images/nzwswe-1.jpe";
+// import img_h02 from "../../assets/images/nzwswe-1.jpe";
+// import img_h03 from "../../assets/images/nzwswe-1.jpe";
 
 import roller01 from "../../assets/images/blinds/roller/roller01.png";
 import roller02 from "../../assets/images/blinds/roller/roller02.jpg";
 import roller03 from "../../assets/images/blinds/roller/roller03.png";
 import roller04 from "../../assets/images/blinds/roller/roller04.png";
-import roller05 from "../../assets/images/blinds/roller/roller05.jpeg";
+// import roller05 from "../../assets/images/blinds/roller/roller05.jpeg";
 
 import timber01 from "../../assets/images/shutter/timber/timber01.png";
 import timber02 from "../../assets/images/shutter/timber/timber02.png";
 import timber03 from "../../assets/images/shutter/timber/timber03.png";
 import timber04 from "../../assets/images/shutter/timber/timber04.png";
-import timber05 from "../../assets/images/shutter/timber/timber05.png";
-import timber06 from "../../assets/images/shutter/timber/timber06.png";
+// import timber05 from "../../assets/images/shutter/timber/timber05.png";
+// import timber06 from "../../assets/images/shutter/timber/timber06.png";
 
 import zebra01 from "../../assets/images/blinds/zebra/zebra01.png";
 import zebra02 from "../../assets/images/blinds/zebra/zebra02.png";
 import zebra03 from "../../assets/images/blinds/zebra/zebra03.png";
 import zebra04 from "../../assets/images/blinds/zebra/zebra04.png";
-import zebra05 from "../../assets/images/blinds/zebra/zebra05.png";
-import zebra06 from "../../assets/images/blinds/zebra/zebra06.png";
+// import zebra05 from "../../assets/images/blinds/zebra/zebra05.png";
+// import zebra06 from "../../assets/images/blinds/zebra/zebra06.png";
 
 import h_01 from "../../assets/images/home/h-01.png";
 import h_02 from "../../assets/images/home/h-02.png";
