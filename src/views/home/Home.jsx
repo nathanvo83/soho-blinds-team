@@ -53,17 +53,243 @@ const Home = props => {
 
   return (
     <React.Fragment>
-      {/* <div>
-        <img src={img_h03} className="test-header-image"></img>
-      </div>
-      <br />
-      <br />
-      <br /> */}
-
       <Header></Header>
 
       <Container fluid>
-        <Responsive>
+        {/* mobile */}
+        <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
+          {/* section A */}
+          <Row className="sectionA">
+            <Col xs="12">
+              <div className="sectionA-title">OUR WORKS</div>
+              <div className="sectionA-subtitle">
+                Featured Service that We Provide
+              </div>
+            </Col>
+
+            <Col xs="12">
+              <div className="sectionA-container">
+                <img class="sectionA-image" src={h_01} alt="" />
+                <div className="sectionA-top-left">blinds</div>
+                <div className="sectionA-top-right">
+                  <div className="sectionA-promo-normal">up to</div>
+                  <div className="sectionA-promo-high">50% off</div>
+                  <div className="sectionA-promo-normal">on selected</div>
+                </div>
+              </div>
+              <div className="sectionA-details">
+                <span className="sectionA-item">Roller</span>
+                {" / "}
+                <span className="sectionA-item">Venetian</span>
+                {" / "}
+                <span className="sectionA-item">Vertical</span>
+                {" / "}
+                <span className="sectionA-item">Zebra</span>
+              </div>
+            </Col>
+
+            <Col xs="12">
+              <div className="sectionA-container">
+                <img class="sectionA-image" src={h_02} alt="" />
+                <div className="sectionA-top-left">curtain</div>
+                <div className="sectionA-top-right">
+                  <div className="sectionA-promo-normal">up to</div>
+                  <div className="sectionA-promo-high">50% off</div>
+                  <div className="sectionA-promo-normal">on selected</div>
+                </div>
+              </div>
+              <div className="sectionA-details">
+                <span className="sectionA-item">Wave</span>
+                {" / "}
+                <span className="sectionA-item">Eyelet</span>
+                {" / "}
+                <span className="sectionA-item">Pinch Pleat</span>
+              </div>
+            </Col>
+            <Col xs="12">
+              <div className="sectionA-container">
+                <img class="sectionA-image" src={h_03} alt="" />
+                <div className="sectionA-top-left">shutter</div>
+                <div className="sectionA-top-right">
+                  <div className="sectionA-promo-normal">up to</div>
+                  <div className="sectionA-promo-high">50% off</div>
+                  <div className="sectionA-promo-normal">on selected</div>
+                </div>
+              </div>
+
+              <div className="sectionA-details">
+                <span className="sectionA-item">Timber</span>
+                {" / "}
+                <span className="sectionA-item">Alycore plus PVC</span>
+                {" / "}
+                <span className="sectionA-item">Exterior</span>{" "}
+              </div>
+            </Col>
+          </Row>
+          {/* section 01 */}
+          <Row className="section01-outbound">
+            <Col xs="12">
+              <div class="section01-m">
+                <img class="section01-image01-m" src={roller01} alt="" />
+                <img class="section01-image02-m" src={roller02} alt="" />
+                <img class="section01-image03-m" src={roller03} alt="" />
+                <img class="section01-image04-m" src={roller04} alt="" />
+              </div>
+            </Col>
+            <Col xs="12">
+              <div className="h-section-title">{home.section01.title}</div>
+              <div className="h-section-subtitle">
+                {home.section01.content.map(item => (
+                  <div className="h-section-subtitle-item">{item}</div>
+                ))}
+              </div>
+            </Col>
+          </Row>
+          {/* section 02 */}
+          <Row className="section02-outbound">
+            <Col xs="12">
+              <div class="section02-m">
+                <img class="section02-image01-m" src={timber01} alt="" />
+                <img class="section02-image02-m" src={timber02} alt="" />
+                <img class="section02-image03-m" src={timber03} alt="" />
+                <img class="section02-image04-m" src={timber04} alt="" />
+              </div>
+            </Col>
+            <Col xs="12">
+              <div className="h-section-title">{home.section02.title}</div>
+              <div className="h-section-subtitle">
+                {home.section02.content.map(item => (
+                  <div className="h-section-subtitle-item">{item}</div>
+                ))}
+              </div>
+            </Col>
+          </Row>
+          {/* section 03 */}
+          <Row className="section01-outbound">
+            <Col xs="12">
+              <div class="section01-m">
+                <img class="section01-image01-m" src={zebra01} alt="" />
+                <img class="section01-image02-m" src={zebra02} alt="" />
+                <img class="section01-image03-m" src={zebra03} alt="" />
+                <img class="section01-image04-m" src={zebra04} alt="" />
+              </div>
+            </Col>
+            <Col xs="12">
+              <div className="h-section-title">{home.section03.title}</div>
+              <div className="h-section-subtitle">
+                {home.section03.content.map(item => (
+                  <div className="h-section-subtitle-item">{item}</div>
+                ))}
+              </div>
+            </Col>
+          </Row>
+          {/* section 04 */}
+          <Row className="section-04">
+            <Col xs="12">
+              <div className="s04-header">About us</div>
+            </Col>
+            <Col xs="12">
+              <div className="s04-col">
+                <div className="s04-icon">
+                  <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
+                </div>
+                <div className="s04-body">
+                  <div className="s04-title">
+                    {home.section04.aboutUs_01.title}
+                  </div>
+                  <div className="s04-subtitle">
+                    {home.section04.aboutUs_01.content}
+                  </div>
+                </div>
+              </div>
+            </Col>
+            <Col xs="12">
+              <div className="s04-col">
+                <div className="s04-icon">
+                  <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
+                </div>
+                <div className="s04-body">
+                  <div className="s04-title">
+                    {home.section04.aboutUs_02.title}
+                  </div>
+                  <div className="s04-subtitle">
+                    {home.section04.aboutUs_02.content}
+                  </div>
+                </div>
+              </div>
+            </Col>
+            <Col xs="12">
+              <div className="s04-col">
+                <div className="s04-icon">
+                  <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
+                </div>
+                <div className="s04-body">
+                  <div className="s04-title">
+                    {home.section04.aboutUs_03.title}
+                  </div>
+                  <div className="s04-subtitle">
+                    {home.section04.aboutUs_03.content}
+                  </div>
+                </div>
+              </div>
+            </Col>
+            <Col xs="12">
+              <div className="s04-col">
+                <div className="s04-icon">
+                  <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
+                </div>
+                <div className="s04-body">
+                  <div className="s04-title">
+                    {home.section04.aboutUs_04.title}
+                  </div>
+                  <div className="s04-subtitle">
+                    {home.section04.aboutUs_04.content}
+                  </div>
+                </div>
+              </div>
+            </Col>
+            <Col xs="12">
+              <div className="s04-col">
+                <div className="s04-icon">
+                  <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
+                </div>
+                <div className="s04-body">
+                  <div className="s04-title">
+                    {home.section04.aboutUs_05.title}
+                  </div>
+                  <div className="s04-subtitle">
+                    {home.section04.aboutUs_05.content}
+                  </div>
+                </div>
+              </div>
+            </Col>
+            <Col xs="12">
+              <div className="s04-col">
+                <div className="s04-icon">
+                  <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
+                </div>
+                <div className="s04-body">
+                  <div className="s04-title">
+                    {home.section04.aboutUs_06.title}
+                  </div>
+                  <div className="s04-subtitle">
+                    {home.section04.aboutUs_06.content}
+                  </div>
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </Responsive>
+
+        {/* tablet */}
+        <Responsive
+          minWidth={Responsive.onlyTablet.minWidth}
+          maxWidth={Responsive.onlyTablet.maxWidth}
+        ></Responsive>
+
+        {/* desktop */}
+        <Responsive minWidth={Responsive.onlyComputer.minWidth}>
+          {/* section A */}
           <Row className="sectionA">
             <Col xs="12">
               <div className="sectionA-title">OUR WORKS</div>
@@ -82,8 +308,8 @@ const Home = props => {
                   <div className="sectionA-promo-normal">on selected</div>
                 </div>
               </div>
-              <br></br>
-              <div>
+
+              <div className="sectionA-details">
                 <span className="sectionA-item">Roller</span>
                 {" / "}
                 <span className="sectionA-item">Venetian</span>
@@ -91,11 +317,6 @@ const Home = props => {
                 <span className="sectionA-item">Vertical</span>
                 {" / "}
                 <span className="sectionA-item">Zebra</span>
-                {/* <div className="sectionA-item">Roller -> </div>
-                <div className="sectionA-item">Venetian -> </div>
-                <div className="sectionA-item">Vetical -> </div>
-                <div className="sectionA-item">Cellular -> </div>
-                <div className="sectionA-item">Zebra -> </div> */}
               </div>
             </Col>
 
@@ -109,8 +330,8 @@ const Home = props => {
                   <div className="sectionA-promo-normal">on selected</div>
                 </div>
               </div>
-              <br></br>
-              <div>
+
+              <div className="sectionA-details">
                 <span className="sectionA-item">Wave</span>
                 {" / "}
                 <span className="sectionA-item">Eyelet</span>
@@ -128,8 +349,8 @@ const Home = props => {
                   <div className="sectionA-promo-normal">on selected</div>
                 </div>
               </div>
-              <br></br>
-              <div>
+
+              <div className="sectionA-details">
                 <span className="sectionA-item">Timber</span>
                 {" / "}
                 <span className="sectionA-item">Alycore plus PVC</span>
@@ -138,8 +359,8 @@ const Home = props => {
               </div>
             </Col>
           </Row>
-
-          <Row>
+          {/* section 01 */}
+          <Row className="section01-outbound">
             <Col xs="6">
               <div class="section01">
                 <img class="section01-image01" src={roller01} alt="" />
@@ -157,8 +378,8 @@ const Home = props => {
               </div>
             </Col>
           </Row>
-
-          <Row>
+          {/* section 02 */}
+          <Row className="section02-outbound">
             <Col xs="6">
               <div className="h-section-title">{home.section02.title}</div>
               <div className="h-section-subtitle">
@@ -176,8 +397,8 @@ const Home = props => {
               </div>
             </Col>
           </Row>
-
-          <Row>
+          {/* section 03 */}
+          <Row className="section01-outbound">
             <Col xs="6">
               <div class="section01">
                 <img class="section01-image01" src={zebra01} alt="" />
@@ -195,7 +416,7 @@ const Home = props => {
               </div>
             </Col>
           </Row>
-
+          {/* section 04 */}
           <Row className="section-04">
             <Col xs="12">
               <div className="s04-header">About us</div>
@@ -293,20 +514,6 @@ const Home = props => {
           </Row>
         </Responsive>
       </Container>
-
-      {/* <div class="parent">
-        <img class="image1" src={img_h01} alt="" />
-        <img class="image2" src={img_h02} alt="" />
-        <img class="image3" src={img_h01} alt="" />
-        <img class="image4" src={img_h02} alt="" />
-      </div> */}
-
-      {/* <div className="parents">
-        <div className="section01">
-          <img src={img_h01} alt="img_h01" className="section01-image01"></img>
-          <img src={img_h01} alt="img_h01" className="section01-image02"></img>
-        </div>
-      </div> */}
     </React.Fragment>
   );
 };
