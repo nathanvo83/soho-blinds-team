@@ -8,7 +8,26 @@ const Com03 = props => {
   return (
     <div className="com03">
       <Container fluid>
-        <Responsive>
+        <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
+          <Row>
+            <Col xs={12}>
+              <div className="details-title">Our Collection</div>
+            </Col>
+          </Row>
+          <Row>
+            {images.map((item, idx) => (
+              <Col xs={12} className="col-x">
+                <img
+                  className="com03-image-thumb"
+                  key={idx}
+                  src={item}
+                  alt={idx}
+                ></img>
+              </Col>
+            ))}
+          </Row>
+        </Responsive>
+        <Responsive minWidth={Responsive.onlyComputer.minWidth}>
           <Row>
             <Col xs={12}>
               <div className="details-title">Our Collection</div>

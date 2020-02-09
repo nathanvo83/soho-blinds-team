@@ -6,6 +6,7 @@
   height: 40vh;
   width: 100%;
   object-fit: cover;
+  border: 1px solid #ededed;
 }
 
 .com03 {
@@ -22,5 +23,6 @@
   padding: 80px 0px 20px 0px;
   font-size: 34px;
   text-transform: uppercase;
+  font-weight: bold;
   /* color: #523de7; */
 }
