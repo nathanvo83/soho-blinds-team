@@ -51,6 +51,33 @@ function Header() {
           maxWidth={Responsive.onlyTablet.maxWidth}
         >
           {/*  */}
+          <Row>
+            <Col xs="12" className="h-header-com">
+              <Carousel>
+                <Carousel.Item>
+                  <img
+                    className="h-header-img"
+                    src={img_h01}
+                    alt="First slide"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="h-header-img"
+                    src={img_h02}
+                    alt="Third slide"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="h-header-img"
+                    src={img_h03}
+                    alt="Third slide"
+                  />
+                </Carousel.Item>
+              </Carousel>
+            </Col>
+          </Row>
         </Responsive>
         {/*  */}
         <Responsive minWidth={Responsive.onlyComputer.minWidth}>

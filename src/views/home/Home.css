@@ -2,7 +2,7 @@
 .h-section-title {
   font-size: 34px;
   font-weight: bold;
-  margin-top: 1rem;
+  margin-top: 2rem;
   /* color: #303030; */
   color: #00bbaa;
 }
@@ -331,7 +331,7 @@
   position: relative;
   top: 0;
   right: 0vw;
-  height: 30vh;
+  height: 27vh;
   width: 85vw;
   margin-bottom: 50px;
 }
