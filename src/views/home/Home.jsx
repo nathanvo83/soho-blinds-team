@@ -42,7 +42,6 @@ import h_03 from "../../assets/images/home/h-03.png";
 
 import { home } from "../../data/home";
 import * as ROUTES from "../../constants/routes";
-import { Nav } from "react-bootstrap";
 
 const Home = props => {
   const { selectMenu } = props;
