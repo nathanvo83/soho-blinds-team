@@ -1,109 +1,15 @@
-.n-logo {
-  background: url("./images/SoHo-Logo-No-script3-300x166.png");
-  /* border: 2px solid black; */
-  /* padding: 25px;
-    background-repeat: no-repeat;
-    height: 300px; */
-  /* background-size: contain; */
-
-  /* Used if the image is unavailable */
-  background-color: #cccccc;
-  /* You must set a specified height */
-  height: 10%;
-  width: 100%;
-  /* Center the image */
-  background-position: center;
-  /* Do not repeat the image */
-  background-repeat: no-repeat;
-  /* Resize the background image to cover the entire container*/
-  background-size: cover;
-}
-
 .n-logo1 {
   width: 100px;
+  margin: 0px;
+  padding: 0px;
 }
-/* .sticky-nav {
-  position: sticky;
-  top: 0;
-} */
 
 .n-navbar {
-  /* background-color: #4c3c3c; */
-  /* background-color: #2f2626; */
-  /* background-color: #17c671; */
-  height: 70px;
+  /* height: 70px; */
   background-color: #ffffff;
   border-bottom: 5px solid #ededed;
 }
-.n-branch-outter {
-  padding: 0px 50px 0px 10px;
-  margin: 0px;
-}
-.n-branch {
-  color: #ffffff;
-  font-size: 25px;
-  cursor: pointer;
-  font-weight: bold;
-  border-bottom: 2px solid #ffffff;
-  padding: 0px;
-  margin: 0px;
-  /* text-decoration: underline; */
-}
-
-.n-branch .n-icon {
-  font-size: 40px;
-  padding: 0px;
-  margin: 0px;
-}
-
-.n-contact {
-  font-size: 25px;
-  margin: 3px 15px;
-  cursor: pointer;
-  /* background-color: #fff111; */
-}
-.n-x {
-  background-color: #fff111;
-}
-
-.n-item {
-  /* padding: 0px 5px; */
-  /* color: red; */
-  /* margin: 0px; */
-  /* padding: 0px; */
-  margin-left: 5px;
-  font-weight: bolder;
-}
-
-.n-item:hover,
-.n-item:focus {
-  background-color: rgba(0, 0, 0, 0.5);
-  /* border-bottom: 2px solid #ffffff; */
-  /* text-decoration: underline; */
-  font-weight: bolder;
-}
-
-/* NavLink:active {
-  border: 1px solid red;
-} */
-
-.n-item-active {
-  /* background-color: sandybrown; */
-  /* background-color: rgba(0, 0, 0, 0.5); */
-
-  /* color: red; */
-  /* border: 1px solid red; */
-  /* color: #333333; */
-  /* border-left: 2px solid rgba(0, 0, 0, 0.5); */
-  font-weight: bold;
-  border-bottom: solid 2px #000000;
-  display: inline-block;
-  padding-bottom: 2px;
-}
 
 .n-item-none {
-  /* background-color: transparent; */
-  /* color: red; */
-  /* font-weight: 900; */
   font-weight: bold;
 }

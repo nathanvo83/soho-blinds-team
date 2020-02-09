@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import { Alert } from "shards-react";
+import { Alert } from "react-bootstrap";
 
 function Footer() {
   return (
