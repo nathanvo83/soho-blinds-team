@@ -248,7 +248,7 @@ const Home = props => {
             </Col>
           </Row>
           {/* section 04 */}
-          {/* <Row className="section-04">
+          <Row className="section-04">
             <Col xs="12">
               <div className="s04-header">About us</div>
             </Col>
@@ -343,7 +343,6 @@ const Home = props => {
               </div>
             </Col>
           </Row>
-         */}
         </Responsive>
 
         {/* tablet */}
