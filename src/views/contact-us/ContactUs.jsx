@@ -113,7 +113,7 @@ const ContactUs = props => {
                 </FormGroup>
 
                 <Button theme="success" type="submit">
-                  Send
+                  SEND
                 </Button>
               </Form>
             </Col>
