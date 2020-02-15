@@ -185,7 +185,7 @@ const Navbar = () => {
           </a>
 
           <a
-            // href="#home"
+            href="#0"
             rel="noopener noreferrer"
             className="icon"
             onClick={burgerMenuHandle}
