@@ -1,6 +1,11 @@
 import React from "react";
 import "./Tab.css";
-import { faAward } from "@fortawesome/free-solid-svg-icons";
+import {
+  faGrinHearts,
+  faGrinStars,
+  faGrinWink,
+  faGrinSquint
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Tab01 = props => {
@@ -9,7 +14,7 @@ const Tab01 = props => {
     <div>
       <div className="tab-col">
         <div className="tab-icon">
-          <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
+          <FontAwesomeIcon icon={faGrinHearts}></FontAwesomeIcon>
         </div>
         <div className="tab-body">
           <div className="tab-title">{content.titles[0]}</div>
@@ -18,7 +23,7 @@ const Tab01 = props => {
       </div>
       <div className="tab-col">
         <div className="tab-icon">
-          <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
+          <FontAwesomeIcon icon={faGrinStars}></FontAwesomeIcon>
         </div>
         <div className="tab-body">
           <div className="tab-title">{content.titles[1]}</div>
@@ -27,7 +32,7 @@ const Tab01 = props => {
       </div>
       <div className="tab-col">
         <div className="tab-icon">
-          <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
+          <FontAwesomeIcon icon={faGrinWink}></FontAwesomeIcon>
         </div>
         <div className="tab-body">
           <div className="tab-title">{content.titles[2]}</div>
@@ -36,7 +41,7 @@ const Tab01 = props => {
       </div>
       <div className="tab-col">
         <div className="tab-icon">
-          <FontAwesomeIcon icon={faAward}></FontAwesomeIcon>
+          <FontAwesomeIcon icon={faGrinSquint}></FontAwesomeIcon>
         </div>
         <div className="tab-body">
           <div className="tab-title">{content.titles[3]}</div>

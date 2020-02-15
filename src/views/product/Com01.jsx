@@ -1,38 +1,37 @@
 import React from "react";
-import { Carousel } from "react-bootstrap";
+// import { Carousel } from "react-bootstrap";
 import "./Com01.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 
 const Com01 = props => {
   const { images } = props;
 
   return (
     <div>
-      <Carousel className="com01-content">
-        <Carousel.Item>
+      <Carousel
+        showStatus={false}
+        autoPlay={true}
+        showThumbs={false}
+        infiniteLoop={true}
+        showArrows={false}
+        className="com01-content"
+      >
+        <div>
           <img className="com01-image" src={images[0]} alt="First slide" />
-          {/* <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption> */}
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="com01-image" src={images[1]} alt="Third slide" />
-
-          {/* <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption> */}
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="com01-image" src={images[2]} alt="Third slide" />
-
-          {/* <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption> */}
-        </Carousel.Item>
+          {/* <img src="https://dummyimage.com/800x300/123/aaa" alt="First slide" /> */}
+          {/* <p className="legend">Legend 1</p> */}
+        </div>
+        <div>
+          <img className="com01-image" src={images[1]} alt="First slide" />
+          {/* <img src="https://dummyimage.com/800x300/123/aaa" alt="First slide" /> */}
+          {/* <p className="legend">Legend 2</p> */}
+        </div>
+        <div>
+          <img className="com01-image" src={images[2]} alt="First slide" />
+          {/* <img src="https://dummyimage.com/800x300/123/aaa" alt="First slide" /> */}
+          {/* <p className="legend">Legend 3</p> */}
+        </div>
       </Carousel>
     </div>
   );

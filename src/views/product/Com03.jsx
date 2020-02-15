@@ -1,50 +1,71 @@
 import React from "react";
 import "./Com03.css";
-import { Responsive } from "semantic-ui-react";
-import { Container, Row, Col } from "shards-react";
+import { Responsive, Container, Grid } from "semantic-ui-react";
+// import { Container, Row, Col } from "shards-react";
 
 const Com03 = props => {
   const { images } = props;
   return (
     <div className="com03">
       <Container fluid>
+        {/* mobile */}
         <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
-          <Row>
-            <Col xs={12}>
-              <div className="details-title">Our Collection</div>
-            </Col>
-          </Row>
-          <Row>
-            {images.map((item, idx) => (
-              <Col xs={12} className="col-x">
-                <img
-                  className="com03-image-thumb"
-                  key={idx}
-                  src={item}
-                  alt={idx}
-                ></img>
-              </Col>
-            ))}
-          </Row>
+          <Grid columns="1">
+            <div className="details-title">Our Collection</div>
+            <Grid.Row>
+              {images.map((item, idx) => (
+                <Grid.Column className="col-x">
+                  <img
+                    className="com03-image-thumb"
+                    key={idx}
+                    src={item}
+                    alt={idx}
+                  ></img>
+                </Grid.Column>
+              ))}
+            </Grid.Row>
+          </Grid>
         </Responsive>
+
+        {/* tablet */}
+        <Responsive
+          minWidth={Responsive.onlyTablet.minWidth}
+          maxWidth={Responsive.onlyTablet.maxWidth}
+        >
+          <Grid columns="2" style={{ margin: 0 }}>
+            <div className="details-title">Our Collection</div>
+            <Grid.Row>
+              {images.map((item, idx) => (
+                <Grid.Column className="col-x">
+                  <img
+                    className="com03-image-thumb"
+                    key={idx}
+                    src={item}
+                    alt={idx}
+                  ></img>
+                </Grid.Column>
+              ))}
+            </Grid.Row>
+          </Grid>
+        </Responsive>
+
+        {/* desktop */}
         <Responsive minWidth={Responsive.onlyComputer.minWidth}>
-          <Row>
-            <Col xs={12}>
-              <div className="details-title">Our Collection</div>
-            </Col>
-          </Row>
-          <Row>
-            {images.map((item, idx) => (
-              <Col xs={3} className="col-x">
-                <img
-                  className="com03-image-thumb"
-                  key={idx}
-                  src={item}
-                  alt={idx}
-                ></img>
-              </Col>
-            ))}
-          </Row>
+          <Grid columns="3" style={{ margin: 0 }}>
+            <div className="details-title">Our Collection</div>
+            <Grid.Row>
+              {images.map((item, idx) => (
+                <Grid.Column className="col-x">
+                  <img
+                    className="com03-image-thumb"
+                    key={idx}
+                    src={item}
+                    alt={idx}
+                  ></img>
+                </Grid.Column>
+              ))}
+            </Grid.Row>
+          </Grid>
         </Responsive>
       </Container>
     </div>

@@ -45,6 +45,8 @@
   background-color: #f9f9fb;
   padding: 100px 0px 50px 0px;
   margin-bottom: 80px;
+  /* padding: 0px;
+  margin: 80px 0px 0px 0px; */
 }
 
 .sectionA-container {
@@ -88,6 +90,15 @@
   height: 45vh;
   object-fit: cover;
   /* margin-top: 15px; */
+}
+
+.sectionA-slogan {
+  font-size: 22px;
+  font-weight: bold;
+  /* text-transform: uppercase; */
+  text-align: center;
+  /* color: #523de7; */
+  margin: 0px 10px 50px 10px;
 }
 
 .sectionA-title {
@@ -254,8 +265,9 @@
 }
 
 .s04-title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
+  /* color: #523de7; */
 }
 .s04-subtitle {
   text-align: justify;
@@ -268,9 +280,11 @@
 }
 .s04-icon {
   display: inline-flex;
+  margin-top: 5px;
   margin-right: 10px;
   font-size: 40px;
-  vertical-align: top;
+  vertical-align: top !important;
+  color: #00bbaa;
 }
 .s04-body {
   /* display: inline-flex; */

@@ -1,12 +1,4 @@
 import React from "react";
-import Home from "./home/Home";
-import Product from "./product/Product";
-// import Blinds from "./product/Blinds";
-// import Curtain from "./product/Curtain";
-// import Shutter from "./product/Shutter";
-// import QuoteMyJob from "./quote-my-job/QuoteMyJob";
-import ContactUs from "./contact-us/ContactUs";
-import Page404 from "./page-404/Page404";
 import { Route, Switch } from "react-router-dom";
 import * as ROUTES from "../constants/routes";
 
@@ -48,15 +40,51 @@ import vertical01 from "../assets/images/blinds/vetical/vertical01.jpeg";
 import vertical02 from "../assets/images/blinds/vetical/vertical02.png";
 import vertical03 from "../assets/images/blinds/vetical/vertical03.jpg";
 
-import alycore01 from "../assets/images/shutter/alycore-plus-PVC/alycore01.png";
-import alycore02 from "../assets/images/shutter/alycore-plus-PVC/alycore02.jpeg";
-import alycore03 from "../assets/images/shutter/alycore-plus-PVC/alycore03.png";
-import alycore04 from "../assets/images/shutter/alycore-plus-PVC/alycore04.png";
-import alycore05 from "../assets/images/shutter/alycore-plus-PVC/alycore05.png";
-import alycore06 from "../assets/images/shutter/alycore-plus-PVC/alycore06.png";
-import alycore07 from "../assets/images/shutter/alycore-plus-PVC/alycore07.png";
+// curtain
+import night01 from "../assets/images/curtain/night/night01.jpeg";
+import night02 from "../assets/images/curtain/night/night02.jpeg";
+import night03 from "../assets/images/curtain/night/night03.jpeg";
+import night04 from "../assets/images/curtain/night/night04.jpg";
+import night05 from "../assets/images/curtain/night/night05.jpeg";
+import night06 from "../assets/images/curtain/night/night06.jpg";
+import night07 from "../assets/images/curtain/night/night07.jpg";
+import night08 from "../assets/images/curtain/night/night08.jpg";
+import night09 from "../assets/images/curtain/night/night09.jpg";
+import night10 from "../assets/images/curtain/night/night10.jpg";
 
-function Main() {
+import day01 from "../assets/images/curtain/day/day01.jpeg";
+import day02 from "../assets/images/curtain/day/day02.jpg";
+import day03 from "../assets/images/curtain/day/day03.jpg";
+import day04 from "../assets/images/curtain/day/day04.jpg";
+import day05 from "../assets/images/curtain/day/day05.jpg";
+import day06 from "../assets/images/curtain/day/day06.jpg";
+import day07 from "../assets/images/curtain/day/day07.jpg";
+import day08 from "../assets/images/curtain/day/day08.jpg";
+import day09 from "../assets/images/curtain/day/day09.jpg";
+import day10 from "../assets/images/curtain/day/day10.jpg";
+import day11 from "../assets/images/curtain/day/day11.jpg";
+import day12 from "../assets/images/curtain/day/day12.jpg";
+import day13 from "../assets/images/curtain/day/day13.jpg";
+
+// shutter
+import alycore01 from "../assets/images/shutter/pvc/alycore01.png";
+import alycore02 from "../assets/images/shutter/pvc/alycore02.jpeg";
+import alycore03 from "../assets/images/shutter/pvc/alycore03.png";
+import alycore04 from "../assets/images/shutter/pvc/alycore04.png";
+import alycore05 from "../assets/images/shutter/pvc/alycore05.png";
+
+import timber01 from "../assets/images/shutter/timber/timber01.jpg";
+import timber02 from "../assets/images/shutter/timber/timber02.png";
+import timber03 from "../assets/images/shutter/timber/timber03.jpg";
+import timber04 from "../assets/images/shutter/timber/timber04.png";
+import timber05 from "../assets/images/shutter/timber/timber05.png";
+
+import Home from "./Home/Home";
+import Product from "./Product/Product";
+import BuyingGuide from "./BuyingGuide/BuyingGuide";
+import ContactUs from "./ContactUs/ContactUs";
+
+const Main = () => {
   // -----blinds-----
   const renderProductBlindsRoller = () => (
     <Product
@@ -122,23 +150,72 @@ function Main() {
       images={[zebra01, zebra02, zebra03, zebra04, zebra05, zebra06, zebra07]}
     ></Product>
   );
+  // -----curtain-----
+  const renderProductCurtainNight = () => (
+    <Product
+      title="Night Curtains"
+      tab01="OVERVIEW"
+      tab02="DESCRIPTION"
+      content01={rollerBlinds.overview}
+      content02={rollerBlinds.description}
+      images={[
+        night03,
+        night04,
+        night05,
+        night06,
+        night07,
+        night08,
+        night09,
+        night10,
+        night01,
+        night02
+      ]}
+    ></Product>
+  );
+  const renderProductCurtainDay = () => (
+    <Product
+      title="Day Curtains"
+      tab01="OVERVIEW"
+      tab02="DESCRIPTION"
+      content01={rollerBlinds.overview}
+      content02={rollerBlinds.description}
+      images={[
+        day01,
+        day02,
+        day03,
+        day04,
+        day05,
+        day06,
+        day07,
+        day08,
+        day09,
+        day10,
+        day11,
+        day12,
+        day13
+      ]}
+    ></Product>
+  );
   // -----shutter-----
-  const renderProductShutterAlycorePlusPVC = () => (
+  const renderProductShutterPVC = () => (
     <Product
       title="Alycore Plus PVC Shutter"
       tab01="OVERVIEW"
       tab02="DESCRIPTION"
       content01={rollerBlinds.overview}
       content02={rollerBlinds.description}
-      images={[
-        alycore01,
-        alycore02,
-        alycore03,
-        alycore04,
-        alycore05,
-        alycore06,
-        alycore07
-      ]}
+      images={[alycore01, alycore02, alycore03, alycore04, alycore05]}
+    ></Product>
+  );
+
+  const renderProductShutterTimber = () => (
+    <Product
+      title="Timber Shutter"
+      tab01="OVERVIEW"
+      tab02="DESCRIPTION"
+      content01={rollerBlinds.overview}
+      content02={rollerBlinds.description}
+      images={[timber01, timber02, timber03, timber04, timber05]}
     ></Product>
   );
 
@@ -158,20 +235,35 @@ function Main() {
         component={renderProductBlindsVertical}
       />
       <Route path={ROUTES.BLINDS_ZEBRA} component={renderProductBlindsZebra} />
+
+      {/* curtain */}
       <Route
-        path={ROUTES.SHUTTER_ALYCOREPLUSPVC}
-        component={renderProductShutterAlycorePlusPVC}
+        path={ROUTES.CURTAIN_NIGHT}
+        component={renderProductCurtainNight}
       />
+
+      <Route path={ROUTES.CURTAIN_DAY} component={renderProductCurtainDay} />
+
+      {/* shutter */}
+      <Route path={ROUTES.SHUTTER_PVC} component={renderProductShutterPVC} />
+      <Route
+        path={ROUTES.SHUTTER_TIMBER}
+        component={renderProductShutterTimber}
+      />
+
+      {/*  */}
+      <Route path={ROUTES.BUYINGGUIDE} component={BuyingGuide} />
+      <Route path={ROUTES.CONTACTUS} component={ContactUs} />
       {/* <Route path="/product/blinds" exact component={Blinds} />
       <Route path="/product/curtain" exact component={Curtain} />
       <Route path="/product/shutter" exact component={Shutter} /> */}
       {/* <Route path="/quote-my-job" component={QuoteMyJob} /> */}
-      <Route path={ROUTES.CONTACTUS} component={ContactUs} />
-      <Route component={Page404} />
+      {/* <Route path={ROUTES.CONTACTUS} component={ContactUs} />
+      <Route component={Page404} /> */}
 
       {/* <Redirect to="/" /> */}
     </Switch>
   );
-}
+};
 
 export default Main;
