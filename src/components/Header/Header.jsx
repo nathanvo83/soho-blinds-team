@@ -22,6 +22,7 @@ const Header = () => {
           autoPlay={true}
           showThumbs={false}
           infiniteLoop={true}
+          showArrows={false}
           className="h-header-com"
         >
           <div>
