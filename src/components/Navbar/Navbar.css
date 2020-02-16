@@ -134,15 +134,11 @@
 
 @media screen and (max-width: 600px) {
   .outbound-m {
-    margin-bottom: 0px;
-    position: relative;
+    /* margin-bottom: 50px; */
+    /* position: relative; */
   }
   .outbound {
     /* position: relative; */
-    position: fixed;
-    top: 0;
-    position: fixed;
-    z-index: 1;
   }
 
   /* .topnav a:not(:first-child),
