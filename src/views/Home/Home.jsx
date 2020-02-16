@@ -340,14 +340,14 @@ const Home = () => {
         {/* section A */}
 
         <div className="sectionA">
-          <div className="sectionA-slogan">
+          {/* <div className="sectionA-slogan">
             Whether it's elegant draperies, roller blinds, or shutters you
             require, we will work with you to ensure that your window
             furnishings not only complete your architectural vision but
             possesses the enduring performance to withstand time.
           </div>
 
-          <br />
+          <br /> */}
           <div className="sectionA-title">OUR WORKS</div>
           <div className="sectionA-subtitle">
             Featured Service that We Provide

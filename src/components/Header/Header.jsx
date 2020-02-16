@@ -9,6 +9,8 @@ import img_h01 from "../../assets/images/header/img01.jpg";
 import img_h02 from "../../assets/images/header/img02.jpeg";
 import img_h03 from "../../assets/images/header/img03.png";
 
+import Slogan from "../Slogan/Slogan";
+
 // import img_h01 from "../../assets/images/curtain/day/day01.jpeg";
 // import img_h02 from "../../assets/images/curtain/day/day02.jpg";
 // import img_h03 from "../../assets/images/curtain/day/day03.jpeg";
@@ -35,7 +37,7 @@ const Header = () => {
             <img className="h-header-img" src={img_h03} alt="First slide" />
           </div>
         </Carousel>
-
+        <Slogan></Slogan>
         <Quote></Quote>
       </Responsive>
       <Responsive minWidth={Responsive.onlyComputer.minWidth}>
@@ -64,6 +66,7 @@ const Header = () => {
             </div>
           </div>
         </div>
+        <Slogan></Slogan>
       </Responsive>
     </div>
   );

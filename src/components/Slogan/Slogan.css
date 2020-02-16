@@ -1,0 +1,60 @@
+.slogan {
+  /* border-top: 5px solid rgba(255, 255, 255, 0.3); */
+  background-color: #282828;
+  color: #fbd62b;
+  padding: 10px;
+  font-size: 22px;
+  text-align: justify;
+  display: inline-flex;
+}
+
+.slogan-01 {
+  height: 30vh;
+  width: auto;
+  object-fit: cover;
+}
+
+.slogan-02 {
+  vertical-align: middle;
+  margin: auto 50px;
+  padding: 20px 20px;
+
+  /* border-left: 5px dashed #fbd62b;
+  border-right: 5px dashed #fbd62b; */
+  /* box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 80px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.slogan-m {
+  /* border-top: 5px solid rgba(255, 255, 255, 0.3); */
+  background-color: #282828;
+  color: #fbd62b;
+  /* padding: 10px; */
+  /* font-size: 22px; */
+  font-size: 17px;
+  text-align: justify;
+  display: inline-flex;
+}
+.slogan-01-m {
+  /* height: 30vh; */
+
+  margin-top: 15px;
+  width: 25vw;
+  height: 25vw;
+  object-fit: cover;
+  /* text-align: center; */
+  align-items: center;
+}
+
+.slogan-02-m {
+  margin: 10px;
+  /* vertical-align: middle; */
+  /* margin: auto 50px;
+  padding: 20px 20px; */
+  /* background-color: rgba(247, 56, 88, 0.5); */
+  /* background-color: #f73858; */
+  /* color: #fff; */
+
+  /* border-left: 5px dashed #fbd62b;
+  border-right: 5px dashed #fbd62b; */
+  /* box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 80px 0 rgba(0, 0, 0, 0.19); */
+}
