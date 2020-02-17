@@ -4,7 +4,7 @@ import Header from "../../components/Header/Header";
 const ContactUs = () => {
   return (
     <React.Fragment>
-      <Header></Header>
+      <Header showQuote={false} showSale={false} showSlogan={true}></Header>
     </React.Fragment>
   );
 };

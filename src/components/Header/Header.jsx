@@ -16,7 +16,8 @@ import Sale from "../Sale/Sale";
 // import img_h02 from "../../assets/images/curtain/day/day02.jpg";
 // import img_h03 from "../../assets/images/curtain/day/day03.jpeg";
 
-const Header = () => {
+const Header = props => {
+  const { showQuote, showSale, showSlogan } = props;
   return (
     <div>
       <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
@@ -40,32 +41,58 @@ const Header = () => {
             </div>
           </Carousel>
 
-          <div className="sale-area">
-            <Sale></Sale>
-          </div>
+          {showSale ? (
+            <div className="sale-area">
+              <Sale></Sale>
+            </div>
+          ) : (
+            ""
+          )}
         </div>
-        {/* <Carousel
-          showStatus={false}
-          autoPlay={true}
-          showThumbs={false}
-          infiniteLoop={true}
-          showArrows={false}
-          className="h-header-com"
-        >
-          <div>
-            <img className="h-header-img" src={img_h01} alt="First slide" />
-          </div>
-          <div>
-            <img className="h-header-img" src={img_h02} alt="First slide" />
-          </div>
-          <div>
-            <img className="h-header-img" src={img_h03} alt="First slide" />
-          </div>
-        </Carousel>
-         */}
-        <Slogan></Slogan>
-        <Quote></Quote>
+
+        {showSlogan ? <Slogan></Slogan> : ""}
+
+        {showQuote ? <Quote></Quote> : ""}
       </Responsive>
+
+      <Responsive
+        minWidth={Responsive.onlyTablet.minWidth}
+        maxWidth={Responsive.onlyTablet.maxWidth}
+      >
+        <div className="h-outbound">
+          <Carousel
+            showStatus={false}
+            autoPlay={true}
+            showThumbs={false}
+            infiniteLoop={true}
+            showArrows={false}
+            className="h-header-com"
+          >
+            <div>
+              <img className="h-header-img" src={img_h01} alt="First slide" />
+            </div>
+            <div>
+              <img className="h-header-img" src={img_h02} alt="First slide" />
+            </div>
+            <div>
+              <img className="h-header-img" src={img_h03} alt="First slide" />
+            </div>
+          </Carousel>
+
+          {showSale ? (
+            <div className="sale-area">
+              <Sale></Sale>
+            </div>
+          ) : (
+            ""
+          )}
+        </div>
+
+        {showSlogan ? <Slogan></Slogan> : ""}
+
+        {showQuote ? <Quote></Quote> : ""}
+      </Responsive>
+
       <Responsive minWidth={Responsive.onlyComputer.minWidth}>
         <div className="h-outbound">
           <Carousel
@@ -86,16 +113,27 @@ const Header = () => {
               <img className="h-header-img" src={img_h03} alt="First slide" />
             </div>
           </Carousel>
-          <div className="quote-outbound">
-            <div className="quote-area">
-              <Quote></Quote>
+
+          {showQuote ? (
+            <div className="quote-outbound">
+              <div className="quote-area">
+                <Quote></Quote>
+              </div>
             </div>
-          </div>
-          <div className="sale-area">
-            <Sale></Sale>
-          </div>
+          ) : (
+            ""
+          )}
+
+          {showSale ? (
+            <div className="sale-area">
+              <Sale></Sale>
+            </div>
+          ) : (
+            ""
+          )}
         </div>
-        <Slogan></Slogan>
+
+        {showSlogan ? <Slogan></Slogan> : ""}
       </Responsive>
     </div>
   );

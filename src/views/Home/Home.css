@@ -35,6 +35,8 @@
 .section-center {
   display: flex;
   justify-content: center;
+  vertical-align: middle;
+  margin: auto;
 }
 
 .sectionA {
@@ -87,7 +89,7 @@
 
 .sectionA-image {
   width: 100%;
-  height: 45vh;
+  height: 45vw;
   object-fit: cover;
   /* margin-top: 15px; */
 }
@@ -152,50 +154,50 @@
 
 .section01 {
   position: relative;
-  top: 0;
-  left: 0;
-  height: 65vh;
-  width: 33.5vw;
+  top: 0px;
+  left: 0px;
+  height: 470px;
+  width: 440px;
   margin-bottom: 50px;
 }
 .section01-image01 {
   position: relative;
-  top: 5vh;
-  left: 0vw;
+  top: 25px;
+  left: 0px;
   border-radius: 10px;
   /* border: 2px solid #fff; */
-  width: 15vw;
-  height: 40vh;
+  width: 200px;
+  height: 300px;
   object-fit: cover;
 }
 .section01-image02 {
   position: relative;
-  top: 0;
-  left: 1.5vw;
+  top: 0px;
+  left: 20px;
   border-radius: 10px;
   /* border: 2px solid #fff; */
-  width: 15vw;
-  height: 40vh;
+  width: 200px;
+  height: 300px;
   object-fit: cover;
 }
 .section01-image03 {
   position: absolute;
-  top: 47vh;
-  left: 2vw;
+  top: 345px;
+  left: 20px;
   border-radius: 10px;
   /* border: 2px solid #fff; */
-  width: 15vw;
-  height: 20vh;
+  width: 200px;
+  height: 125px;
   object-fit: cover;
 }
 .section01-image04 {
   position: absolute;
-  top: 42vh;
-  left: 18.5vw;
+  top: 320px;
+  left: 240px;
   border-radius: 10px;
   /* border: 2px solid #fff; */
-  width: 15vw;
-  height: 20vh;
+  width: 200px;
+  height: 125px;
   object-fit: cover;
 }
 
@@ -205,51 +207,52 @@
 
 .section02 {
   position: relative;
-  top: 0;
-  right: 0vw;
-  height: 65vh;
-  width: 42vw;
+  top: 0px;
+  left: 0px;
+  height: 350px;
+  width: 470px;
   margin-bottom: 50px;
 }
 .section02-image01 {
   position: relative;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
   border-radius: 10px;
   /* border: 2px solid #fff; */
-  width: 20vw;
-  height: 27vh;
+  width: 225px;
+  height: 150px;
   object-fit: cover;
 }
+
 .section02-image02 {
   position: relative;
-  top: 10vh;
-  left: 2vw;
+  top: 20px;
+  left: 20px;
   border-radius: 10px;
   /* border: 2px solid #fff; */
-  width: 20vw;
-  height: 27vh;
+  width: 225px;
+  height: 150px;
   object-fit: cover;
 }
 .section02-image04 {
   position: absolute;
-  top: 31vh;
-  left: 5vw;
+  top: 170px;
+  left: 50px;
   border-radius: 10px;
   border: 2px solid #fff;
-  width: 12.5vw;
-  height: 15vh;
+  width: 160px;
+  height: 100px;
   object-fit: cover;
 }
 
 .section02-image03 {
   position: absolute;
-  top: 40vh;
-  left: 12.5vw;
+  top: 200px;
+  left: 150px;
   border-radius: 10px;
   /* border: 2px solid #fff; */
-  width: 20vw;
-  height: 20vh;
+  width: 225px;
+  height: 150px;
   object-fit: cover;
 }
 
@@ -294,20 +297,20 @@
 /* mobile */
 .section01-m {
   position: relative;
-  top: 0;
-  left: 0;
-  height: 40vh;
+  top: 0px;
+  left: 0px;
+  height: 95vw;
   width: 80vw;
   margin-bottom: 50px;
 }
 .section01-image01-m {
   position: relative;
-  top: 5vh;
-  left: 0;
+  top: 5vw;
+  left: 0px;
   border-radius: 10px;
   /* border: 2px solid #fff; */
   width: 35vw;
-  height: 27vh;
+  height: 60vw;
   object-fit: cover;
 }
 .section01-image02-m {
@@ -317,39 +320,38 @@
   border-radius: 10px;
   /* border: 2px solid #fff; */
   width: 35vw;
-  height: 27vh;
+  height: 60vw;
   object-fit: cover;
 }
 .section01-image03-m {
   position: absolute;
-  top: 34vh;
+  top: 70vw;
   left: 5vw;
   border-radius: 10px;
   /* border: 2px solid #fff; */
   width: 35vw;
-  height: 12vh;
+  height: 25vw;
   object-fit: cover;
 }
 .section01-image04-m {
   position: absolute;
-  top: 29vh;
+  top: 65vw;
   left: 45vw;
   border-radius: 10px;
   /* border: 2px solid #fff; */
   width: 35vw;
-  height: 12vh;
+  height: 25vw;
   object-fit: cover;
 }
 
 .section02-m {
   position: relative;
-  top: 0;
-  right: 0vw;
-  height: 27vh;
+  top: 0px;
+  right: 0px;
+  height: 60vw;
   width: 85vw;
   margin-bottom: 50px;
 }
-
 .section02-image01-m {
   position: relative;
   top: 0;
@@ -357,39 +359,36 @@
   border-radius: 10px;
   /* border: 2px solid #fff; */
   width: 40vw;
-  height: 14.5vh;
+  height: 25vw;
   object-fit: cover;
 }
-
 .section02-image02-m {
   position: relative;
-  top: 5vh;
+  top: 5vw;
   left: 5vw;
   border-radius: 10px;
   /* border: 2px solid #fff; */
   width: 40vw;
-  height: 14.5vh;
+  height: 25vw;
   object-fit: cover;
 }
-
 .section02-image04-m {
   position: absolute;
-  top: 18vh;
+  top: 30vw;
   left: 12vw;
   border-radius: 10px;
   border: 2px solid #fff;
-  width: 28vw;
-  height: 9vh;
+  width: 25vw;
+  height: 15vw;
   object-fit: cover;
 }
-
 .section02-image03-m {
   position: absolute;
-  top: 21vh;
+  top: 35vw;
   left: 25vw;
   border-radius: 10px;
   /* border: 2px solid #fff; */
-  width: 39vw;
-  height: 12vh;
+  width: 40vw;
+  height: 25vw;
   object-fit: cover;
 }

@@ -4,6 +4,7 @@
   object-fit: cover; */
 
   height: 40vh;
+  min-height: 40vw;
   width: 100%;
   object-fit: cover;
   border: 1px solid #ededed;
