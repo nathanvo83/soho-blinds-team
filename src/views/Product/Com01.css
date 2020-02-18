@@ -1,11 +1,36 @@
-.com01-content {
-  height: 50vh;
-  min-height: 50vw;
+/* mobile */
+.com01-content-m {
+  height: 100vw;
+  max-height: 80vh;
 }
 
-.com01-image {
-  height: 50vh;
-  min-height: 50vw;
+.com01-image-m {
+  height: 100vw;
+  max-height: 80vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* tablet */
+.com01-content-t {
+  height: 60vw;
+  max-height: 80vh;
+}
+
+.com01-image-t {
+  height: 60vw;
+  max-height: 80vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* desktop */
+.com01-content-d {
+  height: 45vw;
+}
+
+.com01-image-d {
+  height: 45vw;
   width: 100%;
   object-fit: cover;
 }

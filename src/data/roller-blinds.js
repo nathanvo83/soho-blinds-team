@@ -1,27 +1,23 @@
 export const rollerBlinds = {
   overview: {
     titles: [
-      "Easy Upkeep",
-      "Top Picks",
-      "Any Style, Anywhere",
-      "Manage Sunlight"
+      "Style and Functionality",
+      "Privacy",
+      "UV and Rain Protection",
+      "Versatility"
     ],
     contents: [
-      "Super easy to clean, operate, and maintain, roller shades are ideal solutions in residential, retail, and office settings.",
-      "It’s easy to get excited with so many choices of material, texture, light control, and lift options.",
-      "Get an updated, modern look or choose an elegant pattern for a more traditional setting. Roller shades can match any décor.",
-      "Show sunlight who’s boss with light filtering and blackout to control brightness and privacy."
+      "Roller blinds are the perfect fusion of style and function. Framed, secure, and tidy, their aesthetic adaptability ensures that whatever your interior theme is, there is a roller blind design, pattern and material that will uplift the overall layout of your residential or commercial space.",
+      "Certain materials such as block out roller blinds give you total privacy right when you need it.",
+      "Roller blinds such as sunscreens protect you and your family from harmful UVA and UVB rays. Outdoors, it can effectively keep your balcony mostly dry from rains and repels insects.",
+      "Roller blinds are flexible – they can cover multiple windows or individual large ones. They can be synchronised, separated or even operated in sequence. For motorised roller blinds, they can be operated by rechargeable battery or mains power. Either way, they are easy to manage."
     ]
   },
   description: {
-    titles: ["", "Child Safety:"],
+    titles: ["", ""],
     contents: [
-      "Get the ball rolling on new window treatments! Roller shades are a favorite choice for adding texture, color, and sleek accents to a home. Clean-cut and versatile, roller shades are available in solid colors, various textures, patterns and synthetic woven fabrics. A great mix of modern function and fashion, roller shades are clean, easy to use, and ready to serve.",
-      // "Colors: Various colors, textures, and fabrics.",
-      // "Material: Light-filtering or blackout fabrics.",
-      // "Operation Options: Cord control standard.",
-      // "Upgrades: Stainless steel chain, spring tension cordless lift, and cassette valance.",
-      "The cordless lift option for roller shades is considered safer for kids and pets because there are no exposed cords. Cordless upgrades must be added to each window treatment during customization and purchase. All other versions of this product have cords that may be accessible and are not recommended for windows where children or pets may be present. Learn more about child safety and window treatments."
+      "Roller blinds have been steadily increasing in popularity in response to Newzelander’ demanding schedules. Its primary selling point is its manageability. Unlike curtains, roller blinds are easier to clean at less frequency, and it does not attract dirt like most curtain fabrics do. Unsurprisingly, it has become the more popular choice of home owners, condo dwellers, bungalows, and even commercial spaces.",
+      "Although commonly used indoors, roller blinds are also used to block harsh sunlight in balcony spaces. If aesthetics is what you’re concerned about, roller blinds have a myriad of designs to fit your unique interior designs. SoHo offers roller blind colours and patterns that run the gamut of your imagination. Functionality-wise, the material options range from sunscreen for letting sunlight without the harmful UV rays in, block out for complete privacy, and even translucent fabrics to allow light into the room. SoHo also offers manual roller blind options or motorised operation using a first-grade operating system."
     ]
   }
 };

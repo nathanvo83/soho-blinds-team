@@ -50,7 +50,7 @@ const Home = () => {
             <Grid.Row>
               <Grid.Column>
                 <div className="sectionA-container">
-                  <img class="sectionA-image" src={h_01} alt="" />
+                  <img class="sectionA-image-m" src={h_01} alt="" />
                   <div className="sectionA-top-left">blinds</div>
                   <div className="sectionA-top-right">
                     <div className="sectionA-promo-normal">up to</div>
@@ -95,7 +95,7 @@ const Home = () => {
               </Grid.Column>
               <Grid.Column>
                 <div className="sectionA-container">
-                  <img class="sectionA-image" src={h_02} alt="" />
+                  <img class="sectionA-image-m" src={h_02} alt="" />
                   <div className="sectionA-top-left">curtains</div>
                   <div className="sectionA-top-right">
                     <div className="sectionA-promo-normal">up to</div>
@@ -124,7 +124,7 @@ const Home = () => {
               </Grid.Column>
               <Grid.Column>
                 <div className="sectionA-container">
-                  <img class="sectionA-image" src={h_03} alt="" />
+                  <img class="sectionA-image-m" src={h_03} alt="" />
                   <div className="sectionA-top-left">shutters</div>
                   <div className="sectionA-top-right">
                     <div className="sectionA-promo-normal">up to</div>
@@ -352,7 +352,7 @@ const Home = () => {
             <Grid.Row>
               <Grid.Column>
                 <div className="sectionA-container">
-                  <img class="sectionA-image" src={h_01} alt="" />
+                  <img class="sectionA-image-t" src={h_01} alt="" />
                   <div className="sectionA-top-left">blinds</div>
                   <div className="sectionA-top-right">
                     <div className="sectionA-promo-normal">up to</div>
@@ -397,7 +397,7 @@ const Home = () => {
               </Grid.Column>
               <Grid.Column>
                 <div className="sectionA-container">
-                  <img class="sectionA-image" src={h_02} alt="" />
+                  <img class="sectionA-image-t" src={h_02} alt="" />
                   <div className="sectionA-top-left">curtains</div>
                   <div className="sectionA-top-right">
                     <div className="sectionA-promo-normal">up to</div>
@@ -426,7 +426,7 @@ const Home = () => {
               </Grid.Column>
               <Grid.Column>
                 <div className="sectionA-container">
-                  <img class="sectionA-image" src={h_03} alt="" />
+                  <img class="sectionA-image-t" src={h_03} alt="" />
                   <div className="sectionA-top-left">shutters</div>
                   <div className="sectionA-top-right">
                     <div className="sectionA-promo-normal">up to</div>

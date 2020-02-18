@@ -28,16 +28,15 @@ const Header = props => {
             showThumbs={false}
             infiniteLoop={true}
             showArrows={false}
-            className="h-header-com"
           >
             <div>
-              <img className="h-header-img" src={img_h01} alt="First slide" />
+              <img className="h-header-img-m" src={img_h01} alt="First slide" />
             </div>
             <div>
-              <img className="h-header-img" src={img_h02} alt="First slide" />
+              <img className="h-header-img-m" src={img_h02} alt="First slide" />
             </div>
             <div>
-              <img className="h-header-img" src={img_h03} alt="First slide" />
+              <img className="h-header-img-m" src={img_h03} alt="First slide" />
             </div>
           </Carousel>
 
@@ -66,16 +65,15 @@ const Header = props => {
             showThumbs={false}
             infiniteLoop={true}
             showArrows={false}
-            className="h-header-com"
           >
             <div>
-              <img className="h-header-img" src={img_h01} alt="First slide" />
+              <img className="h-header-img-t" src={img_h01} alt="First slide" />
             </div>
             <div>
-              <img className="h-header-img" src={img_h02} alt="First slide" />
+              <img className="h-header-img-t" src={img_h02} alt="First slide" />
             </div>
             <div>
-              <img className="h-header-img" src={img_h03} alt="First slide" />
+              <img className="h-header-img-t" src={img_h03} alt="First slide" />
             </div>
           </Carousel>
 
@@ -104,13 +102,13 @@ const Header = props => {
             className="h-header-com"
           >
             <div>
-              <img className="h-header-img" src={img_h01} alt="First slide" />
+              <img className="h-header-img-d" src={img_h01} alt="First slide" />
             </div>
             <div>
-              <img className="h-header-img" src={img_h02} alt="First slide" />
+              <img className="h-header-img-d" src={img_h02} alt="First slide" />
             </div>
             <div>
-              <img className="h-header-img" src={img_h03} alt="First slide" />
+              <img className="h-header-img-d" src={img_h03} alt="First slide" />
             </div>
           </Carousel>
 

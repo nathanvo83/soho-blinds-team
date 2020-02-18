@@ -24,34 +24,34 @@ export const home = {
   },
   section04: {
     aboutUs_01: {
-      title: "FREE SAMPLE SERVICE",
+      title: "100% Satisfaction",
       content:
-        "From versatile dual roller blinds to our affordable vertical blinds options, we’re are happy to send colour samples for all of our blinds anywhere in the country for FREE."
+        "We import high quality materials & fabrics for your furnishing needs. Sewing services are done neatly and professionally to ensure customer satisfaction."
     },
     aboutUs_02: {
-      title: "FIVE YEAR WARRANTY",
+      title: "Personalisation",
       content:
-        "Buy blinds with confidence as all blinds come with a 5 year warranty on fabrics, and a 3 year warranty, on parts and workmanship."
+        "Everyone is different & unique. Our designs come in wide range of styles, fabrics, patterns. We have something for every home. Allow us to assist you in creating your perfect window dressing!"
     },
     aboutUs_03: {
-      title: "EASY INSTALLATION",
+      title: "Warranty",
       content:
-        "All our blinds are easy to install and come with installation instructions, however, if you need some further information regarding measuring or fitting your blinds then view our how to page or contact us to find out how we can help."
+        "We provide warranty for all products. Although we are confident in our products’ quality, we are more than happy to be of assistance should you encounter any issues."
     },
     aboutUs_04: {
-      title: "FREE MEASURE & QUOTE",
+      title: "We come to you",
       content:
-        "Our experts can come to you anywhere in NZ for an in house design consultation with no obligations. Our quotes include construction and installation so you don’t get any nasty surprises."
+        "We provide you professional non-obligatory consultation and quotation for your window dressing."
     },
     aboutUs_05: {
-      title: "MADE TO MEASURE",
+      title: "Customer service",
       content:
-        "Don’t make the mistake of buying pre made blinds or shutters that might not fit your home. All our shutters & blinds are made to order so you get superior quality blinds that fit your home."
+        "You will enjoy the highest standard of customer service from quotation right through to installation."
     },
     aboutUs_06: {
-      title: "PROFESSIONAL INSTALLATION",
+      title: "High Reliabity",
       content:
-        "Most installations only take 1/2 a day. All of our installers have an expert background in the shutter & blind industry so you get the peace of mind knowing that the shutters or blinds will be perfectly flush."
+        "We are CaseTrust, BizSafe Star certified, and have won TOP 25 Prestige Award 2014. You can count on us!"
     }
   }
 };

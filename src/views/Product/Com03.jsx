@@ -16,7 +16,7 @@ const Com03 = props => {
               {images.map((item, idx) => (
                 <Grid.Column className="col-x">
                   <img
-                    className="com03-image-thumb"
+                    className="com03-image-thumb-m"
                     key={idx}
                     src={item}
                     alt={idx}
@@ -38,7 +38,7 @@ const Com03 = props => {
               {images.map((item, idx) => (
                 <Grid.Column className="col-x">
                   <img
-                    className="com03-image-thumb"
+                    className="com03-image-thumb-t"
                     key={idx}
                     src={item}
                     alt={idx}
@@ -57,7 +57,7 @@ const Com03 = props => {
               {images.map((item, idx) => (
                 <Grid.Column className="col-x">
                   <img
-                    className="com03-image-thumb"
+                    className="com03-image-thumb-d"
                     key={idx}
                     src={item}
                     alt={idx}

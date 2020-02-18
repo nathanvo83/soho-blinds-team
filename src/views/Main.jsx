@@ -3,6 +3,8 @@ import { Route, Switch } from "react-router-dom";
 import * as ROUTES from "../constants/routes";
 
 import { rollerBlinds } from "../data/roller-blinds";
+import { zebraBlinds } from "../data/zebra-blinds";
+import { verticalBlinds } from "../data/vertical-blinds";
 
 import roller01 from "../assets/images/blinds/roller/roller01.png";
 import roller02 from "../assets/images/blinds/roller/roller02.jpg";
@@ -135,8 +137,8 @@ const Main = () => {
       title="Vertical Blinds"
       tab01="OVERVIEW"
       tab02="DESCRIPTION"
-      content01={rollerBlinds.overview}
-      content02={rollerBlinds.description}
+      content01={verticalBlinds.overview}
+      content02={verticalBlinds.description}
       images={[vertical01, vertical02, vertical03]}
     ></Product>
   );
@@ -145,8 +147,8 @@ const Main = () => {
       title="Zebra Blinds"
       tab01="OVERVIEW"
       tab02="DESCRIPTION"
-      content01={rollerBlinds.overview}
-      content02={rollerBlinds.description}
+      content01={zebraBlinds.overview}
+      content02={zebraBlinds.description}
       images={[zebra01, zebra02, zebra03, zebra04, zebra05, zebra06, zebra07]}
     ></Product>
   );

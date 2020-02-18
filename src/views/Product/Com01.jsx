@@ -1,4 +1,5 @@
 import React from "react";
+import { Responsive } from "semantic-ui-react";
 // import { Carousel } from "react-bootstrap";
 import "./Com01.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -9,30 +10,69 @@ const Com01 = props => {
 
   return (
     <div>
-      <Carousel
-        showStatus={false}
-        autoPlay={true}
-        showThumbs={false}
-        infiniteLoop={true}
-        showArrows={false}
-        className="com01-content"
+      <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
+        <Carousel
+          showStatus={false}
+          autoPlay={true}
+          showThumbs={false}
+          infiniteLoop={true}
+          showArrows={false}
+          className="com01-content"
+        >
+          <div>
+            <img className="com01-image-m" src={images[0]} alt="First slide" />
+          </div>
+          <div>
+            <img className="com01-image-m" src={images[1]} alt="First slide" />
+          </div>
+          <div>
+            <img className="com01-image-m" src={images[2]} alt="First slide" />
+          </div>
+        </Carousel>
+      </Responsive>
+      <Responsive
+        minWidth={Responsive.onlyTablet.minWidth}
+        maxWidth={Responsive.onlyTablet.maxWidth}
       >
-        <div>
-          <img className="com01-image" src={images[0]} alt="First slide" />
-          {/* <img src="https://dummyimage.com/800x300/123/aaa" alt="First slide" /> */}
-          {/* <p className="legend">Legend 1</p> */}
-        </div>
-        <div>
-          <img className="com01-image" src={images[1]} alt="First slide" />
-          {/* <img src="https://dummyimage.com/800x300/123/aaa" alt="First slide" /> */}
-          {/* <p className="legend">Legend 2</p> */}
-        </div>
-        <div>
-          <img className="com01-image" src={images[2]} alt="First slide" />
-          {/* <img src="https://dummyimage.com/800x300/123/aaa" alt="First slide" /> */}
-          {/* <p className="legend">Legend 3</p> */}
-        </div>
-      </Carousel>
+        <Carousel
+          showStatus={false}
+          autoPlay={true}
+          showThumbs={false}
+          infiniteLoop={true}
+          showArrows={false}
+          className="com01-content-t"
+        >
+          <div>
+            <img className="com01-image-t" src={images[0]} alt="First slide" />
+          </div>
+          <div>
+            <img className="com01-image-t" src={images[1]} alt="First slide" />
+          </div>
+          <div>
+            <img className="com01-image-t" src={images[2]} alt="First slide" />
+          </div>
+        </Carousel>
+      </Responsive>
+      <Responsive minWidth={Responsive.onlyComputer.minWidth}>
+        <Carousel
+          showStatus={false}
+          autoPlay={true}
+          showThumbs={false}
+          infiniteLoop={true}
+          showArrows={false}
+          className="com01-content-d"
+        >
+          <div>
+            <img className="com01-image-d" src={images[0]} alt="First slide" />
+          </div>
+          <div>
+            <img className="com01-image-d" src={images[1]} alt="First slide" />
+          </div>
+          <div>
+            <img className="com01-image-d" src={images[2]} alt="First slide" />
+          </div>
+        </Carousel>
+      </Responsive>
     </div>
   );
 };
