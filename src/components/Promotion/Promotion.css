@@ -1,0 +1,80 @@
+.pro-bg {
+  background-image: radial-gradient(circle, #ff886e 30%, #f37478 70%);
+  text-align: center;
+  position: relative;
+  height: 150px;
+  z-index: 900;
+}
+
+.pro-out {
+  display: flex;
+  margin: 0px;
+  height: 150px;
+}
+
+.pro-content {
+  text-transform: uppercase;
+  margin: auto;
+}
+
+.pro-01-line01 {
+  font-size: 30px;
+  line-height: 100%;
+  color: #202a33;
+  transform: rotate(10deg);
+  text-align: left;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.pro-01-line02 {
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 100%;
+  color: #2c2c39;
+  transform: rotate(-10deg);
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.pro-02-line01 {
+  font-size: 30px;
+  line-height: 100%;
+  color: #202a33;
+  transform: rotate(20deg);
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.pro-02-line02 {
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 100%;
+  color: #fff;
+  transform: rotate(10deg);
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.pro-03-line01 {
+  font-size: 20px;
+  line-height: 100%;
+  color: #202a33;
+  /* transform: rotate(-10deg); */
+  text-align: right;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.pro-03-line02 {
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 100%;
+  color: #fff;
+  transform: rotate(10deg);
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.pro-03-line03 {
+  font-size: 30px;
+  /* font-weight: bold; */
+  line-height: 100%;
+  color: #202a33;
+  text-align: left;
+  text-shadow: 2px 2px 4px #000;
+}

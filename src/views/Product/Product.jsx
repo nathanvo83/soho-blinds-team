@@ -6,6 +6,7 @@ import Com01 from "./Com01";
 import Com02 from "./Com02";
 import Com03 from "./Com03";
 import "./Product.css";
+import Promotion from "../../components/Promotion/Promotion";
 
 const Product = props => {
   const { title, tab01, tab02, content01, content02, images } = props;
@@ -49,7 +50,8 @@ const Product = props => {
       </Responsive>
       {/* desktop */}
       <Responsive minWidth={Responsive.onlyComputer.minWidth}>
-        <br />
+        <Promotion></Promotion>
+
         <Container fluid>
           <Grid columns="2" style={{ margin: 0 }}>
             <Grid.Row>

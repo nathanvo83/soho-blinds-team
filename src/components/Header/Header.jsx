@@ -11,6 +11,7 @@ import img_h03 from "../../assets/images/header/img03.png";
 
 import Slogan from "../Slogan/Slogan";
 import Sale from "../Sale/Sale";
+import Promotion from "../Promotion/Promotion";
 
 // import img_h01 from "../../assets/images/curtain/day/day01.jpeg";
 // import img_h02 from "../../assets/images/curtain/day/day02.jpg";
@@ -21,6 +22,7 @@ const Header = props => {
   return (
     <div>
       <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
+        <Promotion></Promotion>
         <div className="h-outbound">
           <Carousel
             showStatus={false}
@@ -58,6 +60,7 @@ const Header = props => {
         minWidth={Responsive.onlyTablet.minWidth}
         maxWidth={Responsive.onlyTablet.maxWidth}
       >
+        <Promotion></Promotion>
         <div className="h-outbound">
           <Carousel
             showStatus={false}
@@ -92,6 +95,8 @@ const Header = props => {
       </Responsive>
 
       <Responsive minWidth={Responsive.onlyComputer.minWidth}>
+        <Promotion></Promotion>
+        {/* <br /> */}
         <div className="h-outbound">
           <Carousel
             showStatus={false}
@@ -99,7 +104,6 @@ const Header = props => {
             showThumbs={false}
             infiniteLoop={true}
             showArrows={false}
-            className="h-header-com"
           >
             <div>
               <img className="h-header-img-d" src={img_h01} alt="First slide" />
