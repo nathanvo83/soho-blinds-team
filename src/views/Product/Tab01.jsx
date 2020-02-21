@@ -4,24 +4,45 @@ import {
   faGrinHearts,
   faGrinStars,
   faGrinWink,
-  faGrinSquint
+  faGrinSquint,
+  faGrinBeam
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Tab01 = props => {
   const { content } = props;
+  const images = [
+    faGrinHearts,
+    faGrinStars,
+    faGrinWink,
+    faGrinSquint,
+    faGrinBeam
+  ];
+
   return (
     <div>
-      <div className="tab-col">
-        <div className="tab-icon">
+      {/* <div className="tab-col"> */}
+      {content.titles.map((item, idx) => (
+        <div className="tab-col">
+          <div className="tab-icon">
+            <FontAwesomeIcon icon={images[idx]}></FontAwesomeIcon>
+          </div>
+          <div className="tab-body">
+            <div className="tab-title">{content.titles[idx]}</div>
+            <div className="tab-content">{content.contents[idx]}</div>
+          </div>
+        </div>
+      ))}
+
+      {/* <div className="tab-icon">
           <FontAwesomeIcon icon={faGrinHearts}></FontAwesomeIcon>
         </div>
         <div className="tab-body">
           <div className="tab-title">{content.titles[0]}</div>
           <div className="tab-content">{content.contents[0]}</div>
-        </div>
-      </div>
-      <div className="tab-col">
+        </div> */}
+      {/* </div> */}
+      {/* <div className="tab-col">
         <div className="tab-icon">
           <FontAwesomeIcon icon={faGrinStars}></FontAwesomeIcon>
         </div>
@@ -47,7 +68,7 @@ const Tab01 = props => {
           <div className="tab-title">{content.titles[3]}</div>
           <div className="tab-content">{content.contents[3]}</div>
         </div>
-      </div>
+      </div> */}
 
       {/* <div className="tab-title" key="0">
         {content.titles[0]}

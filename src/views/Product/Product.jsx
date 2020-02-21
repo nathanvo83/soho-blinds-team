@@ -15,6 +15,7 @@ const Product = props => {
     <div className="p-outbound">
       {/* phone */}
       <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
+        <Promotion></Promotion>
         <Com01 images={images}></Com01>
         <div className="p-part02-m">
           <Com02
@@ -34,6 +35,7 @@ const Product = props => {
         minWidth={Responsive.onlyTablet.minWidth}
         maxWidth={Responsive.onlyTablet.maxWidth}
       >
+        <Promotion></Promotion>
         <Com01 images={images}></Com01>
         <div className="p-part02-m">
           <Com02

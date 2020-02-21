@@ -1,11 +1,10 @@
 export const verticalBlinds = {
   overview: {
-    titles: ["Wide array of choices", "Safe", "Easy to clean", ""],
+    titles: ["Wide array of choices", "Safe", "Easy to clean"],
     contents: [
       "Vertical blinds come in various blade widths, finishes, texture and colours. High-quality and with superior durability, they surely will add an extra touch of finesse to any space.",
       "Vertical blinds in NZ are guaranteed safe, without unnecessary cords that may pose as risks to children and pets.",
-      "These types of blinds are often made of stain-resistant materials. There are also options to go for fire-safe and block out materials. They’re easy to clean – all you need is a cleaning cloth.",
-      ""
+      "These types of blinds are often made of stain-resistant materials. There are also options to go for fire-safe and block out materials. They’re easy to clean – all you need is a cleaning cloth."
     ]
   },
   description: {
