@@ -133,13 +133,13 @@
 }
 
 @media screen and (max-width: 768px) {
-  .outbound-m {
+  /* .outbound-m {
     margin-bottom: 0px;
     position: relative;
   }
   .outbound {
     position: relative;
-  }
+  } */
 
   /* .topnav a:not(:first-child),
   .dropdown .dropbtn {

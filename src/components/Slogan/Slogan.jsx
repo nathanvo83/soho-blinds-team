@@ -10,10 +10,8 @@ const Slogan = () => {
         <div className="slogan-m">
           <img className="slogan-01-m" src={price_icon} alt=""></img>
           <div className="slogan-02-m">
-            Whether it's elegant draperies, roller blinds, or shutters you
-            require, we will work with you to ensure that your window
-            furnishings not only complete your architectural vision but
-            possesses the enduring performance to withstand time.
+            <div>Best price and high quality</div>
+            <div>for a better future.</div>
           </div>
         </div>
       </Responsive>
@@ -21,13 +19,11 @@ const Slogan = () => {
         minWidth={Responsive.onlyTablet.minWidth}
         maxWidth={Responsive.onlyTablet.maxWidth}
       >
-        <div className="slogan-m">
-          <img className="slogan-01-m" src={price_icon} alt=""></img>
-          <div className="slogan-02-m">
-            Whether it's elegant draperies, roller blinds, or shutters you
-            require, we will work with you to ensure that your window
-            furnishings not only complete your architectural vision but
-            possesses the enduring performance to withstand time.
+        <div className="slogan-t">
+          <img className="slogan-01-t" src={price_icon} alt=""></img>
+          <div className="slogan-02-t">
+            <div>Best price and high quality</div>
+            <div>for a better future.</div>
           </div>
         </div>
       </Responsive>
@@ -36,10 +32,8 @@ const Slogan = () => {
           <img className="slogan-01" src={price_icon} alt=""></img>
 
           <div className="slogan-02">
-            Whether it's elegant draperies, roller blinds, or shutters you
-            require, we will work with you to ensure that your window
-            furnishings not only complete your architectural vision but
-            possesses the enduring performance to withstand time.
+            <div>Best price and high quality</div>
+            <div>for a better future.</div>
           </div>
         </div>
       </Responsive>

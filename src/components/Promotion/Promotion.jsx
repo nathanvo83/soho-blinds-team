@@ -5,8 +5,8 @@ import "./Promotion.css";
 const Promotion = () => {
   return (
     <div>
-      <div className="pro-bg">
-        <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
+      <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
+        <div className="pro-bg-m">
           <Grid columns="3" style={{ margin: 0 }}>
             <Grid.Row>
               <Grid.Column>
@@ -36,11 +36,13 @@ const Promotion = () => {
               </Grid.Column>
             </Grid.Row>
           </Grid>
-        </Responsive>
-        <Responsive
-          minWidth={Responsive.onlyTablet.minWidth}
-          maxWidth={Responsive.onlyTablet.maxWidth}
-        >
+        </div>
+      </Responsive>
+      <Responsive
+        minWidth={Responsive.onlyTablet.minWidth}
+        maxWidth={Responsive.onlyTablet.maxWidth}
+      >
+        <div className="pro-bg-t">
           <Grid columns="3" style={{ margin: 0 }}>
             <Grid.Row>
               <Grid.Column>
@@ -70,8 +72,10 @@ const Promotion = () => {
               </Grid.Column>
             </Grid.Row>
           </Grid>
-        </Responsive>
-        <Responsive minWidth={Responsive.onlyComputer.minWidth}>
+        </div>
+      </Responsive>
+      <Responsive minWidth={Responsive.onlyComputer.minWidth}>
+        <div className="pro-bg-d">
           <Grid columns="3" style={{ margin: 0 }}>
             <Grid.Row>
               <Grid.Column>
@@ -101,8 +105,8 @@ const Promotion = () => {
               </Grid.Column>
             </Grid.Row>
           </Grid>
-        </Responsive>
-      </div>
+        </div>
+      </Responsive>
     </div>
   );
 };

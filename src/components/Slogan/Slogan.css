@@ -1,60 +1,91 @@
+/* mobile */
+.slogan-m {
+  background-color: #282828;
+  color: #fbd62b;
+  font-size: 17px;
+  text-align: justify;
+  display: inline-flex;
+  padding: 5px 0px;
+  width: 100%;
+}
+.slogan-01-m {
+  height: auto;
+  width: 70px;
+  object-fit: cover;
+  vertical-align: middle;
+  margin: auto;
+}
+
+.slogan-02-m {
+  vertical-align: middle;
+  margin: auto auto;
+  text-align: center;
+  font-size: 21px;
+  font-weight: bold;
+  background: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(2px 2px 4px #000000);
+}
+
+/* tablet */
+.slogan-t {
+  background-color: #282828;
+  color: #fbd62b;
+  font-size: 17px;
+  text-align: justify;
+  display: inline-flex;
+  padding: 5px 0px;
+  width: 100%;
+}
+.slogan-01-t {
+  height: auto;
+  width: 120px;
+  object-fit: cover;
+  vertical-align: middle;
+  margin: auto;
+}
+
+.slogan-02-t {
+  vertical-align: middle;
+  margin: auto auto;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  background: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(2px 2px 4px #000000);
+}
+
+/* desktop */
 .slogan {
-  /* border-top: 5px solid rgba(255, 255, 255, 0.3); */
   background-color: #282828;
   color: #fbd62b;
   padding: 10px;
   font-size: 22px;
   text-align: justify;
   display: inline-flex;
+  width: 100%;
+  padding: 5px 0px;
 }
 
 .slogan-01 {
-  height: 30vh;
-  width: auto;
+  height: auto;
+  width: 170px;
   object-fit: cover;
+  vertical-align: middle;
+  margin: auto;
 }
 
 .slogan-02 {
   vertical-align: middle;
-  margin: auto 50px;
-  padding: 20px 20px;
-
-  /* border-left: 5px dashed #fbd62b;
-  border-right: 5px dashed #fbd62b; */
-  /* box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 80px 0 rgba(0, 0, 0, 0.19); */
-}
-
-.slogan-m {
-  /* border-top: 5px solid rgba(255, 255, 255, 0.3); */
-  background-color: #282828;
-  color: #fbd62b;
-  /* padding: 10px; */
-  /* font-size: 22px; */
-  font-size: 17px;
-  text-align: justify;
-  display: inline-flex;
-}
-.slogan-01-m {
-  /* height: 30vh; */
-
-  margin-top: 15px;
-  width: 25vw;
-  height: 25vw;
-  object-fit: cover;
-  /* text-align: center; */
-  align-items: center;
-}
-
-.slogan-02-m {
-  margin: 10px;
-  /* vertical-align: middle; */
-  /* margin: auto 50px;
-  padding: 20px 20px; */
-  /* background-color: rgba(247, 56, 88, 0.5); */
-  /* background-color: #f73858; */
-  /* color: #fff; */
-
-  /* border-left: 5px dashed #fbd62b;
-  border-right: 5px dashed #fbd62b; */
-  /* box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 80px 0 rgba(0, 0, 0, 0.19); */
+  margin: auto auto;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  background: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(2px 2px 4px #000000);
 }
