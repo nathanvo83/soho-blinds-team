@@ -4,7 +4,7 @@ import Header from "../../components/Header/Header";
 const BuyingGuide = () => {
   return (
     <React.Fragment>
-      <Header></Header>
+      <Header showQuote={false} showSale={false} showSlogan={false}></Header>
     </React.Fragment>
   );
 };

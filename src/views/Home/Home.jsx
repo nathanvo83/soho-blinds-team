@@ -36,7 +36,7 @@ import * as ROUTES from "../../constants/routes";
 const Home = () => {
   return (
     <React.Fragment>
-      <Header showQuote={true} showSale={false} showSlogan={true}></Header>
+      <Header showQuote={true} showSale={false} showSlogan={false}></Header>
 
       {/* phone */}
       <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
