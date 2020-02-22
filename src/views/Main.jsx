@@ -6,6 +6,9 @@ import { rollerBlinds } from "../data/roller-blinds";
 import { zebraBlinds } from "../data/zebra-blinds";
 import { verticalBlinds } from "../data/vertical-blinds";
 
+import { dayCurtains } from "../data/day-curtain";
+import { nightCurtains } from "../data/night-curtain";
+
 import roller01 from "../assets/images/blinds/roller/roller01.png";
 import roller02 from "../assets/images/blinds/roller/roller02.jpg";
 import roller03 from "../assets/images/blinds/roller/roller03.png";
@@ -131,7 +134,7 @@ const Main = () => {
         venetian12
       ]}
     ></Product>
-  );
+  ); //update
   const renderProductBlindsVertical = () => (
     <Product
       title="Vertical Blinds"
@@ -158,8 +161,8 @@ const Main = () => {
       title="Night Curtains"
       tab01="OVERVIEW"
       tab02="DESCRIPTION"
-      content01={rollerBlinds.overview}
-      content02={rollerBlinds.description}
+      content01={nightCurtains.overview}
+      content02={nightCurtains.description}
       images={[
         night03,
         night04,
@@ -179,8 +182,8 @@ const Main = () => {
       title="Day Curtains"
       tab01="OVERVIEW"
       tab02="DESCRIPTION"
-      content01={rollerBlinds.overview}
-      content02={rollerBlinds.description}
+      content01={dayCurtains.overview}
+      content02={dayCurtains.description}
       images={[
         day01,
         day02,

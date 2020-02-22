@@ -162,8 +162,10 @@ const ContactUs = () => {
         <FontAwesomeIcon
           icon={faMapMarkedAlt}
           className="contact-details-icon"
-        />{" "}
-        Broadway New Market, Auckland City.
+        />
+        176 Broadway New Market, Auckland 1023.
+        <br />
+        &nbsp; &nbsp; &nbsp; &nbsp; (Viewing By Appointment Only)
       </div>
     </div>
   );

@@ -1,27 +1,21 @@
-export const rollerBlinds = {
+export const dayCurtains = {
   overview: {
     titles: [
-      "Easy Upkeep",
-      "Top Picks",
-      "Any Style, Anywhere",
-      "Manage Sunlight"
+      "Curtains improve the décor of the house",
+      "Curtains provides Privacy and Security",
+      "Curtains provides Protection"
     ],
     contents: [
-      "Super easy to clean, operate, and maintain, roller shades are ideal solutions in residential, retail, and office settings.",
-      "It’s easy to get excited with so many choices of material, texture, light control, and lift options.",
-      "Get an updated, modern look or choose an elegant pattern for a more traditional setting. Roller shades can match any décor.",
-      "Show sunlight who’s boss with light filtering and blackout to control brightness and privacy."
+      "Whether your interior design is Scandinavian, traditional, contemporary, shabby chic or Bohemian, curtains have the ability to augment your chosen look and take it to new heights. Curtains accent the overall mood you wish to evoke with your chosen design them. In New Zealand, homeowners go for high-quality materials, decorative charm, and ease of maintenance.",
+      "The most practical function of curtains is to serve as covering. In New Zealand, where privacy is a primordial concern, curtains are sensibly used in every window. Curtains keep you safe from the glances and curious looks of people walking by. For most people, curtains give them a sense of security, exclusivity, and ownership of space.",
+      "Curtains protect the dwellers from harmful UVA/ UVB light and mitigate extreme heat from entering your upsetting the temperature balance in your home. They also protect your precious furniture and furnishing, especially those that react to extreme heat and light."
     ]
   },
   description: {
-    titles: ["", "Child Safety:"],
+    titles: ["", ""],
     contents: [
-      "Get the ball rolling on new window treatments! Roller shades are a favorite choice for adding texture, color, and sleek accents to a home. Clean-cut and versatile, roller shades are available in solid colors, various textures, patterns and synthetic woven fabrics. A great mix of modern function and fashion, roller shades are clean, easy to use, and ready to serve.",
-      // "Colors: Various colors, textures, and fabrics.",
-      // "Material: Light-filtering or blackout fabrics.",
-      // "Operation Options: Cord control standard.",
-      // "Upgrades: Stainless steel chain, spring tension cordless lift, and cassette valance.",
-      "The cordless lift option for roller shades is considered safer for kids and pets because there are no exposed cords. Cordless upgrades must be added to each window treatment during customization and purchase. All other versions of this product have cords that may be accessible and are not recommended for windows where children or pets may be present. Learn more about child safety and window treatments."
+      "Day curtains are distinguishable from other types of curtains because of their lightweight and sheer materials. Day curtains are the perfect options to soften the look of any room in your home. Often made of delicate fabrics such as lace or organza, day curtains afford owners full view of the outdoors, while keeping outsiders from looking inside the house. It is the curtain of choice of most property owners as the subtle ambient natural lighting provides optimal visibility during the day; while the diffusion of the sunlight’s direct heat and glare allows them to keep room temperature at a comfortable level, thus saving electricity.",
+      "Your day curtains need not be complicated, but the decision-making itself is a rather complex process. You need to ensure that the colour, fabric and design of your curtain matches your interior – and you’d have to find curtains made out of low-maintenance materials. At the soho gallery, you get spoilt for choice. We have one of the most extensive arrays of sheer day curtains at prices to fit every budget. Speak to our friendly and skillful in-house designers should you need help in choosing the right day curtain for your home."
     ]
   }
 };

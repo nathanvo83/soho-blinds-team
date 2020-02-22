@@ -1,27 +1,22 @@
-export const rollerBlinds = {
+export const nightCurtains = {
   overview: {
     titles: [
-      "Easy Upkeep",
-      "Top Picks",
-      "Any Style, Anywhere",
-      "Manage Sunlight"
+      "Normal Night Curtains",
+      "Dimmed Out Curtains",
+      "Blackout Curtains"
     ],
     contents: [
-      "Super easy to clean, operate, and maintain, roller shades are ideal solutions in residential, retail, and office settings.",
-      "It’s easy to get excited with so many choices of material, texture, light control, and lift options.",
-      "Get an updated, modern look or choose an elegant pattern for a more traditional setting. Roller shades can match any décor.",
-      "Show sunlight who’s boss with light filtering and blackout to control brightness and privacy."
+      "They are also commonly known as standard night curtains, are the ones you can usually find in most New Zealand homes. Normal night curtains block out 50% to 70% of sunlight and privacy. They cannot completely block out glare and lights.",
+      "They are made of thicker materials, traditionally 3 layers, and are thus better at UV blocking and privacy. They can block 75% to 90% of sunlight.",
+      "Blackout curtains are probably the thickest of the lot, normally containing an extra layer of PVC sewn behind the fabric. They effectively block 100% of sunlight. They are more difficult to care for though as they need dry cleaning instead of normal washing."
     ]
   },
   description: {
-    titles: ["", "Child Safety:"],
+    titles: ["", "", ""],
     contents: [
-      "Get the ball rolling on new window treatments! Roller shades are a favorite choice for adding texture, color, and sleek accents to a home. Clean-cut and versatile, roller shades are available in solid colors, various textures, patterns and synthetic woven fabrics. A great mix of modern function and fashion, roller shades are clean, easy to use, and ready to serve.",
-      // "Colors: Various colors, textures, and fabrics.",
-      // "Material: Light-filtering or blackout fabrics.",
-      // "Operation Options: Cord control standard.",
-      // "Upgrades: Stainless steel chain, spring tension cordless lift, and cassette valance.",
-      "The cordless lift option for roller shades is considered safer for kids and pets because there are no exposed cords. Cordless upgrades must be added to each window treatment during customization and purchase. All other versions of this product have cords that may be accessible and are not recommended for windows where children or pets may be present. Learn more about child safety and window treatments."
+      "Night curtains are crucial elements for every home in NZ. In an urban jungle, night curtains give you the solitude and tranquillity that your household deserves.",
+      "Night curtains block light and sound from entering a room. This functionality is attributable to the materials of these draperies – privacy-inducing fabrics that act as a barrier. They keep sounds at bay, muffling noise from noisy neighbours or from passing vehicles if you live near busy roads. They also keep noise in. Its light-blocking properties ensure that you get the most restful sleep, especially if you need to sleep in during the day.",
+      "If you want to have your own movie theatre experience at home, night curtains are the perfect solution. Fully drawn, they ensure absolute obscurity and maximum sound obstruction. And because of its blocking properties, you are guaranteed to save on electricity and retain a comfortable room temperature as it keeps outdoor heat from permeating your room. Night curtains also give your home a luxurious hotel suite feel."
     ]
   }
 };
