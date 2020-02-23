@@ -1,27 +1,19 @@
-export const rollerBlinds = {
+export const venetianBlinds = {
   overview: {
     titles: [
-      "Easy Upkeep",
-      "Top Picks",
-      "Any Style, Anywhere",
-      "Manage Sunlight"
+      "Controlling light and privacy with adjustable slats",
+      "Creating and look with a huge range of colours, finishes and slats widths"
     ],
     contents: [
-      "Super easy to clean, operate, and maintain, roller shades are ideal solutions in residential, retail, and office settings.",
-      "It’s easy to get excited with so many choices of material, texture, light control, and lift options.",
-      "Get an updated, modern look or choose an elegant pattern for a more traditional setting. Roller shades can match any décor.",
-      "Show sunlight who’s boss with light filtering and blackout to control brightness and privacy."
+      "Venetian blinds, one of the most preferred blinds variant in New Zealand, are essentially horizontal slats stacked parallel to one another and suspended together. These slats can be rotated almost 180 degrees, thus it closes or opens in either direction. When it comes to its mechanism, venetian blinds are quite straightforward and can be operated with utmost ease.",
+      "One of the key contributors to the popularity of venetian blinds in New Zealand is its sturdy material and low maintenance requirement. Whether you opt for PVC, wooden or aluminium venetian blinds, cleaning them is uncomplicated. Just wipe the accumulated dust with a cleaning cloth and you’re all set. When it comes to aesthetics, it’s hard to discount the adaptability of venetian blinds. They come in different looks, width, slat size, materials and colours, thus, there’s always that one perfect venetian blind that complements your residential or commercial décor. Beyond their sophisticated visual appeal, venetian blinds are functionally versatile, giving you the option to go with maximum privacy, minimal lighting or letting in as much natural light to your room."
     ]
   },
   description: {
-    titles: ["", "Child Safety:"],
+    titles: ["Wooden Venetian Blinds", "PVC Venetian Blinds"],
     contents: [
-      "Get the ball rolling on new window treatments! Roller shades are a favorite choice for adding texture, color, and sleek accents to a home. Clean-cut and versatile, roller shades are available in solid colors, various textures, patterns and synthetic woven fabrics. A great mix of modern function and fashion, roller shades are clean, easy to use, and ready to serve.",
-      // "Colors: Various colors, textures, and fabrics.",
-      // "Material: Light-filtering or blackout fabrics.",
-      // "Operation Options: Cord control standard.",
-      // "Upgrades: Stainless steel chain, spring tension cordless lift, and cassette valance.",
-      "The cordless lift option for roller shades is considered safer for kids and pets because there are no exposed cords. Cordless upgrades must be added to each window treatment during customization and purchase. All other versions of this product have cords that may be accessible and are not recommended for windows where children or pets may be present. Learn more about child safety and window treatments."
+      "Wooden venetian blinds are versatile and would quaintly fit into any New Zealand home, whether with modern designs or traditional decors. They come in a spectrum of colours, ready to complement any setting.",
+      "Venetian blinds made from PVC are the most cost-effective options. Chic, modern and easiest to maintain, they make the ideal accompaniment to often-used spaces such as kitchens, dining rooms, bedrooms or laundry areas. Cleaning is a breeze, as you would only need to wipe PVC venetian blinds with a cleaning cloth and it’s as good as new!"
     ]
   }
 };

@@ -26,7 +26,7 @@ export const home = {
     aboutUs_01: {
       title: "100% Satisfaction",
       content:
-        "We import high quality materials & fabrics for your furnishing needs. Sewing services are done neatly and professionally to ensure customer satisfaction."
+        "Whether it's elegant draperies, roller blinds, or shutters you require, we will work with you to ensure that your window furnishings not only complete your architectural vision but possesses the enduring performance to withstand time."
     },
     aboutUs_02: {
       title: "Personalisation",
@@ -36,7 +36,7 @@ export const home = {
     aboutUs_03: {
       title: "Warranty",
       content:
-        "We provide warranty for all products. Although we are confident in our products’ quality, we are more than happy to be of assistance should you encounter any issues."
+        "We provide five years warranty for all products. Although we are confident in our products’ quality, we are more than happy to be of assistance should you encounter any issues."
     },
     aboutUs_04: {
       title: "We come to you",
@@ -49,9 +49,9 @@ export const home = {
         "You will enjoy the highest standard of customer service from quotation right through to installation."
     },
     aboutUs_06: {
-      title: "High Reliabity",
+      title: "Best price Guarantee",
       content:
-        "We are CaseTrust, BizSafe Star certified, and have won TOP 25 Prestige Award 2014. You can count on us!"
+        "We do our best to always offer you the lowest price, but if you find a lower  price on another site, we will be happy to match it and give you 15% off that product."
     }
   }
 };

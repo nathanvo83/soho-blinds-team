@@ -50,7 +50,7 @@ const Home = () => {
             <Grid.Row>
               <Grid.Column>
                 <div className="sectionA-container">
-                  <img class="sectionA-image-m" src={h_01} alt="" />
+                  <img className="sectionA-image-m" src={h_01} alt="" />
                   <div className="sectionA-top-left">blinds</div>
                   <div className="sectionA-top-right">
                     <div className="sectionA-promo-normal">up to</div>
@@ -95,7 +95,7 @@ const Home = () => {
               </Grid.Column>
               <Grid.Column>
                 <div className="sectionA-container">
-                  <img class="sectionA-image-m" src={h_02} alt="" />
+                  <img className="sectionA-image-m" src={h_02} alt="" />
                   <div className="sectionA-top-left">curtains</div>
                   <div className="sectionA-top-right">
                     <div className="sectionA-promo-normal">up to</div>
@@ -124,7 +124,7 @@ const Home = () => {
               </Grid.Column>
               <Grid.Column>
                 <div className="sectionA-container">
-                  <img class="sectionA-image-m" src={h_03} alt="" />
+                  <img className="sectionA-image-m" src={h_03} alt="" />
                   <div className="sectionA-top-left">shutters</div>
                   <div className="sectionA-top-right">
                     <div className="sectionA-promo-normal">up to</div>
@@ -170,19 +170,21 @@ const Home = () => {
           <Grid.Row className="section01-outbound">
             <Grid.Column>
               <div className="section-center">
-                <div class="section01-m">
-                  <img class="section01-image01-m" src={roller01} alt="" />
-                  <img class="section01-image02-m" src={roller02} alt="" />
-                  <img class="section01-image03-m" src={roller03} alt="" />
-                  <img class="section01-image04-m" src={roller04} alt="" />
+                <div className="section01-m">
+                  <img className="section01-image01-m" src={roller01} alt="" />
+                  <img className="section01-image02-m" src={roller02} alt="" />
+                  <img className="section01-image03-m" src={roller03} alt="" />
+                  <img className="section01-image04-m" src={roller04} alt="" />
                 </div>
               </div>
             </Grid.Column>
             <Grid.Column>
               <div className="h-section-title">{home.section01.title}</div>
               <div className="h-section-subtitle">
-                {home.section01.content.map(item => (
-                  <div className="h-section-subtitle-item">{item}</div>
+                {home.section01.content.map((item, idx) => (
+                  <div className="h-section-subtitle-item" key={idx}>
+                    {item}
+                  </div>
                 ))}
               </div>
             </Grid.Column>
@@ -194,19 +196,21 @@ const Home = () => {
           <Grid.Row className="section02-outbound">
             <Grid.Column>
               <div className="section-center">
-                <div class="section02-m">
-                  <img class="section02-image01-m" src={timber01} alt="" />
-                  <img class="section02-image02-m" src={timber02} alt="" />
-                  <img class="section02-image03-m" src={timber03} alt="" />
-                  <img class="section02-image04-m" src={timber04} alt="" />
+                <div className="section02-m">
+                  <img className="section02-image01-m" src={timber01} alt="" />
+                  <img className="section02-image02-m" src={timber02} alt="" />
+                  <img className="section02-image03-m" src={timber03} alt="" />
+                  <img className="section02-image04-m" src={timber04} alt="" />
                 </div>
               </div>
             </Grid.Column>
             <Grid.Column>
               <div className="h-section-title">{home.section02.title}</div>
               <div className="h-section-subtitle">
-                {home.section02.content.map(item => (
-                  <div className="h-section-subtitle-item">{item}</div>
+                {home.section02.content.map((item, idx) => (
+                  <div className="h-section-subtitle-item" key={idx}>
+                    {item}
+                  </div>
                 ))}
               </div>
             </Grid.Column>
@@ -218,19 +222,21 @@ const Home = () => {
           <Grid.Row className="section01-outbound">
             <Grid.Column>
               <div className="section-center">
-                <div class="section01-m">
-                  <img class="section01-image01-m" src={zebra01} alt="" />
-                  <img class="section01-image02-m" src={zebra02} alt="" />
-                  <img class="section01-image03-m" src={zebra03} alt="" />
-                  <img class="section01-image04-m" src={zebra04} alt="" />
+                <div className="section01-m">
+                  <img className="section01-image01-m" src={zebra01} alt="" />
+                  <img className="section01-image02-m" src={zebra02} alt="" />
+                  <img className="section01-image03-m" src={zebra03} alt="" />
+                  <img className="section01-image04-m" src={zebra04} alt="" />
                 </div>
               </div>
             </Grid.Column>
             <Grid.Column>
               <div className="h-section-title">{home.section03.title}</div>
               <div className="h-section-subtitle">
-                {home.section03.content.map(item => (
-                  <div className="h-section-subtitle-item">{item}</div>
+                {home.section03.content.map((item, idx) => (
+                  <div className="h-section-subtitle-item" key={idx}>
+                    {item}
+                  </div>
                 ))}
               </div>
             </Grid.Column>
@@ -352,7 +358,7 @@ const Home = () => {
             <Grid.Row>
               <Grid.Column>
                 <div className="sectionA-container">
-                  <img class="sectionA-image-t" src={h_01} alt="" />
+                  <img className="sectionA-image-t" src={h_01} alt="" />
                   <div className="sectionA-top-left">blinds</div>
                   <div className="sectionA-top-right">
                     <div className="sectionA-promo-normal">up to</div>
@@ -397,7 +403,7 @@ const Home = () => {
               </Grid.Column>
               <Grid.Column>
                 <div className="sectionA-container">
-                  <img class="sectionA-image-t" src={h_02} alt="" />
+                  <img className="sectionA-image-t" src={h_02} alt="" />
                   <div className="sectionA-top-left">curtains</div>
                   <div className="sectionA-top-right">
                     <div className="sectionA-promo-normal">up to</div>
@@ -426,7 +432,7 @@ const Home = () => {
               </Grid.Column>
               <Grid.Column>
                 <div className="sectionA-container">
-                  <img class="sectionA-image-t" src={h_03} alt="" />
+                  <img className="sectionA-image-t" src={h_03} alt="" />
                   <div className="sectionA-top-left">shutters</div>
                   <div className="sectionA-top-right">
                     <div className="sectionA-promo-normal">up to</div>
@@ -472,19 +478,21 @@ const Home = () => {
           <Grid.Row className="section01-outbound">
             <Grid.Column>
               <div className="section-center">
-                <div class="section01-m">
-                  <img class="section01-image01-m" src={roller01} alt="" />
-                  <img class="section01-image02-m" src={roller02} alt="" />
-                  <img class="section01-image03-m" src={roller03} alt="" />
-                  <img class="section01-image04-m" src={roller04} alt="" />
+                <div className="section01-m">
+                  <img className="section01-image01-m" src={roller01} alt="" />
+                  <img className="section01-image02-m" src={roller02} alt="" />
+                  <img className="section01-image03-m" src={roller03} alt="" />
+                  <img className="section01-image04-m" src={roller04} alt="" />
                 </div>
               </div>
             </Grid.Column>
             <Grid.Column>
               <div className="h-section-title">{home.section01.title}</div>
               <div className="h-section-subtitle">
-                {home.section01.content.map(item => (
-                  <div className="h-section-subtitle-item">{item}</div>
+                {home.section01.content.map((item, idx) => (
+                  <div className="h-section-subtitle-item" key={idx}>
+                    {item}
+                  </div>
                 ))}
               </div>
             </Grid.Column>
@@ -496,19 +504,21 @@ const Home = () => {
           <Grid.Row className="section02-outbound">
             <Grid.Column>
               <div className="section-center">
-                <div class="section02-m">
-                  <img class="section02-image01-m" src={timber01} alt="" />
-                  <img class="section02-image02-m" src={timber02} alt="" />
-                  <img class="section02-image03-m" src={timber03} alt="" />
-                  <img class="section02-image04-m" src={timber04} alt="" />
+                <div className="section02-m">
+                  <img className="section02-image01-m" src={timber01} alt="" />
+                  <img className="section02-image02-m" src={timber02} alt="" />
+                  <img className="section02-image03-m" src={timber03} alt="" />
+                  <img className="section02-image04-m" src={timber04} alt="" />
                 </div>
               </div>
             </Grid.Column>
             <Grid.Column>
               <div className="h-section-title">{home.section02.title}</div>
               <div className="h-section-subtitle">
-                {home.section02.content.map(item => (
-                  <div className="h-section-subtitle-item">{item}</div>
+                {home.section02.content.map((item, idx) => (
+                  <div className="h-section-subtitle-item" key={idx}>
+                    {item}
+                  </div>
                 ))}
               </div>
             </Grid.Column>
@@ -520,19 +530,21 @@ const Home = () => {
           <Grid.Row className="section01-outbound">
             <Grid.Column>
               <div className="section-center">
-                <div class="section01-m">
-                  <img class="section01-image01-m" src={zebra01} alt="" />
-                  <img class="section01-image02-m" src={zebra02} alt="" />
-                  <img class="section01-image03-m" src={zebra03} alt="" />
-                  <img class="section01-image04-m" src={zebra04} alt="" />
+                <div className="section01-m">
+                  <img className="section01-image01-m" src={zebra01} alt="" />
+                  <img className="section01-image02-m" src={zebra02} alt="" />
+                  <img className="section01-image03-m" src={zebra03} alt="" />
+                  <img className="section01-image04-m" src={zebra04} alt="" />
                 </div>
               </div>
             </Grid.Column>
             <Grid.Column>
               <div className="h-section-title">{home.section03.title}</div>
               <div className="h-section-subtitle">
-                {home.section03.content.map(item => (
-                  <div className="h-section-subtitle-item">{item}</div>
+                {home.section03.content.map((item, idx) => (
+                  <div className="h-section-subtitle-item" key={idx}>
+                    {item}
+                  </div>
                 ))}
               </div>
             </Grid.Column>
@@ -660,7 +672,7 @@ const Home = () => {
             <Grid.Row>
               <Grid.Column>
                 <div className="sectionA-container">
-                  <img class="sectionA-image" src={h_01} alt="" />
+                  <img className="sectionA-image" src={h_01} alt="" />
                   <div className="sectionA-top-left">blinds</div>
                   <div className="sectionA-top-right">
                     <div className="sectionA-promo-normal">up to</div>
@@ -705,7 +717,7 @@ const Home = () => {
               </Grid.Column>
               <Grid.Column>
                 <div className="sectionA-container">
-                  <img class="sectionA-image" src={h_02} alt="" />
+                  <img className="sectionA-image" src={h_02} alt="" />
                   <div className="sectionA-top-left">curtains</div>
                   <div className="sectionA-top-right">
                     <div className="sectionA-promo-normal">up to</div>
@@ -734,7 +746,7 @@ const Home = () => {
               </Grid.Column>
               <Grid.Column>
                 <div className="sectionA-container">
-                  <img class="sectionA-image" src={h_03} alt="" />
+                  <img className="sectionA-image" src={h_03} alt="" />
                   <div className="sectionA-top-left">shutters</div>
                   <div className="sectionA-top-right">
                     <div className="sectionA-promo-normal">up to</div>
@@ -780,19 +792,21 @@ const Home = () => {
           <Grid.Row className="section01-outbound">
             <Grid.Column>
               <div className="section-center">
-                <div class="section01">
-                  <img class="section01-image01" src={roller01} alt="" />
-                  <img class="section01-image02" src={roller02} alt="" />
-                  <img class="section01-image03" src={roller03} alt="" />
-                  <img class="section01-image04" src={roller04} alt="" />
+                <div className="section01">
+                  <img className="section01-image01" src={roller01} alt="" />
+                  <img className="section01-image02" src={roller02} alt="" />
+                  <img className="section01-image03" src={roller03} alt="" />
+                  <img className="section01-image04" src={roller04} alt="" />
                 </div>
               </div>
             </Grid.Column>
             <Grid.Column>
               <div className="h-section-title">{home.section01.title}</div>
               <div className="h-section-subtitle">
-                {home.section01.content.map(item => (
-                  <div className="h-section-subtitle-item">{item}</div>
+                {home.section01.content.map((item, idx) => (
+                  <div className="h-section-subtitle-item" key={idx}>
+                    {item}
+                  </div>
                 ))}
               </div>
             </Grid.Column>
@@ -805,18 +819,20 @@ const Home = () => {
             <Grid.Column>
               <div className="h-section-title">{home.section02.title}</div>
               <div className="h-section-subtitle">
-                {home.section02.content.map(item => (
-                  <div className="h-section-subtitle-item">{item}</div>
+                {home.section02.content.map((item, idx) => (
+                  <div className="h-section-subtitle-item" key={idx}>
+                    {item}
+                  </div>
                 ))}
               </div>
             </Grid.Column>
             <Grid.Column>
               <div className="section-center">
-                <div class="section02">
-                  <img class="section02-image01" src={timber01} alt="" />
-                  <img class="section02-image02" src={timber02} alt="" />
-                  <img class="section02-image03" src={timber03} alt="" />
-                  <img class="section02-image04" src={timber04} alt="" />
+                <div className="section02">
+                  <img className="section02-image01" src={timber01} alt="" />
+                  <img className="section02-image02" src={timber02} alt="" />
+                  <img className="section02-image03" src={timber03} alt="" />
+                  <img className="section02-image04" src={timber04} alt="" />
                 </div>
               </div>
             </Grid.Column>
@@ -828,19 +844,21 @@ const Home = () => {
           <Grid.Row className="section01-outbound">
             <Grid.Column>
               <div className="section-center">
-                <div class="section01">
-                  <img class="section01-image01" src={zebra01} alt="" />
-                  <img class="section01-image02" src={zebra02} alt="" />
-                  <img class="section01-image03" src={zebra03} alt="" />
-                  <img class="section01-image04" src={zebra04} alt="" />
+                <div className="section01">
+                  <img className="section01-image01" src={zebra01} alt="" />
+                  <img className="section01-image02" src={zebra02} alt="" />
+                  <img className="section01-image03" src={zebra03} alt="" />
+                  <img className="section01-image04" src={zebra04} alt="" />
                 </div>
               </div>
             </Grid.Column>
             <Grid.Column>
               <div className="h-section-title">{home.section03.title}</div>
               <div className="h-section-subtitle">
-                {home.section03.content.map(item => (
-                  <div className="h-section-subtitle-item">{item}</div>
+                {home.section03.content.map((item, idx) => (
+                  <div className="h-section-subtitle-item" key={idx}>
+                    {item}
+                  </div>
                 ))}
               </div>
             </Grid.Column>

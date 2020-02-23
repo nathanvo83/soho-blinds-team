@@ -5,9 +5,13 @@ import * as ROUTES from "../constants/routes";
 import { rollerBlinds } from "../data/roller-blinds";
 import { zebraBlinds } from "../data/zebra-blinds";
 import { verticalBlinds } from "../data/vertical-blinds";
+import { venetianBlinds } from "../data/venetian-blinds";
 
 import { dayCurtains } from "../data/day-curtain";
 import { nightCurtains } from "../data/night-curtain";
+
+import { pvcShutter } from "../data/pvc-shutter";
+import { timberShutter } from "../data/timber-shutter";
 
 import roller01 from "../assets/images/blinds/roller/roller01.png";
 import roller02 from "../assets/images/blinds/roller/roller02.jpg";
@@ -117,8 +121,8 @@ const Main = () => {
       title="Venetian Blinds"
       tab01="OVERVIEW"
       tab02="DESCRIPTION"
-      content01={rollerBlinds.overview}
-      content02={rollerBlinds.description}
+      content01={venetianBlinds.overview}
+      content02={venetianBlinds.description}
       images={[
         venetian01,
         venetian02,
@@ -207,8 +211,8 @@ const Main = () => {
       title="Alycore Plus PVC Shutter"
       tab01="OVERVIEW"
       tab02="DESCRIPTION"
-      content01={rollerBlinds.overview}
-      content02={rollerBlinds.description}
+      content01={pvcShutter.overview}
+      content02={pvcShutter.description}
       images={[alycore01, alycore02, alycore03, alycore04, alycore05]}
     ></Product>
   );
@@ -218,8 +222,8 @@ const Main = () => {
       title="Timber Shutter"
       tab01="OVERVIEW"
       tab02="DESCRIPTION"
-      content01={rollerBlinds.overview}
-      content02={rollerBlinds.description}
+      content01={timberShutter.overview}
+      content02={timberShutter.description}
       images={[timber01, timber02, timber03, timber04, timber05]}
     ></Product>
   );

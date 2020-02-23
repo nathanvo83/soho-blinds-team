@@ -23,7 +23,7 @@ const Tab01 = props => {
     <div>
       {/* <div className="tab-col"> */}
       {content.titles.map((item, idx) => (
-        <div className="tab-col">
+        <div className="tab-col" key={idx}>
           <div className="tab-icon">
             <FontAwesomeIcon icon={images[idx]}></FontAwesomeIcon>
           </div>

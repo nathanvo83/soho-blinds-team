@@ -14,7 +14,7 @@ const Com03 = props => {
             <div className="details-title">Our Collection</div>
             <Grid.Row>
               {images.map((item, idx) => (
-                <Grid.Column className="col-x">
+                <Grid.Column className="col-x" key={idx}>
                   <img
                     className="com03-image-thumb-m"
                     key={idx}
@@ -36,7 +36,7 @@ const Com03 = props => {
             <div className="details-title">Our Collection</div>
             <Grid.Row>
               {images.map((item, idx) => (
-                <Grid.Column className="col-x">
+                <Grid.Column className="col-x" key={idx}>
                   <img
                     className="com03-image-thumb-t"
                     key={idx}
@@ -55,7 +55,7 @@ const Com03 = props => {
             <div className="details-title">Our Collection</div>
             <Grid.Row>
               {images.map((item, idx) => (
-                <Grid.Column className="col-x">
+                <Grid.Column className="col-x" key={idx}>
                   <img
                     className="com03-image-thumb-d"
                     key={idx}
