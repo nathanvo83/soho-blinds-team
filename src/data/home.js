@@ -1,6 +1,15 @@
 export const home = {
   // -----
   section01: {
+    title: "The Importance of Curtains and Blinds",
+    content: [
+      "Curtains and blinds have similar functional purposes and have numerous identical traits. They are designed as window coverings and perform multiple tasks including blocking sunlight, controlling light permeability, and privacy.",
+      "With New Zealand ’s fast-evolving lifestyle and improvement of the residents’ quality of life, curtains and blinds have extended their functional value to aesthetics and are thus now crucial elements in a home’s interior design.",
+      "Curtains easily complement any interior design. They come in varieties such as day and night curtains that are available in a spectrum of material and styles.",
+      "Blinds are neat, feasible and minimalist. They widen the options in light filtering and design options."
+    ]
+  },
+  section02: {
     title: "You'll love what we do",
     content: [
       "Looking for the latest designs for your window dressings? Our collections of made-to-measure window coverings are sure to offer a design that catches your eye.",
@@ -8,15 +17,9 @@ export const home = {
       "There’s a lot to love about what we do. So request your in-home appointment today."
     ]
   },
-  section02: {
-    title: "Price Policy",
-    content: [
-      "Our lowest prices policy applies to any lower price on an item that is in-stock and available for delivery or collection on the same day from a competitor’s online or physical store in New Zealand. It applies where our competitor’s price (including GST and delivery charges), is lower than our price.",
-      "We recognise that despite everything we do to provide our products at the lowest prices we can’t always be the lowest at every instant on everything. So, if you find a competitor's lower price (including GST and delivery charges) on the same in-stock item that’s available for same-day delivery or collection, we'll beat it by 15%. Don't forget this excludes trade quotes, stock liquidations and commercial quantities."
-    ]
-  },
+
   section03: {
-    title: "Blinds Specialists",
+    title: "Window Covering Specialists",
     content: [
       "We are a leading provider of high quality window treatments servicing in Auckland area. We specialize in the finest curtains, shades, blinds, drapes and other window treatments from the leading manufacturers.",
       "With many years of experience, our relationships enable us to bring our clients the finest products. Whether you are looking for window treatments for your home or office, we have the variety that you need at the lowest prices. In addition to the high quality products, we offer the best professional installation and related services, with outstanding customer service."

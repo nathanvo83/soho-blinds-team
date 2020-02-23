@@ -26,11 +26,13 @@
 
 /* desktop */
 .com01-content-d {
-  height: 45vw;
+  height: 50vh;
+  min-height: 50vw;
 }
 
 .com01-image-d {
-  height: 45vw;
+  height: 50vh;
+  min-height: 50vw;
   width: 100%;
   object-fit: cover;
 }

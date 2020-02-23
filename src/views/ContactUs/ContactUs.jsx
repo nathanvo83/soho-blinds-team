@@ -29,6 +29,10 @@ const ContactUs = () => {
   const [subject, setSubject] = useState("");
   const [query, setQuery] = useState("");
 
+  const [errorEmail, setErrorEmail] = useState(false);
+  const [errorPhone, setErrorPhone] = useState(false);
+  // const [errorQuery, setErrorQuery] = useState(false);
+
   const yourNameHandler = e => {
     setYourName(e.target.value);
   };
@@ -45,6 +49,21 @@ const ContactUs = () => {
     setQuery(e.target.value);
   };
 
+  const checkEmail = () => {
+    setErrorEmail(email === "");
+    return email === "";
+  };
+
+  const checkPhone = () => {
+    setErrorPhone(phone === "");
+    return phone === "";
+  };
+
+  // const checkQuery = () => {
+  //   setErrorQuery(query === "");
+  //   return query === "";
+  // };
+
   const submitHandler = () => {
     const templateParas = {
       yourName,
@@ -54,22 +73,24 @@ const ContactUs = () => {
       query
     };
 
-    emailjs
-      .send(
-        emailjsServiceId,
-        emailjsTemplateIdContactUs,
-        templateParas,
-        emailjsKey
-      )
-      .then(
-        result => {
-          console.log(result.text);
-          resetHandler();
-        },
-        error => {
-          console.log(error.text);
-        }
-      );
+    if (!checkPhone() & !checkEmail()) {
+      emailjs
+        .send(
+          emailjsServiceId,
+          emailjsTemplateIdContactUs,
+          templateParas,
+          emailjsKey
+        )
+        .then(
+          result => {
+            console.log(result.text);
+            resetHandler();
+          },
+          error => {
+            console.log(error.text);
+          }
+        );
+    }
   };
 
   const resetHandler = () => {
@@ -78,6 +99,10 @@ const ContactUs = () => {
     setPhone("");
     setSubject("");
     setQuery("");
+
+    setErrorEmail(false);
+    setErrorPhone(false);
+    // setErrorQuery(false);
   };
 
   const renderForm = () => (
@@ -90,7 +115,7 @@ const ContactUs = () => {
           <Input
             value={yourName}
             onChange={yourNameHandler}
-            placeholder="Yourname (*)"
+            placeholder="Yourname"
           ></Input>
         </Form.Field>
 
@@ -98,22 +123,40 @@ const ContactUs = () => {
           <div>Email:</div>
         </Form.Field>
         <Form.Field className="contact-field">
-          <Input
-            value={email}
-            onChange={emailHandler}
-            placeholder="Email (*)"
-          ></Input>
+          {errorEmail ? (
+            <Input
+              error
+              value={email}
+              onChange={emailHandler}
+              placeholder="Email (*)"
+            ></Input>
+          ) : (
+            <Input
+              value={email}
+              onChange={emailHandler}
+              placeholder="Email (*)"
+            ></Input>
+          )}
         </Form.Field>
 
         <Form.Field className="contact-field">
           <div>Phone:</div>
         </Form.Field>
         <Form.Field className="contact-field">
-          <Input
-            value={phone}
-            onChange={phoneHandler}
-            placeholder="Phone (*)"
-          ></Input>
+          {errorPhone ? (
+            <Input
+              error
+              value={phone}
+              onChange={phoneHandler}
+              placeholder="Phone (*)"
+            ></Input>
+          ) : (
+            <Input
+              value={phone}
+              onChange={phoneHandler}
+              placeholder="Phone (*)"
+            ></Input>
+          )}
         </Form.Field>
 
         <Form.Field className="contact-field">
@@ -134,7 +177,7 @@ const ContactUs = () => {
           <TextArea
             value={query}
             onChange={queryHandler}
-            placeholder="Query (*)"
+            placeholder="Query"
           ></TextArea>
         </Form.Field>
 

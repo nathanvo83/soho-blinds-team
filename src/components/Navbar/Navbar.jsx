@@ -168,13 +168,13 @@ const Navbar = () => {
             </div>
           </div>
 
-          <a
+          {/* <a
             href={ROUTES.BUYINGGUIDE}
             rel="noopener noreferrer"
             onClick={closeBurgerMenu}
           >
             Buying guide
-          </a>
+          </a> */}
 
           <a
             href={ROUTES.CONTACTUS}

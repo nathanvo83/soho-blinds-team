@@ -17,6 +17,12 @@ const Quote = () => {
   const [address, setAddress] = useState("");
   const [postCode, setPostCode] = useState("");
 
+  // const [errorFullName, setErrorFullName] = useState(false);
+  const [errorPhone, setErrorPhone] = useState(false);
+  const [errorEmail, setErrorEmail] = useState(false);
+  const [errorAddress, setErrorAddress] = useState(false);
+  const [errorPostCode, setErrorPostCode] = useState(false);
+
   const fullNameHandler = e => {
     setFullName(e.target.value);
   };
@@ -33,6 +39,36 @@ const Quote = () => {
     setPostCode(e.target.value);
   };
 
+  // const checkFullName = () => {
+  //   //
+  //   setErrorFullName(fullName === "");
+  //   return fullName === "";
+  // };
+
+  const checkPhone = () => {
+    //
+    setErrorPhone(phone === "");
+    return phone === "";
+  };
+
+  const checkEmail = () => {
+    //
+    setErrorEmail(email === "");
+    return email === "";
+  };
+
+  const checkAddress = () => {
+    //
+    setErrorAddress(address === "");
+    return address === "";
+  };
+
+  const checkPostCode = () => {
+    //
+    setErrorPostCode(postCode === "");
+    return postCode === "";
+  };
+
   const submitHandler = () => {
     const templateParas = {
       fullName,
@@ -42,17 +78,32 @@ const Quote = () => {
       postCode
     };
 
-    emailjs
-      .send(emailjsServiceId, emailjsTemplateIdQuote, templateParas, emailjsKey)
-      .then(
-        result => {
-          console.log(result.text);
-          resetHandler();
-        },
-        error => {
-          console.log(error.text);
-        }
-      );
+    if (
+      // !checkFullName() &
+      !checkPhone() &
+      !checkEmail() &
+      !checkAddress() &
+      !checkPostCode()
+    ) {
+      emailjs
+        .send(
+          emailjsServiceId,
+          emailjsTemplateIdQuote,
+          templateParas,
+          emailjsKey
+        )
+        .then(
+          result => {
+            console.log(result.text);
+            resetHandler();
+          },
+          error => {
+            console.log(error.text);
+          }
+        );
+    } else {
+      console.log("form invalid");
+    }
   };
 
   const resetHandler = () => {
@@ -61,6 +112,12 @@ const Quote = () => {
     setEmail("");
     setAddress("");
     setPostCode("");
+
+    // setErrorFullName(false);
+    setErrorPhone(false);
+    setErrorEmail(false);
+    setErrorAddress(false);
+    setErrorPostCode(false);
   };
 
   return (
@@ -78,37 +135,73 @@ const Quote = () => {
         <Form.Field className="quote-field">
           <Input
             value={fullName}
-            placeholder="Full name(*)"
+            placeholder="Full name"
             onChange={fullNameHandler}
           ></Input>
         </Form.Field>
         <Form.Field className="quote-field">
-          <Input
-            value={phone}
-            placeholder="Phone number(*)"
-            onChange={phoneHandler}
-          ></Input>
+          {errorPhone ? (
+            <Input
+              error
+              value={phone}
+              placeholder="Phone number(*)"
+              onChange={phoneHandler}
+            ></Input>
+          ) : (
+            <Input
+              value={phone}
+              placeholder="Phone number(*)"
+              onChange={phoneHandler}
+            ></Input>
+          )}
         </Form.Field>
         <Form.Field className="quote-field">
-          <Input
-            value={email}
-            placeholder="Email(*)"
-            onChange={emailHandler}
-          ></Input>
+          {errorEmail ? (
+            <Input
+              error
+              value={email}
+              placeholder="Email(*)"
+              onChange={emailHandler}
+            ></Input>
+          ) : (
+            <Input
+              value={email}
+              placeholder="Email(*)"
+              onChange={emailHandler}
+            ></Input>
+          )}
         </Form.Field>
         <Form.Field className="quote-field">
-          <Input
-            value={address}
-            placeholder="Address(*)"
-            onChange={addressHandler}
-          ></Input>
+          {errorAddress ? (
+            <Input
+              error
+              value={address}
+              placeholder="Address(*)"
+              onChange={addressHandler}
+            ></Input>
+          ) : (
+            <Input
+              value={address}
+              placeholder="Address(*)"
+              onChange={addressHandler}
+            ></Input>
+          )}
         </Form.Field>
         <Form.Field className="quote-field">
-          <Input
-            value={postCode}
-            placeholder="Postcode(*)"
-            onChange={postCodeHandler}
-          ></Input>
+          {errorPostCode ? (
+            <Input
+              error
+              value={postCode}
+              placeholder="Postcode(*)"
+              onChange={postCodeHandler}
+            ></Input>
+          ) : (
+            <Input
+              value={postCode}
+              placeholder="Postcode(*)"
+              onChange={postCodeHandler}
+            ></Input>
+          )}
         </Form.Field>
         <div className="quote-bottom">
           <Button type="submit" className="send-btn">
