@@ -1,111 +1,155 @@
 import React from "react";
 import { Responsive, Grid } from "semantic-ui-react";
 import "./Promotion.css";
+import {
+  faHandHoldingUsd,
+  faSmileWink,
+  faUserShield,
+  // faHandshake,
+  // faRunning,
+  // faGlassCheers,
+  // faGifts,
+  // faShippingFast,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Promotion = () => {
   return (
     <div>
       <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
-        <div className="pro-bg-m">
-          <Grid columns="3" style={{ margin: 0 }}>
-            <Grid.Row>
-              <Grid.Column>
-                <div className="pro-out-m">
-                  <div className="pro-content-m">
-                    <div className="pro-01-line01-m">summer</div>
-                    <div className="pro-01-line02-m">savings</div>
-                  </div>
+        <Grid columns="3" style={{ margin: 0 }}>
+          <Grid.Row>
+            <Grid.Column>
+              <div className="promotion-col-m">
+                <div className="promotion-icon-m">
+                  <FontAwesomeIcon icon={faHandHoldingUsd}></FontAwesomeIcon>
                 </div>
-              </Grid.Column>
-              <Grid.Column>
-                <div className="pro-out-m">
-                  <div className="pro-content-m">
-                    <div className="pro-02-line01-m">up to</div>
-                    <div className="pro-02-line02-m">50% off</div>
-                  </div>
+                <div className="promotion-body">
+                  <div className="promotion-title-m">BEST PRICE</div>
                 </div>
-              </Grid.Column>
-              <Grid.Column>
-                <div className="pro-out-m">
-                  <div className="pro-content-m">
-                    <div className="pro-03-line01-m">plus an extra</div>
-                    <div className="pro-03-line02-m">15% off</div>
-                    <div className="pro-03-line03-m">everything</div>
-                  </div>
+              </div>
+            </Grid.Column>
+            <Grid.Column>
+              <div className="promotion-col-m">
+                <div className="promotion-icon-m">
+                  <FontAwesomeIcon icon={faUserShield}></FontAwesomeIcon>
                 </div>
-              </Grid.Column>
-            </Grid.Row>
-          </Grid>
-        </div>
+                <div className="promotion-body">
+                  <div className="promotion-title-m">CHILDSAFE</div>
+                </div>
+              </div>
+            </Grid.Column>
+            <Grid.Column>
+              <div className="promotion-col-m">
+                <div className="promotion-icon-m">
+                  <FontAwesomeIcon icon={faSmileWink}></FontAwesomeIcon>
+                </div>
+                <div className="promotion-body">
+                  <div className="promotion-title-m">Satisfaction</div>
+                </div>
+              </div>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
       </Responsive>
       <Responsive
         minWidth={Responsive.onlyTablet.minWidth}
         maxWidth={Responsive.onlyTablet.maxWidth}
       >
-        <div className="pro-bg-t">
-          <Grid columns="3" style={{ margin: 0 }}>
-            <Grid.Row>
-              <Grid.Column>
-                <div className="pro-out-t">
-                  <div className="pro-content-t">
-                    <div className="pro-01-line01-t">summer</div>
-                    <div className="pro-01-line02-t">savings</div>
+        <Grid columns="3" style={{ margin: 0 }}>
+          <Grid.Row>
+            <Grid.Column>
+              <div className="promotion-col">
+                <div className="promotion-icon">
+                  <FontAwesomeIcon icon={faHandHoldingUsd}></FontAwesomeIcon>
+                  <div className="promotion-title">BEST PRICE</div>
+                </div>
+                {/* <div className="promotion-body">
+                  <div className="promotion-title">BEST PRICE</div>
+                  <div className="promotion-subtitle">Buy more, pay less.</div>
+                </div> */}
+              </div>
+            </Grid.Column>
+            <Grid.Column>
+              <div className="promotion-col">
+                <div className="promotion-icon">
+                  <FontAwesomeIcon icon={faUserShield}></FontAwesomeIcon>
+                  <div className="promotion-title">CHILDSAFE</div>
+                </div>
+                {/* <div className="promotion-body">
+                  <div className="promotion-title">CHILDSAFE</div>
+                  <div className="promotion-subtitle">
+                    Together, protection children.
+                  </div>
+                </div> */}
+              </div>
+            </Grid.Column>
+            <Grid.Column>
+              <div className="promotion-col">
+                <div className="promotion-icon">
+                  <FontAwesomeIcon icon={faSmileWink}></FontAwesomeIcon>
+                </div>
+                <div className="promotion-body">
+                  <div className="promotion-title">100%</div>
+                  <div className="promotion-subtitle">
+                    Customer Satisfaction.
                   </div>
                 </div>
-              </Grid.Column>
-              <Grid.Column>
-                <div className="pro-out-t">
-                  <div className="pro-content-t">
-                    <div className="pro-02-line01-t">up to</div>
-                    <div className="pro-02-line02-t">50% off</div>
-                  </div>
-                </div>
-              </Grid.Column>
-              <Grid.Column>
-                <div className="pro-out-t">
-                  <div className="pro-content-t">
-                    <div className="pro-03-line01-t">plus an extra</div>
-                    <div className="pro-03-line02-t">15% off</div>
-                    <div className="pro-03-line03-t">everything</div>
-                  </div>
-                </div>
-              </Grid.Column>
-            </Grid.Row>
-          </Grid>
-        </div>
+              </div>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
       </Responsive>
       <Responsive minWidth={Responsive.onlyComputer.minWidth}>
-        <div className="pro-bg-d">
-          <Grid columns="3" style={{ margin: 0 }}>
-            <Grid.Row>
-              <Grid.Column>
-                <div className="pro-out">
-                  <div className="pro-content">
-                    <div className="pro-01-line01">summer</div>
-                    <div className="pro-01-line02">savings</div>
+        <Grid columns="3" style={{ margin: 0 }}>
+          <Grid.Row>
+            <Grid.Column>
+              <div className="promotion-col-outter">
+                <div className="promotion-col">
+                  <div className="promotion-icon">
+                    <FontAwesomeIcon icon={faHandHoldingUsd}></FontAwesomeIcon>
+                  </div>
+                  <div className="promotion-body">
+                    <div className="promotion-title">BEST PRICE</div>
+                    <div className="promotion-subtitle">
+                      Buy more, pay less.
+                    </div>
                   </div>
                 </div>
-              </Grid.Column>
-              <Grid.Column>
-                <div className="pro-out">
-                  <div className="pro-content">
-                    <div className="pro-02-line01">up to</div>
-                    <div className="pro-02-line02">50% off</div>
+              </div>
+            </Grid.Column>
+            <Grid.Column>
+              <div className="promotion-col-outter">
+                <div className="promotion-col">
+                  <div className="promotion-icon">
+                    <FontAwesomeIcon icon={faUserShield}></FontAwesomeIcon>
+                  </div>
+                  <div className="promotion-body">
+                    <div className="promotion-title">CHILDSAFE</div>
+                    <div className="promotion-subtitle">
+                      Together, protection children.
+                    </div>
                   </div>
                 </div>
-              </Grid.Column>
-              <Grid.Column>
-                <div className="pro-out">
-                  <div className="pro-content">
-                    <div className="pro-03-line01">plus an extra</div>
-                    <div className="pro-03-line02">15% off</div>
-                    <div className="pro-03-line03">everything</div>
+              </div>
+            </Grid.Column>
+            <Grid.Column>
+              <div className="promotion-col-outter">
+                <div className="promotion-col">
+                  <div className="promotion-icon">
+                    <FontAwesomeIcon icon={faSmileWink}></FontAwesomeIcon>
+                  </div>
+                  <div className="promotion-body">
+                    <div className="promotion-title">100%</div>
+                    <div className="promotion-subtitle">
+                      Customer Satisfaction.
+                    </div>
                   </div>
                 </div>
-              </Grid.Column>
-            </Grid.Row>
-          </Grid>
-        </div>
+              </div>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
       </Responsive>
     </div>
   );

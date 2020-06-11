@@ -7,9 +7,11 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.css";
 import * as ROUTES from "../../constants/routes";
-import logo from "../../assets/images/SoHo-Logo-No-script3-300x166.png";
+import logo from "../../assets/images/logo.png";
+import { useHistory } from "react-router-dom";
 
 const Navbar = () => {
+  const history = useHistory();
   const [showBurgerMenu, setShowBurgerMenu] = useState(false);
 
   const burgerMenuHandle = () => {
@@ -20,6 +22,10 @@ const Navbar = () => {
     setShowBurgerMenu(false);
   };
 
+  const gotoHomePage = () => {
+    history.push(ROUTES.HOME);
+  };
+
   return (
     <div className="outbound-m">
       <div className="outbound">
@@ -28,9 +34,19 @@ const Navbar = () => {
           id="myTopnav"
         >
           <div className="dropdown">
-            {/* <span className="branch">SOHO BLINDS</span> */}
             <div className="branch">
-              <img src={logo} alt="" className="n-logo"></img>
+              {/* <Link to={ROUTES.HOME} style={{ padding: 0 }}>
+                <img src={logo} alt="" className="n-logo"></img>
+              </Link> */}
+              {/* <a href={ROUTES.HOME} className="branch"> */}
+              <img
+                src={logo}
+                alt=""
+                className="n-logo"
+                onClick={gotoHomePage}
+              ></img>
+              {/* </a> */}
+              {/* <img src={logo} alt="" className="n-logo"></img> */}
             </div>
           </div>
 

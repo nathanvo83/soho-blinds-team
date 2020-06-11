@@ -48,6 +48,7 @@ import zebra07 from "../assets/images/blinds/zebra/zebra07.png";
 import vertical01 from "../assets/images/blinds/vetical/vertical01.jpeg";
 import vertical02 from "../assets/images/blinds/vetical/vertical02.png";
 import vertical03 from "../assets/images/blinds/vetical/vertical03.jpg";
+import vertical04 from "../assets/images/blinds/vetical/vertical04.jpeg";
 
 // curtain
 import night01 from "../assets/images/curtain/night/night01.jpeg";
@@ -146,7 +147,7 @@ const Main = () => {
       tab02="DESCRIPTION"
       content01={verticalBlinds.overview}
       content02={verticalBlinds.description}
-      images={[vertical01, vertical02, vertical03]}
+      images={[vertical01, vertical02, vertical03, vertical04]}
     ></Product>
   );
   const renderProductBlindsZebra = () => (

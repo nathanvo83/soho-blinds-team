@@ -1,0 +1,155 @@
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Raleway;
+  background-color: #202125;
+} */
+
+.heading {
+  /* text-align: center;
+  font-size: 2em;
+  letter-spacing: 1px;
+  padding: 40px; */
+  /* color: white; */
+  /* text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 2rem; */
+  /* color: #303030; */
+  /* color: #00bbaa; */
+
+  margin-top: 50px;
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+  /* padding-bottom: 0px; */
+}
+
+.gallery-image {
+  /* background: #131313; */
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+
+.gallery-image img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: transform 0.4s ease;
+}
+
+.img-box {
+  border: 1px solid #000;
+  box-sizing: content-box;
+  margin: 10px;
+  height: 300px;
+  /* width: 30vw; */
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+}
+
+.caption {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+  height: 300px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.img-box:hover img {
+  transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1;
+}
+
+.img-box:active .caption {
+  transform: translateY(-20px);
+  opacity: 1;
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+  font-size: 0.8em;
+}
+
+.opacity-low {
+  opacity: 0.5;
+}
+
+.img-box-m {
+  border: 1px solid #000;
+  box-sizing: content-box;
+  margin: 10px;
+  height: 300px;
+  /* width: 30vw; */
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+}
+
+.img-box-m .transparent-box {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.img-box-m .caption {
+  transform: translateY(-20px);
+  opacity: 1;
+}
+
+/* .our {
+
+}
+
+.our-grid {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.our-section-01 {
+  background: lightcoral;
+}
+
+.our-section-02 {
+  background: lightgreen;
+}
+
+.our-section-03 {
+  background: lightseagreen;
+}
+
+.our-section-04 {
+  background: lightsteelblue;
+} */

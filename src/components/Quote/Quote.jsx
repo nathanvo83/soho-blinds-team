@@ -9,6 +9,7 @@ import {
   emailjsTemplateIdQuote
 } from "../../config/config";
 import emailjs from "emailjs-com";
+import { Responsive } from "semantic-ui-react";
 
 const Quote = () => {
   const [fullName, setFullName] = useState("");
@@ -120,14 +121,16 @@ const Quote = () => {
     setErrorPostCode(false);
   };
 
-  return (
+  const renderMobile = () => (
     <div className="quote-bg">
       <Form onSubmit={submitHandler}>
         <Form.Field className="quote-field">
-          <div className="quote-phone">
-            <FontAwesomeIcon icon={faPhoneAlt}></FontAwesomeIcon>
-            &nbsp; 0800 756 567
-          </div>
+          <a href="tel:+64 800 765 567" rel="noopener noreferrer">
+            <div className="quote-phone">
+              <FontAwesomeIcon icon={faPhoneAlt}></FontAwesomeIcon>
+              &nbsp; 0800 765 567
+            </div>
+          </a>
         </Form.Field>
         <Form.Field>
           <div className="quote-title">Book A Free Measure & Quote</div>
@@ -209,6 +212,209 @@ const Quote = () => {
           </Button>
         </div>
       </Form>
+    </div>
+  );
+  const renderTablet = () => (
+    <div className="quote-bg">
+      <Form onSubmit={submitHandler}>
+        <Form.Field className="quote-field">
+          <a href="tel:+64 800 765 567" rel="noopener noreferrer">
+            <div className="quote-phone">
+              <FontAwesomeIcon icon={faPhoneAlt}></FontAwesomeIcon>
+              &nbsp; 0800 765 567
+            </div>
+          </a>
+        </Form.Field>
+        <Form.Field>
+          <div className="quote-title">Book A Free Measure & Quote</div>
+        </Form.Field>
+        <Form.Field className="quote-field">
+          <Input
+            value={fullName}
+            placeholder="Full name"
+            onChange={fullNameHandler}
+          ></Input>
+        </Form.Field>
+        <Form.Field className="quote-field">
+          {errorPhone ? (
+            <Input
+              error
+              value={phone}
+              placeholder="Phone number(*)"
+              onChange={phoneHandler}
+            ></Input>
+          ) : (
+            <Input
+              value={phone}
+              placeholder="Phone number(*)"
+              onChange={phoneHandler}
+            ></Input>
+          )}
+        </Form.Field>
+        <Form.Field className="quote-field">
+          {errorEmail ? (
+            <Input
+              error
+              value={email}
+              placeholder="Email(*)"
+              onChange={emailHandler}
+            ></Input>
+          ) : (
+            <Input
+              value={email}
+              placeholder="Email(*)"
+              onChange={emailHandler}
+            ></Input>
+          )}
+        </Form.Field>
+        <Form.Field className="quote-field">
+          {errorAddress ? (
+            <Input
+              error
+              value={address}
+              placeholder="Address(*)"
+              onChange={addressHandler}
+            ></Input>
+          ) : (
+            <Input
+              value={address}
+              placeholder="Address(*)"
+              onChange={addressHandler}
+            ></Input>
+          )}
+        </Form.Field>
+        <Form.Field className="quote-field">
+          {errorPostCode ? (
+            <Input
+              error
+              value={postCode}
+              placeholder="Postcode(*)"
+              onChange={postCodeHandler}
+            ></Input>
+          ) : (
+            <Input
+              value={postCode}
+              placeholder="Postcode(*)"
+              onChange={postCodeHandler}
+            ></Input>
+          )}
+        </Form.Field>
+        <div className="quote-bottom">
+          <Button type="submit" className="send-btn">
+            &nbsp; SEND &nbsp;
+          </Button>
+        </div>
+      </Form>
+    </div>
+  );
+  const renderDesktop = () => (
+    <div className="quote-bg">
+      <Form onSubmit={submitHandler}>
+        <Form.Field className="quote-field">
+          <a href="tel:+64 800 765 567" rel="noopener noreferrer">
+            <div className="quote-phone">
+              <FontAwesomeIcon icon={faPhoneAlt}></FontAwesomeIcon>
+              &nbsp; 0800 765 567
+            </div>
+          </a>
+        </Form.Field>
+        <Form.Field>
+          <div className="quote-title">Book A Free Measure & Quote</div>
+        </Form.Field>
+        <Form.Field className="quote-field">
+          <Input
+            value={fullName}
+            placeholder="Full name"
+            onChange={fullNameHandler}
+          ></Input>
+        </Form.Field>
+        <Form.Field className="quote-field">
+          {errorPhone ? (
+            <Input
+              error
+              value={phone}
+              placeholder="Phone number(*)"
+              onChange={phoneHandler}
+            ></Input>
+          ) : (
+            <Input
+              value={phone}
+              placeholder="Phone number(*)"
+              onChange={phoneHandler}
+            ></Input>
+          )}
+        </Form.Field>
+        <Form.Field className="quote-field">
+          {errorEmail ? (
+            <Input
+              error
+              value={email}
+              placeholder="Email(*)"
+              onChange={emailHandler}
+            ></Input>
+          ) : (
+            <Input
+              value={email}
+              placeholder="Email(*)"
+              onChange={emailHandler}
+            ></Input>
+          )}
+        </Form.Field>
+        <Form.Field className="quote-field">
+          {errorAddress ? (
+            <Input
+              error
+              value={address}
+              placeholder="Address(*)"
+              onChange={addressHandler}
+            ></Input>
+          ) : (
+            <Input
+              value={address}
+              placeholder="Address(*)"
+              onChange={addressHandler}
+            ></Input>
+          )}
+        </Form.Field>
+        <Form.Field className="quote-field">
+          {errorPostCode ? (
+            <Input
+              error
+              value={postCode}
+              placeholder="Postcode(*)"
+              onChange={postCodeHandler}
+            ></Input>
+          ) : (
+            <Input
+              value={postCode}
+              placeholder="Postcode(*)"
+              onChange={postCodeHandler}
+            ></Input>
+          )}
+        </Form.Field>
+        <div className="quote-bottom">
+          <Button type="submit" className="send-btn">
+            &nbsp; SEND &nbsp;
+          </Button>
+        </div>
+      </Form>
+    </div>
+  );
+
+  return (
+    <div>
+      <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
+        {renderMobile()}
+      </Responsive>
+      <Responsive
+        minWidth={Responsive.onlyTablet.minWidth}
+        maxWidth={Responsive.onlyTablet.maxWidth}
+      >
+        {renderTablet()}
+      </Responsive>
+      <Responsive minWidth={Responsive.onlyComputer.minWidth}>
+        {renderDesktop()}
+      </Responsive>
     </div>
   );
 };

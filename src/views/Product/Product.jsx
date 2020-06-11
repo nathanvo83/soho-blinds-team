@@ -8,7 +8,7 @@ import Com03 from "./Com03";
 import "./Product.css";
 import Promotion from "../../components/Promotion/Promotion";
 
-const Product = props => {
+const Product = (props) => {
   const { title, tab01, tab02, content01, content02, images } = props;
 
   return (

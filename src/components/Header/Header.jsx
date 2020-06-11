@@ -7,14 +7,14 @@ import "./Header.css";
 import Quote from "../Quote/Quote";
 import img_h01 from "../../assets/images/header/img01.jpg";
 import img_h02 from "../../assets/images/header/img02.jpeg";
-import img_h03 from "../../assets/images/header/img03.png";
+import img_h03 from "../../assets/images/header/img03.jpg";
 import img_h04 from "../../assets/images/header/img04.jpg";
 
 import Slogan from "../Slogan/Slogan";
 import Sale from "../Sale/Sale";
 import Promotion from "../Promotion/Promotion";
 
-const Header = props => {
+const Header = (props) => {
   const { showQuote, showSale, showSlogan } = props;
   return (
     <div>

@@ -7,6 +7,13 @@ import {
   faEnvelope,
   faMapMarkedAlt
 } from "@fortawesome/free-solid-svg-icons";
+
+import {
+  faFacebookSquare,
+  faWhatsappSquare,
+  faYoutubeSquare
+} from "@fortawesome/free-brands-svg-icons";
+
 import {
   Form,
   Button,
@@ -192,14 +199,36 @@ const ContactUs = () => {
 
   const renderDetails = () => (
     <div className="contact-details-bg">
+      <div className="contact-details-title">
+        <a
+          href="https://www.facebook.com/SoHoBlindsNZ/"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon
+            icon={faFacebookSquare}
+            className="contact-brand-facebook"
+          />
+        </a>
+
+        <FontAwesomeIcon
+          icon={faWhatsappSquare}
+          className="contact-brand-whatsapp"
+        />
+
+        <FontAwesomeIcon
+          icon={faYoutubeSquare}
+          className="contact-brand-youtube"
+        />
+      </div>
       <div className="contact-details-title">Contact detail</div>
+
       <div className="contact-details-subtitle">
         <FontAwesomeIcon icon={faEnvelope} className="contact-details-icon" />
-        peter@sohoblinds.co.nz{" "}
+        peter@sohoblinds.co.nz
       </div>
       <div className="contact-details-subtitle">
-        <FontAwesomeIcon icon={faPhone} className="contact-details-icon" /> 0800
-        756 567
+        <FontAwesomeIcon icon={faPhone} className="contact-details-icon" />
+        0800 765 567
       </div>
       <div className="contact-details-subtitle">
         <FontAwesomeIcon
@@ -207,29 +236,53 @@ const ContactUs = () => {
           className="contact-details-icon"
         />
         176 Broadway New Market, Auckland 1023.
-        <br />
-        &nbsp; &nbsp; &nbsp; &nbsp; (Viewing By Appointment Only)
+        {/* <br />
+        &nbsp; &nbsp; &nbsp; &nbsp; (Viewing By Appointment Only) */}
       </div>
     </div>
   );
 
   const renderDetailsMoblie = () => (
     <div className="contact-details-bg-m">
+      <div className="contact-details-title">
+        <a
+          href="https://www.facebook.com/SoHoBlindsNZ/"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon
+            icon={faFacebookSquare}
+            className="contact-brand-facebook"
+          />
+        </a>
+
+        <FontAwesomeIcon
+          icon={faWhatsappSquare}
+          className="contact-brand-whatsapp"
+        />
+
+        <FontAwesomeIcon
+          icon={faYoutubeSquare}
+          className="contact-brand-youtube"
+        />
+      </div>
       <div className="contact-details-title">Contact detail</div>
+
       <div className="contact-details-subtitle">
         <FontAwesomeIcon icon={faEnvelope} className="contact-details-icon" />
-        peter@sohoblinds.co.nz{" "}
+        peter@sohoblinds.co.nz
       </div>
       <div className="contact-details-subtitle">
-        <FontAwesomeIcon icon={faPhone} className="contact-details-icon" /> 0800
-        756 567
+        <FontAwesomeIcon icon={faPhone} className="contact-details-icon" />
+        0800 765 567
       </div>
       <div className="contact-details-subtitle">
         <FontAwesomeIcon
           icon={faMapMarkedAlt}
           className="contact-details-icon"
-        />{" "}
-        Broadway New Market, Auckland City.
+        />
+        176 Broadway New Market, Auckland 1023.
+        {/* <br />
+        &nbsp; &nbsp; &nbsp; &nbsp; (Viewing By Appointment Only) */}
       </div>
     </div>
   );
@@ -246,7 +299,6 @@ const ContactUs = () => {
   return (
     <React.Fragment>
       <Header showQuote={false} showSale={false} showSlogan={false}></Header>
-
       {renderTitle()}
       <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
         {renderDetailsMoblie()}
@@ -267,6 +319,8 @@ const ContactUs = () => {
           </Grid.Row>
         </Grid>
       </Responsive>
+      <br />
+      <br />
     </React.Fragment>
   );
 };
