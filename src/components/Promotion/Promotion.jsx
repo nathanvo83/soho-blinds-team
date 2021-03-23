@@ -15,7 +15,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Promotion = () => {
   return (
-    <div>
+    <div className="promotion-content">
       <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
         <Grid columns="3" style={{ margin: 0 }}>
           <Grid.Row>
@@ -59,41 +59,32 @@ const Promotion = () => {
         <Grid columns="3" style={{ margin: 0 }}>
           <Grid.Row>
             <Grid.Column>
-              <div className="promotion-col">
-                <div className="promotion-icon">
+              <div className="promotion-col-m">
+                <div className="promotion-icon-m">
                   <FontAwesomeIcon icon={faHandHoldingUsd}></FontAwesomeIcon>
-                  <div className="promotion-title">BEST PRICE</div>
                 </div>
-                {/* <div className="promotion-body">
-                  <div className="promotion-title">BEST PRICE</div>
-                  <div className="promotion-subtitle">Buy more, pay less.</div>
-                </div> */}
+                <div className="promotion-body">
+                  <div className="promotion-title-m">BEST PRICE</div>
+                </div>
               </div>
             </Grid.Column>
             <Grid.Column>
-              <div className="promotion-col">
-                <div className="promotion-icon">
+              <div className="promotion-col-m">
+                <div className="promotion-icon-m">
                   <FontAwesomeIcon icon={faUserShield}></FontAwesomeIcon>
-                  <div className="promotion-title">CHILDSAFE</div>
                 </div>
-                {/* <div className="promotion-body">
-                  <div className="promotion-title">CHILDSAFE</div>
-                  <div className="promotion-subtitle">
-                    Together, protection children.
-                  </div>
-                </div> */}
+                <div className="promotion-body">
+                  <div className="promotion-title-m">CHILDSAFE</div>
+                </div>
               </div>
             </Grid.Column>
             <Grid.Column>
-              <div className="promotion-col">
-                <div className="promotion-icon">
+              <div className="promotion-col-m">
+                <div className="promotion-icon-m">
                   <FontAwesomeIcon icon={faSmileWink}></FontAwesomeIcon>
                 </div>
                 <div className="promotion-body">
-                  <div className="promotion-title">100%</div>
-                  <div className="promotion-subtitle">
-                    Customer Satisfaction.
-                  </div>
+                  <div className="promotion-title-m">Satisfaction</div>
                 </div>
               </div>
             </Grid.Column>
@@ -110,9 +101,13 @@ const Promotion = () => {
                     <FontAwesomeIcon icon={faHandHoldingUsd}></FontAwesomeIcon>
                   </div>
                   <div className="promotion-body">
-                    <div className="promotion-title">BEST PRICE</div>
+                    <div className="promotion-title">
+                      LOWEST PRICE GUARANTEE
+                    </div>
                     <div className="promotion-subtitle">
-                      Buy more, pay less.
+                      Find any cheaper price in NZ?
+                      <br />
+                      We beat it by 15%.
                     </div>
                   </div>
                 </div>
@@ -127,7 +122,9 @@ const Promotion = () => {
                   <div className="promotion-body">
                     <div className="promotion-title">CHILDSAFE</div>
                     <div className="promotion-subtitle">
-                      Together, protection children.
+                      We take the matter of child
+                      <br />
+                      safety very seriously.
                     </div>
                   </div>
                 </div>
@@ -140,9 +137,11 @@ const Promotion = () => {
                     <FontAwesomeIcon icon={faSmileWink}></FontAwesomeIcon>
                   </div>
                   <div className="promotion-body">
-                    <div className="promotion-title">100%</div>
+                    <div className="promotion-title">Satisfaction</div>
                     <div className="promotion-subtitle">
-                      Customer Satisfaction.
+                      Kiwis Love Soho Blind
+                      <br />
+                      Over 90% give us a 5-star rating.
                     </div>
                   </div>
                 </div>

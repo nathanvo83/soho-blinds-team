@@ -63,7 +63,7 @@ import night09 from "../assets/images/curtain/night/night09.jpg";
 import night10 from "../assets/images/curtain/night/night10.jpg";
 
 import day01 from "../assets/images/curtain/day/day01.jpeg";
-import day02 from "../assets/images/curtain/day/day02.jpg";
+// import day02 from "../assets/images/curtain/day/day02.jpg";
 import day03 from "../assets/images/curtain/day/day03.jpg";
 import day04 from "../assets/images/curtain/day/day04.jpg";
 import day05 from "../assets/images/curtain/day/day05.jpg";
@@ -103,6 +103,8 @@ const Main = () => {
       tab02="DESCRIPTION"
       content01={rollerBlinds.overview}
       content02={rollerBlinds.description}
+      summary={rollerBlinds.summary}
+      about={rollerBlinds.about}
       images={[
         roller01,
         roller02,
@@ -113,7 +115,7 @@ const Main = () => {
         roller07,
         roller08,
         roller09,
-        roller10
+        roller10,
       ]}
     ></Product>
   );
@@ -136,7 +138,7 @@ const Main = () => {
         venetian09,
         venetian10,
         venetian11,
-        venetian12
+        venetian12,
       ]}
     ></Product>
   ); //update
@@ -178,7 +180,7 @@ const Main = () => {
         night09,
         night10,
         night01,
-        night02
+        night02,
       ]}
     ></Product>
   );
@@ -191,10 +193,10 @@ const Main = () => {
       content02={dayCurtains.description}
       images={[
         day01,
-        day02,
+        // day02,
         day03,
-        day04,
         day05,
+        day04,
         day06,
         day07,
         day08,
@@ -202,7 +204,7 @@ const Main = () => {
         day10,
         day11,
         day12,
-        day13
+        day13,
       ]}
     ></Product>
   );

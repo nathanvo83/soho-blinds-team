@@ -1,0 +1,81 @@
+.CustomerFeedback {
+  background-color: #f4f4f3;
+  margin: 0px 20px;
+  color: #2e2c2c;
+}
+
+/* mobile */
+.CustomerFeedback-m {
+  background-color: #f4f4f3;
+  margin: 0px 0px;
+  color: #2e2c2c;
+}
+
+.CustomerFeedback-container-m {
+  /* padding: 50px 20px 50px 20px; */
+  /* width: 1024px; */
+  margin: auto;
+  /* background-color: aquamarine; */
+}
+
+/* tablet */
+.CustomerFeedback-t {
+  background-color: #f4f4f3;
+  margin: 0px 0px;
+  color: #2e2c2c;
+}
+
+.CustomerFeedback-container-t {
+  padding: 50px 20px 50px 20px;
+  /* width: 1024px; */
+  margin: auto;
+  /* background-color: aquamarine; */
+}
+
+/* desktop */
+.CustomerFeedback-container {
+  padding: 50px 20px 50px 0px;
+  width: 1024px;
+  margin: auto;
+  /* background-color: aquamarine; */
+}
+
+.CustomerFeedback-box {
+  padding: 20px;
+  margin: auto;
+  background-color: #ffffff;
+}
+
+.CustomerFeedback-header {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.CustomerFeedback-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 18px;
+}
+
+.CustomerFeedback-details {
+  margin-top: 5px;
+}
+
+.CustomerFeedback-button {
+  margin-top: 24px;
+  background-color: #eb0143 !important;
+  color: #f5f5f5 !important;
+}
+
+.CustomerFeedback-name {
+  font-weight: bold;
+}
+
+.CustomerFeedback-stars {
+  color: #00bbaa;
+}
+
+.CustomerFeedback-desc {
+  font-style: italic;
+}

@@ -1,0 +1,24 @@
+.com04-content {
+  /* margin-top: 15px; */
+  padding: 15px;
+}
+
+.com04-header {
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.com04-item-title {
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 25px;
+  text-align: justify;
+}
+
+.com04-item-details {
+  font-size: 17px;
+  margin-top: 5px;
+  text-align: justify;
+}

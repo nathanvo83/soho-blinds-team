@@ -1,9 +1,11 @@
 .p-outbound {
   margin: 0px;
-  padding: 0px !;
+  padding: 0px !important;
   /* background-color: rosybrown; */
 }
-
+.p-content {
+  margin: 15px 75px;
+}
 .p-part02-m {
   margin: 15px;
 }

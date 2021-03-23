@@ -1,9 +1,24 @@
-.contact-bg {
+.contact-container {
+  padding: 100px 20px 0px 0px;
+  width: 1024px;
+  margin: auto;
+  font-size: 18px;
+  /* background-color: seagreen; */
+}
+
+.contact-container-m {
+  padding: 50px 0px 0px 0px;
+  margin: auto;
+  /* background-color: seagreen; */
+}
+
+.contact-form {
   font-family: "Titillium Web", sans-serif;
   padding-bottom: 10px;
 }
 
 .contact-bottom {
+  margin-top: 20px;
   text-align: center;
 }
 .contact-send-btn {
@@ -11,47 +26,51 @@
   color: #f5f5f5 !important;
 }
 
-/* .contact-label {
-  text-transform: uppercase;
-  text-align: center;
+.contact-field-title {
   font-weight: bold;
-  font-size: 18px;
-  margin-top: 20px;
-  margin-bottom: 0px !important;
-} */
+  font-size: 17px;
+}
 
 .contact-field {
   margin: 7px 0px !important;
-  padding: 0px 25px !important;
+  padding: 0px 10px !important;
+  font-size: 15px;
 }
 
-.contact-details-bg-m {
-  padding: 20px 0px;
-  margin-bottom: 20px;
+.contact-details {
+  padding: 10px 20px;
+  margin: 10px 5px;
   background-color: #ededed;
+  font-style: italic;
 }
 
 .contact-details-title {
-  font-size: 17px;
-  font-weight: bold;
+  font-size: 25px;
+  font-weight: bolder;
   text-transform: uppercase;
-  margin: 5px 30px 10px 30px;
-  color: #523de7;
+  margin: 15px 0px 10px 0px;
+  /* color: #523de7; */
 }
 
 .contact-details-subtitle {
-  font-size: 17px;
-  margin: 5px 5px 5px 30px;
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 30px 10px 15px 10px;
 }
+
+.contact-details-item {
+  margin: 10px;
+  text-align: justify;
+}
+
 .contact-details-icon {
-  margin-right: 5px;
-  color: #523de7;
+  margin-right: 15px;
+  color: #02bbaa;
 }
 
 .contact-title {
   font-size: 17px;
   text-transform: uppercase;
-  margin: 50px 0px 0px 0px;
   text-align: center;
 }
 
@@ -60,21 +79,4 @@
   margin: 5px 5px 40px 5px;
   text-align: center;
   font-weight: bold;
-}
-
-.contact-brand-facebook {
-  font-size: 50px;
-  color: #4065ae;
-  margin: 0px 10px 20px 0px;
-}
-.contact-brand-whatsapp {
-  font-size: 50px;
-  color: #29ad00;
-  margin: 0px 10px 20px 0px;
-}
-
-.contact-brand-youtube {
-  font-size: 50px;
-  color: #df2c26;
-  margin: 0px 10px 20px 0px;
 }

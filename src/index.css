@@ -7,7 +7,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* max-width: 1024px; */
-  color: #4f5866;
+  /* color: #4f5866; */
+  color: #302e2e;
+
+  /* color: #685f58; */
   font-size: 16px;
 }
 

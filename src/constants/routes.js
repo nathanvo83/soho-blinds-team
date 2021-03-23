@@ -25,6 +25,12 @@ export const SHUTTER_EXTERIOR = "/product/shutters/exterior";
 export const BUYINGGUIDE = "/buying-guide";
 export const CONTACTUS = "/contact-us";
 
+export const HOUZZ_PROJECTS =
+  "https://www.houzz.co.nz/professionals/shutters-blinds-and-curtains/soho-blinds-pfvwnz-pf~943228419#Projects";
+export const HOUZZ_REVIEWS =
+  "https://www.houzz.co.nz/professionals/shutters-blinds-and-curtains/soho-blinds-pfvwnz-pf~943228419#Reviews";
+
+// https://www.houzz.co.nz/professionals/shutters-blinds-and-curtains/soho-blinds-pfvwnz-pf~943228419#Reviews
 // export const path = {
 //   HOME: "/",
 //   BLINDS_ROLLER: "/product/blinds/roller",

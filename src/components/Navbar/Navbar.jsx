@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCaretDown,
-  faAngleDoubleRight
+  faAngleDoubleRight,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.css";
 import * as ROUTES from "../../constants/routes";
@@ -184,12 +184,54 @@ const Navbar = () => {
             </div>
           </div>
 
+          <div className="dropdown">
+            <button className="dropbtn">
+              Collections&nbsp;
+              <FontAwesomeIcon icon={faCaretDown}></FontAwesomeIcon>
+            </button>
+            <div className="dropdown-content">
+              <a
+                href={ROUTES.HOUZZ_PROJECTS}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={closeBurgerMenu}
+              >
+                <FontAwesomeIcon
+                  icon={faAngleDoubleRight}
+                  className="pulled"
+                ></FontAwesomeIcon>
+                &nbsp; Projects
+              </a>
+              {/* <a
+                href={ROUTES.HOUZZ_REVIEWS}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={closeBurgerMenu}
+              >
+                <FontAwesomeIcon
+                  icon={faAngleDoubleRight}
+                  className="pulled"
+                ></FontAwesomeIcon>
+                &nbsp; Reviews
+              </a> */}
+            </div>
+          </div>
+
           {/* <a
-            href={ROUTES.BUYINGGUIDE}
+            href={ROUTES.HOUZZ_PROJECTS}
+            target="_blank"
             rel="noopener noreferrer"
             onClick={closeBurgerMenu}
           >
-            Buying guide
+            Projects
+          </a>
+          <a
+            href={ROUTES.HOUZZ_REVIEWS}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={closeBurgerMenu}
+          >
+            Reviews
           </a> */}
 
           <a

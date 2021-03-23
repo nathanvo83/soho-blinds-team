@@ -2,17 +2,6 @@ import React, { useState } from "react";
 import "./ContactUs.css";
 import Header from "../../components/Header/Header";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faPhone,
-  faEnvelope,
-  faMapMarkedAlt
-} from "@fortawesome/free-solid-svg-icons";
-
-import {
-  faFacebookSquare,
-  faWhatsappSquare,
-  faYoutubeSquare
-} from "@fortawesome/free-brands-svg-icons";
 
 import {
   Form,
@@ -20,14 +9,15 @@ import {
   Grid,
   Responsive,
   TextArea,
-  Input
+  Input,
 } from "semantic-ui-react";
 import {
   emailjsKey,
   emailjsServiceId,
-  emailjsTemplateIdContactUs
+  emailjsTemplateIdContactUs,
 } from "../../config/config";
 import emailjs from "emailjs-com";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 const ContactUs = () => {
   const [yourName, setYourName] = useState("");
@@ -40,19 +30,19 @@ const ContactUs = () => {
   const [errorPhone, setErrorPhone] = useState(false);
   // const [errorQuery, setErrorQuery] = useState(false);
 
-  const yourNameHandler = e => {
+  const yourNameHandler = (e) => {
     setYourName(e.target.value);
   };
-  const emailHandler = e => {
+  const emailHandler = (e) => {
     setEmail(e.target.value);
   };
-  const phoneHandler = e => {
+  const phoneHandler = (e) => {
     setPhone(e.target.value);
   };
-  const subjectHandler = e => {
+  const subjectHandler = (e) => {
     setSubject(e.target.value);
   };
-  const queryHandler = e => {
+  const queryHandler = (e) => {
     setQuery(e.target.value);
   };
 
@@ -66,18 +56,13 @@ const ContactUs = () => {
     return phone === "";
   };
 
-  // const checkQuery = () => {
-  //   setErrorQuery(query === "");
-  //   return query === "";
-  // };
-
   const submitHandler = () => {
     const templateParas = {
       yourName,
       email,
       phone,
       subject,
-      query
+      query,
     };
 
     if (!checkPhone() & !checkEmail()) {
@@ -89,11 +74,11 @@ const ContactUs = () => {
           emailjsKey
         )
         .then(
-          result => {
+          (result) => {
             console.log(result.text);
             resetHandler();
           },
-          error => {
+          (error) => {
             console.log(error.text);
           }
         );
@@ -113,10 +98,10 @@ const ContactUs = () => {
   };
 
   const renderForm = () => (
-    <div className="contact-bg">
+    <div className="contact-form">
       <Form onSubmit={submitHandler}>
         <Form.Field className="contact-field">
-          <div>Your name:</div>
+          <div className="contact-field-title">Your name:</div>
         </Form.Field>
         <Form.Field className="contact-field">
           <Input
@@ -127,7 +112,7 @@ const ContactUs = () => {
         </Form.Field>
 
         <Form.Field className="contact-field">
-          <div>Email:</div>
+          <div className="contact-field-title">Email:</div>
         </Form.Field>
         <Form.Field className="contact-field">
           {errorEmail ? (
@@ -147,7 +132,7 @@ const ContactUs = () => {
         </Form.Field>
 
         <Form.Field className="contact-field">
-          <div>Phone:</div>
+          <div className="contact-field-title">Phone:</div>
         </Form.Field>
         <Form.Field className="contact-field">
           {errorPhone ? (
@@ -167,7 +152,7 @@ const ContactUs = () => {
         </Form.Field>
 
         <Form.Field className="contact-field">
-          <div>Subject:</div>
+          <div className="contact-field-title">Subject:</div>
         </Form.Field>
         <Form.Field className="contact-field">
           <Input
@@ -178,7 +163,7 @@ const ContactUs = () => {
         </Form.Field>
 
         <Form.Field className="contact-field">
-          <div>Query:</div>
+          <div className="contact-field-title">Query:</div>
         </Form.Field>
         <Form.Field className="contact-field">
           <TextArea
@@ -198,100 +183,87 @@ const ContactUs = () => {
   );
 
   const renderDetails = () => (
-    <div className="contact-details-bg">
-      <div className="contact-details-title">
-        <a
-          href="https://www.facebook.com/SoHoBlindsNZ/"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon
-            icon={faFacebookSquare}
-            className="contact-brand-facebook"
-          />
-        </a>
-
-        <FontAwesomeIcon
-          icon={faWhatsappSquare}
-          className="contact-brand-whatsapp"
-        />
-
-        <FontAwesomeIcon
-          icon={faYoutubeSquare}
-          className="contact-brand-youtube"
-        />
+    <div className="contact-details">
+      <div className="contact-details-title">What to expect</div>
+      <div>
+        Our advisors job is to make your life as easy as possible, with
+        inspiring ideas and practical solutions for your home.
       </div>
-      <div className="contact-details-title">Contact detail</div>
-
-      <div className="contact-details-subtitle">
-        <FontAwesomeIcon icon={faEnvelope} className="contact-details-icon" />
-        peter@sohoblinds.co.nz
+      <div className="contact-details-subtitle">Your advisor will</div>
+      <div className="contact-details-item">
+        <FontAwesomeIcon icon={faHeart} className="contact-details-icon" />
+        Take a relaxed approach, offering inspiring ideas and practical
+        solutions
       </div>
-      <div className="contact-details-subtitle">
-        <FontAwesomeIcon icon={faPhone} className="contact-details-icon" />
-        0800 765 567
+      <div className="contact-details-item">
+        <FontAwesomeIcon icon={faHeart} className="contact-details-icon" />
+        Stay as long as you need, usually only around 45 minutes (a little
+        longer for shutters and conservatory roof blinds)
       </div>
-      <div className="contact-details-subtitle">
-        <FontAwesomeIcon
-          icon={faMapMarkedAlt}
-          className="contact-details-icon"
-        />
-        176 Broadway New Market, Auckland 1023.
-        {/* <br />
-        &nbsp; &nbsp; &nbsp; &nbsp; (Viewing By Appointment Only) */}
+      <div className="contact-details-item">
+        <FontAwesomeIcon icon={faHeart} className="contact-details-icon" />
+        Measure your windows
       </div>
-    </div>
-  );
-
-  const renderDetailsMoblie = () => (
-    <div className="contact-details-bg-m">
-      <div className="contact-details-title">
-        <a
-          href="https://www.facebook.com/SoHoBlindsNZ/"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon
-            icon={faFacebookSquare}
-            className="contact-brand-facebook"
-          />
-        </a>
-
-        <FontAwesomeIcon
-          icon={faWhatsappSquare}
-          className="contact-brand-whatsapp"
-        />
-
-        <FontAwesomeIcon
-          icon={faYoutubeSquare}
-          className="contact-brand-youtube"
-        />
-      </div>
-      <div className="contact-details-title">Contact detail</div>
-
-      <div className="contact-details-subtitle">
-        <FontAwesomeIcon icon={faEnvelope} className="contact-details-icon" />
-        peter@sohoblinds.co.nz
-      </div>
-      <div className="contact-details-subtitle">
-        <FontAwesomeIcon icon={faPhone} className="contact-details-icon" />
-        0800 765 567
-      </div>
-      <div className="contact-details-subtitle">
-        <FontAwesomeIcon
-          icon={faMapMarkedAlt}
-          className="contact-details-icon"
-        />
-        176 Broadway New Market, Auckland 1023.
-        {/* <br />
-        &nbsp; &nbsp; &nbsp; &nbsp; (Viewing By Appointment Only) */}
+      <div className="contact-details-item">
+        <FontAwesomeIcon icon={faHeart} className="contact-details-icon" />
+        Provide an accurate quote for your chosen product
       </div>
     </div>
   );
 
   const renderTitle = () => (
     <div>
+      <div
+        style={{
+          backgroundColor: "#1C2122",
+          color: "#ff0000",
+          padding: 10,
+          // marginLeft: 20,
+          marginBottom: 20,
+          // marginRight: 20,
+
+          textAlign: "justify",
+        }}
+      >
+        <h3 style={{ textDecoration: "underline" }}>COVID-19:</h3>
+        Request an in-home appointment, safe in the knowledge that our advisors
+        are fully equipped to protect your health and wellbeing throughout. You
+        can be assured that your advisor will not have had any Coronavirus
+        symptoms within the last 14 days, they will have safety clothing such as
+        masks and gloves and will observe strict social distancing throughout
+        your appointment.
+      </div>
       <div className="contact-title">Do you have a query?</div>
       <div className="contact-subtitle">
-        We would love to discuss your blinds requirements with you.
+        We would love to discuss your window covering requirements with you.
+      </div>
+    </div>
+  );
+
+  const renderDesktop = () => (
+    <div>
+      <div className="contact-container">
+        {renderTitle()}
+        <Grid columns="2" style={{ margin: 0 }}>
+          <Grid.Row>
+            <Grid.Column>{renderForm()}</Grid.Column>
+            <Grid.Column>{renderDetails()}</Grid.Column>
+          </Grid.Row>
+        </Grid>
+      </div>
+    </div>
+  );
+
+  const renderMobile = () => (
+    <div>
+      <div className="contact-container-m">
+        {renderTitle()}
+        <Grid columns="1" style={{ margin: 0 }}>
+          <Grid.Row>
+            <Grid.Column>{renderForm()}</Grid.Column>
+            <Grid.Column>{renderDetails()}</Grid.Column>
+          </Grid.Row>
+        </Grid>
       </div>
     </div>
   );
@@ -299,25 +271,18 @@ const ContactUs = () => {
   return (
     <React.Fragment>
       <Header showQuote={false} showSale={false} showSlogan={false}></Header>
-      {renderTitle()}
       <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
-        {renderDetailsMoblie()}
-        {renderForm()}
+        {/*  */}
+        {renderMobile()}
       </Responsive>
       <Responsive
         minWidth={Responsive.onlyTablet.minWidth}
         maxWidth={Responsive.onlyTablet.maxWidth}
       >
-        {renderDetailsMoblie()}
-        {renderForm()}
+        {renderDesktop()}
       </Responsive>
       <Responsive minWidth={Responsive.onlyComputer.minWidth}>
-        <Grid columns="2" style={{ margin: 0 }}>
-          <Grid.Row>
-            <Grid.Column>{renderDetails()}</Grid.Column>
-            <Grid.Column>{renderForm()}</Grid.Column>
-          </Grid.Row>
-        </Grid>
+        {renderDesktop()}
       </Responsive>
       <br />
       <br />
