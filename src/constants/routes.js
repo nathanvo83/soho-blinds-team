@@ -24,6 +24,7 @@ export const SHUTTER_PVC = "/product/shutters/pvc";
 export const SHUTTER_EXTERIOR = "/product/shutters/exterior";
 export const BUYINGGUIDE = "/buying-guide";
 export const CONTACTUS = "/contact-us";
+export const PROJECTS = "/projects";
 
 export const HOUZZ_PROJECTS =
   "https://www.houzz.co.nz/professionals/shutters-blinds-and-curtains/soho-blinds-pfvwnz-pf~943228419#Projects";
