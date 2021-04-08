@@ -10,7 +10,7 @@ const Comments = () =>  (
       <Grid.Column>
         <div className="CustomerFeedback-box">
           <div className="CustomerFeedback-header">
-            13 Reviews for Soho Blinds
+              {comments.length} Reviews for Soho Blinds
           </div>
           <div className="CustomerFeedback-stars">
             <div className="ui comments">
