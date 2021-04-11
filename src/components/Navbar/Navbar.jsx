@@ -6,7 +6,7 @@ import {
   faAngleDoubleRight,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.css";
-import * as ROUTES from "../../constants/routes";
+import * as ROUTES from "../../constants/routes.js";
 import logo from "../../assets/images/logo.png";
 import { useHistory } from "react-router-dom";
 
@@ -191,8 +191,7 @@ const Navbar = () => {
             </button>
             <div className="dropdown-content">
               <a
-                href={ROUTES.HOUZZ_PROJECTS}
-                target="_blank"
+                href={ROUTES.PROJECTS}
                 rel="noopener noreferrer"
                 onClick={closeBurgerMenu}
               >

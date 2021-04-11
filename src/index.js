@@ -1,5 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import jQuery from 'jquery';
+import "magnific-popup";
 
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
@@ -8,6 +10,7 @@ import "semantic-ui-css/semantic.min.css";
 // import "bootstrap/dist/css/bootstrap.min.css";
 // import "shards-ui/dist/css/shards.min.css";
 import "./index.css";
+window.$ = window.jQuery = jQuery;
 
 ReactDOM.render(
   <BrowserRouter>
