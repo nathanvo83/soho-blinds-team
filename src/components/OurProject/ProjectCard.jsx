@@ -42,7 +42,7 @@ class ProjectCard extends React.Component {
     const props = this.props;
 
     return (<div className="our-products-card">
-      <div className="ui card">
+      <div className="ui card" style={{ width: '95%' }}>
         <div className="image">
           <img src={props.image} style={{ height:'300px' }} />
         </div>

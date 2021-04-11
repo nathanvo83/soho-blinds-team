@@ -20,24 +20,7 @@ const OurProject = () => {
               {
                 projects.map((project) => (
                   <Grid.Column key={project.name}>
-                    <a
-                      href={project.link}
-                      rel="noopener noreferrer"
-                    >
-                      <div class="img-box-m">
-                        <img
-                          src={project.image}
-                          alt={project.name}
-                        />
-
-                        <div class="transparent-box">
-                          <div class="caption">
-                            <p>{project.name}</p>
-                            <p class="opacity-low">{project.address}</p>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
+                    <ProjectCard {...project} />
                   </Grid.Column>
                 ))
               }
@@ -62,24 +45,7 @@ const OurProject = () => {
               {
                 projects.map((project) => (
                   <Grid.Column key={project.name}>
-                    <a
-                      href={project.link}
-                      rel="noopener noreferrer"
-                    >
-                      <div class="img-box-t">
-                        <img
-                          src={project.image}
-                          alt={project.name}
-                        />
-
-                        <div class="transparent-box">
-                          <div class="caption">
-                            <p>{project.name}</p>
-                            <p class="opacity-low">{project.address}</p>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
+                    <ProjectCard {...project} />
                   </Grid.Column>
                 ))
               }
