@@ -1,7 +1,7 @@
 import React from "react";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Responsive, Grid } from "semantic-ui-react";
+import { Grid } from "semantic-ui-react";
 import comments from "../../data/comments";
 
 const Comments = () =>  (
@@ -17,11 +17,11 @@ const Comments = () =>  (
               {
                 comments.map((com) => (
                   <div key={com.name} className="comment">
-                    <a className="avatar">
-                      <img src={com.image}></img>
-                    </a>
+                    <div className="avatar">
+                      <img src={com.image} alt='icon'></img>
+                    </div>
                     <div className="content">
-                      <a className="author">{com.name}</a>
+                      <div className="author">{com.name}</div>
                       <div className="metadata">
                         <div className="date">{com.datetime}</div>
                         <div className="rating">

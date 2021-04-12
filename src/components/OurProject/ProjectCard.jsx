@@ -1,5 +1,4 @@
 import React from 'react'
-import { Card, Icon } from 'semantic-ui-react'
 
 // const extra = (
 // <a
@@ -44,7 +43,7 @@ class ProjectCard extends React.Component {
     return (<div className="our-products-card">
       <div className="ui card" style={{ width: '95%' }}>
         <div className="image">
-          <img src={props.image} style={{ height:'300px' }} />
+          <img src={props.image} style={{ height:'300px' }} alt='img'/>
         </div>
         <div className="content">
           <div className="header">{props.name}</div>
@@ -52,10 +51,10 @@ class ProjectCard extends React.Component {
           {/* <div className="description">{props.address}</div> */}
         </div>
         <div className="extra">
-          <a id={props.id}
+          <div id={props.id}
             onClick={() => this.magnificPopup(props)}>
             <i aria-hidden="true" className="image icon"></i>{props.images.length} Photos
-          </a>
+          </div>
         </div>
       </div>
     </div>)
