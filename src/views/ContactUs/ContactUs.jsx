@@ -17,13 +17,7 @@ import {
   emailjsTemplateIdContactUs,
 } from "../../config/config";
 import emailjs from "emailjs-com";
-import {
-  faBuilding,
-  faClock,
-  faHeart,
-  faHome,
-  faTimes,
-} from "@fortawesome/free-solid-svg-icons";
+import { faClock, faHeart, faHome } from "@fortawesome/free-solid-svg-icons";
 
 const ContactUs = () => {
   const [yourName, setYourName] = useState("");
