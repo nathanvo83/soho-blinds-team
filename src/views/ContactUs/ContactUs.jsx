@@ -17,7 +17,13 @@ import {
   emailjsTemplateIdContactUs,
 } from "../../config/config";
 import emailjs from "emailjs-com";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBuilding,
+  faClock,
+  faHeart,
+  faHome,
+  faTimes,
+} from "@fortawesome/free-solid-svg-icons";
 
 const ContactUs = () => {
   const [yourName, setYourName] = useState("");
@@ -213,7 +219,7 @@ const ContactUs = () => {
 
   const renderTitle = () => (
     <div>
-      <div
+      {/* <div
         style={{
           backgroundColor: "#1C2122",
           color: "#ff0000",
@@ -232,17 +238,57 @@ const ContactUs = () => {
         symptoms within the last 14 days, they will have safety clothing such as
         masks and gloves and will observe strict social distancing throughout
         your appointment.
-      </div>
-      <div className="contact-title">Do you have a query?</div>
+      </div> */}
+      {/* <div className="contact-title">Do you have a query?</div>
       <div className="contact-subtitle">
         We would love to discuss your window covering requirements with you.
+      </div> */}
+
+      <div className="contact-title">Do you have a query?</div>
+      <div className="contact-subtitle">
+        Call 0800 765 567 or fill out the form below and a Soho sales
+        representative will contact you.
       </div>
     </div>
   );
 
+  const renderNote = () => {
+    return (
+      <div className="contact-note">
+        *Terms and Conditions apply. Product design specifications and colours
+        are subject to change without notice and may vary from those shown.
+        Images displayed on website pages are for illustration purposes only.
+        Images are intended to help illustrate how various products appear and
+        how they can be applied in different situations.
+      </div>
+    );
+  };
+
+  const renderShowRoom = (type) => {
+    return (
+      <div className={`contact-showroom ${type}`}>
+        <div className="title">
+          <div className="text">showroom</div>
+        </div>
+
+        <div className="content">
+          <div>
+            <FontAwesomeIcon icon={faHome} className="icon" /> Auckland Showroom
+            293 Dominion Road Mount Eden, Auckland 1024.
+          </div>
+          <div>
+            <FontAwesomeIcon icon={faClock} className="icon" /> Open from 10:00
+            am - 6:00 pm Monday - Saturday and Sunday by appointment.
+          </div>
+        </div>
+      </div>
+    );
+  };
+
   const renderDesktop = () => (
     <div>
       <div className="contact-container">
+        {renderShowRoom("")}
         {renderTitle()}
         <Grid columns="2" style={{ margin: 0 }}>
           <Grid.Row>
@@ -250,6 +296,7 @@ const ContactUs = () => {
             <Grid.Column>{renderDetails()}</Grid.Column>
           </Grid.Row>
         </Grid>
+        {renderNote()}
       </div>
     </div>
   );
@@ -257,6 +304,7 @@ const ContactUs = () => {
   const renderMobile = () => (
     <div>
       <div className="contact-container-m">
+        {renderShowRoom("m")}
         {renderTitle()}
         <Grid columns="1" style={{ margin: 0 }}>
           <Grid.Row>
@@ -264,6 +312,7 @@ const ContactUs = () => {
             <Grid.Column>{renderDetails()}</Grid.Column>
           </Grid.Row>
         </Grid>
+        {renderNote()}
       </div>
     </div>
   );
@@ -279,7 +328,7 @@ const ContactUs = () => {
         minWidth={Responsive.onlyTablet.minWidth}
         maxWidth={Responsive.onlyTablet.maxWidth}
       >
-        {renderDesktop()}
+        {renderMobile()}
       </Responsive>
       <Responsive minWidth={Responsive.onlyComputer.minWidth}>
         {renderDesktop()}

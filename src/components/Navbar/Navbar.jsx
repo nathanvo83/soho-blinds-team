@@ -184,7 +184,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className="dropdown">
+          {/* <div className="dropdown">
             <button className="dropbtn">
               Collections&nbsp;
               <FontAwesomeIcon icon={faCaretDown}></FontAwesomeIcon>
@@ -201,7 +201,7 @@ const Navbar = () => {
                 ></FontAwesomeIcon>
                 &nbsp; Projects
               </a>
-              {/* <a
+              <a
                 href={ROUTES.HOUZZ_REVIEWS}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -212,9 +212,16 @@ const Navbar = () => {
                   className="pulled"
                 ></FontAwesomeIcon>
                 &nbsp; Reviews
-              </a> */}
+              </a>
             </div>
-          </div>
+          </div> */}
+          <a
+            href={ROUTES.PROJECTS}
+            rel="noopener noreferrer"
+            onClick={closeBurgerMenu}
+          >
+            Projects
+          </a>
 
           {/* <a
             href={ROUTES.HOUZZ_PROJECTS}
