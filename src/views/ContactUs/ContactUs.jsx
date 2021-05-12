@@ -163,13 +163,13 @@ const ContactUs = () => {
         </Form.Field>
 
         <Form.Field className="contact-field">
-          <div className="contact-field-title">Query:</div>
+          <div className="contact-field-title">Your Message:</div>
         </Form.Field>
         <Form.Field className="contact-field">
           <TextArea
             value={query}
             onChange={queryHandler}
-            placeholder="Query"
+            placeholder="Your Message"
           ></TextArea>
         </Form.Field>
 
@@ -213,32 +213,7 @@ const ContactUs = () => {
 
   const renderTitle = () => (
     <div>
-      {/* <div
-        style={{
-          backgroundColor: "#1C2122",
-          color: "#ff0000",
-          padding: 10,
-          // marginLeft: 20,
-          marginBottom: 20,
-          // marginRight: 20,
-
-          textAlign: "justify",
-        }}
-      >
-        <h3 style={{ textDecoration: "underline" }}>COVID-19:</h3>
-        Request an in-home appointment, safe in the knowledge that our advisors
-        are fully equipped to protect your health and wellbeing throughout. You
-        can be assured that your advisor will not have had any Coronavirus
-        symptoms within the last 14 days, they will have safety clothing such as
-        masks and gloves and will observe strict social distancing throughout
-        your appointment.
-      </div> */}
-      {/* <div className="contact-title">Do you have a query?</div>
-      <div className="contact-subtitle">
-        We would love to discuss your window covering requirements with you.
-      </div> */}
-
-      <div className="contact-title">Do you have a query?</div>
+      <div className="contact-title">Book A Free Measure & Quote</div>
       <div className="contact-subtitle">
         Call 0800 765 567 or fill out the form below and a Soho sales
         representative will contact you.
