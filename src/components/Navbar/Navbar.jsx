@@ -11,6 +11,7 @@ import logo from "../../assets/images/logo.png";
 import { useHistory } from "react-router-dom";
 
 const Navbar = () => {
+  let currentPage = window.location.pathname;
   const history = useHistory();
   const [showBurgerMenu, setShowBurgerMenu] = useState(false);
 
@@ -67,6 +68,7 @@ const Navbar = () => {
               <a
                 href={ROUTES.BLINDS_ROLLER}
                 rel="noopener noreferrer"
+                className={currentPage == ROUTES.BLINDS_ROLLER ? 'active' : ''}
                 onClick={closeBurgerMenu}
               >
                 <FontAwesomeIcon
@@ -78,6 +80,7 @@ const Navbar = () => {
               <a
                 href={ROUTES.BLINDS_VENETIAN}
                 rel="noopener noreferrer"
+                className={currentPage == ROUTES.BLINDS_VENETIAN ? 'active' : ''}
                 onClick={closeBurgerMenu}
               >
                 <FontAwesomeIcon
@@ -89,6 +92,7 @@ const Navbar = () => {
               <a
                 href={ROUTES.BLINDS_VERTICAL}
                 rel="noopener noreferrer"
+                className={currentPage == ROUTES.BLINDS_VERTICAL ? 'active' : ''}
                 onClick={closeBurgerMenu}
               >
                 <FontAwesomeIcon
@@ -100,6 +104,7 @@ const Navbar = () => {
               <a
                 href={ROUTES.BLINDS_ZEBRA}
                 rel="noopener noreferrer"
+                className={currentPage == ROUTES.BLINDS_ZEBRA ? 'active' : ''}
                 onClick={closeBurgerMenu}
               >
                 <FontAwesomeIcon
@@ -120,6 +125,7 @@ const Navbar = () => {
               <a
                 href={ROUTES.CURTAIN_DAY}
                 rel="noopener noreferrer"
+                className={currentPage == ROUTES.CURTAIN_DAY ? 'active' : ''}
                 onClick={closeBurgerMenu}
               >
                 <FontAwesomeIcon
@@ -131,6 +137,7 @@ const Navbar = () => {
               <a
                 href={ROUTES.CURTAIN_NIGHT}
                 rel="noopener noreferrer"
+                className={currentPage == ROUTES.CURTAIN_NIGHT ? 'active' : ''}
                 onClick={closeBurgerMenu}
               >
                 <FontAwesomeIcon
@@ -151,6 +158,7 @@ const Navbar = () => {
               <a
                 href={ROUTES.SHUTTER_TIMBER}
                 rel="noopener noreferrer"
+                className={currentPage == ROUTES.SHUTTER_TIMBER ? 'active' : ''}
                 onClick={closeBurgerMenu}
               >
                 <FontAwesomeIcon
@@ -162,6 +170,7 @@ const Navbar = () => {
               <a
                 href={ROUTES.SHUTTER_PVC}
                 rel="noopener noreferrer"
+                className={currentPage == ROUTES.SHUTTER_PVC ? 'active' : ''}
                 onClick={closeBurgerMenu}
               >
                 <FontAwesomeIcon
@@ -218,6 +227,7 @@ const Navbar = () => {
           <a
             href={ROUTES.PROJECTS}
             rel="noopener noreferrer"
+            className={currentPage == ROUTES.PROJECTS ? 'active' : ''}
             onClick={closeBurgerMenu}
           >
             Projects
@@ -241,8 +251,18 @@ const Navbar = () => {
           </a> */}
 
           <a
+            href={ROUTES.SHOWROOM}
+            rel="noopener noreferrer"
+            className={currentPage == ROUTES.SHOWROOM ? 'active' : ''}
+            onClick={closeBurgerMenu}
+          >
+            Show Room
+          </a>
+
+          <a
             href={ROUTES.CONTACTUS}
             rel="noopener noreferrer"
+            className={currentPage == ROUTES.CONTACTUS ? 'active' : ''}
             onClick={closeBurgerMenu}
           >
             Contact us
