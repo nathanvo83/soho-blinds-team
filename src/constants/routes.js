@@ -24,6 +24,7 @@ export const SHUTTER_PVC = "/product/shutters/pvc";
 export const SHUTTER_EXTERIOR = "/product/shutters/exterior";
 export const BUYINGGUIDE = "/buying-guide";
 export const CONTACTUS = "/contact-us";
+export const SHOWROOM = "/showroom";
 export const PROJECTS = "/projects";
 
 export const HOUZZ_PROJECTS =
