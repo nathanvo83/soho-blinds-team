@@ -93,6 +93,7 @@ import Home from "./Home/Home";
 import Product from "./Product/Product";
 import BuyingGuide from "./BuyingGuide/BuyingGuide";
 import ContactUs from "./ContactUs/ContactUs";
+import ShowRoom from "./ShowRoom/ShowRoom";
 import Projects from "./Projects/Projects";
 
 const Main = () => {
@@ -266,6 +267,7 @@ const Main = () => {
 
       {/*  */}
       <Route path={ROUTES.BUYINGGUIDE} component={BuyingGuide} />
+      <Route path={ROUTES.SHOWROOM} component={ShowRoom} />
       <Route path={ROUTES.CONTACTUS} component={ContactUs} />
       <Route path={ROUTES.PROJECTS} component={Projects} />
       {/* <Route path="/product/blinds" exact component={Blinds} />
