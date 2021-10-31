@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "./ShowRoom.css";
 import Header from "../../components/Header/Header";
+import Section01 from "./Section01";
+import Section03 from "./Section03";
+import Section04 from "./Section04";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
@@ -15,35 +18,6 @@ import { faClock, faHeart, faHome } from "@fortawesome/free-solid-svg-icons";
 
 const ShowRoom = () => {
   // const [errorQuery, setErrorQuery] = useState(false);
-
-  const renderDetails = () => (
-    <div className="contact-details">
-      <div className="contact-details-title">What to expect</div>
-      <div>
-        Our advisors job is to make your life as easy as possible, with
-        inspiring ideas and practical solutions for your home.
-      </div>
-      <div className="contact-details-subtitle">Your advisor will</div>
-      <div className="contact-details-item">
-        <FontAwesomeIcon icon={faHeart} className="contact-details-icon" />
-        Take a relaxed approach, offering inspiring ideas and practical
-        solutions
-      </div>
-      <div className="contact-details-item">
-        <FontAwesomeIcon icon={faHeart} className="contact-details-icon" />
-        Stay as long as you need, usually only around 45 minutes (a little
-        longer for shutters and conservatory roof blinds)
-      </div>
-      <div className="contact-details-item">
-        <FontAwesomeIcon icon={faHeart} className="contact-details-icon" />
-        Measure your windows
-      </div>
-      <div className="contact-details-item">
-        <FontAwesomeIcon icon={faHeart} className="contact-details-icon" />
-        Provide an accurate quote for your chosen product
-      </div>
-    </div>
-  );
 
   const renderTitle = () => (
     <div>
@@ -91,30 +65,24 @@ const ShowRoom = () => {
   const renderDesktop = () => (
     <div>
       <div className="contact-container">
-        {renderShowRoom("")}
         {renderTitle()}
-        <Grid columns="2" style={{ margin: 0 }}>
-          <Grid.Row>
-            <Grid.Column>{renderDetails()}</Grid.Column>
-          </Grid.Row>
-        </Grid>
-        {renderNote()}
+        {renderShowRoom("")}
       </div>
+      <Section01 />
+      <Section03 />
+      <Section04 />
     </div>
   );
 
   const renderMobile = () => (
     <div>
       <div className="contact-container-m">
-        {renderShowRoom("m")}
         {renderTitle()}
-        <Grid columns="1" style={{ margin: 0 }}>
-          <Grid.Row>
-            <Grid.Column>{renderDetails()}</Grid.Column>
-          </Grid.Row>
-        </Grid>
-        {renderNote()}
+        {renderShowRoom("m")}
       </div>
+      <Section01 />
+      <Section03 />
+      <Section04 />
     </div>
   );
 
