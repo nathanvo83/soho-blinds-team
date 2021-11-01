@@ -37,9 +37,6 @@ const Header = (props) => {
             <div>
               <img className="h-header-img-m" src={img_h03} alt="First slide" />
             </div>
-            <div>
-              <img className="h-header-img-m" src={img_h04} alt="First slide" />
-            </div>
           </Carousel>
 
           {showSale ? (
