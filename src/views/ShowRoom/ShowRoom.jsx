@@ -5,6 +5,7 @@ import Section01 from "./Section01";
 import Section03 from "./Section03";
 import Section04 from "./Section04";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import * as ROUTES from "../../constants/routes";
 
 import {
   Form,
@@ -20,12 +21,12 @@ const ShowRoom = () => {
   // const [errorQuery, setErrorQuery] = useState(false);
 
   const renderTitle = () => (
-    <div>
-      <div className="contact-title">Book A Free Measure & Quote</div>
-      <div className="contact-subtitle">
-        Call 0800 765 567 or fill out the form below and a Soho sales
-        representative will contact you.
-      </div>
+    <div className="contact-bottom">
+      <a href={ROUTES.CONTACTUS + '#contact-showroom'} rel="noopener noreferrer">
+        <Button className="CustomerFeedback-button">
+          Book A Free Measure & Quote
+        </Button>
+      </a>
     </div>
   );
 
@@ -64,31 +65,31 @@ const ShowRoom = () => {
 
   const renderDesktop = () => (
     <div>
+      <Section04 />
       <div className="contact-container">
-        {renderTitle()}
         {renderShowRoom("")}
+        {renderTitle()}
       </div>
       <Section01 />
       <Section03 />
-      <Section04 />
     </div>
   );
 
   const renderMobile = () => (
     <div>
+      <Section04 />
       <div className="contact-container-m">
-        {renderTitle()}
         {renderShowRoom("m")}
+        {renderTitle()}
       </div>
       <Section01 />
       <Section03 />
-      <Section04 />
     </div>
   );
 
   return (
     <React.Fragment>
-      <Header showQuote={false} showSale={false} showSlogan={false}></Header>
+      {/* <Header showQuote={false} showSale={false} showSlogan={false}></Header> */}
       <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
         {/*  */}
         {renderMobile()}

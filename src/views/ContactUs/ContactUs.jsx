@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./ContactUs.css";
 import Header from "../../components/Header/Header";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -28,6 +28,17 @@ const ContactUs = () => {
 
   const [errorEmail, setErrorEmail] = useState(false);
   const [errorPhone, setErrorPhone] = useState(false);
+  useEffect(() => {
+    let hash = window.location.hash;
+    let el = document.querySelector(hash);
+    if (el) {
+      window.scrollTo({
+        top: el.offsetTop + 70,
+        left: 0,
+        behavior: 'smooth',
+      })
+    }
+  });
   // const [errorQuery, setErrorQuery] = useState(false);
 
   const yourNameHandler = (e) => {
@@ -235,7 +246,7 @@ const ContactUs = () => {
 
   const renderShowRoom = (type) => {
     return (
-      <div className={`contact-showroom ${type}`}>
+      <div id="contact-showroom" className={`contact-showroom ${type}`}>
         <div className="title">
           <div className="text">showroom</div>
         </div>

@@ -19,10 +19,10 @@ const renderMap = () => {
         width="100%"
         height="500"
         id="gmap_canvas"
-        frameborder="0"
+        frameBorder="0"
         scrolling="no"
-        marginheight="0"
-        marginwidth="0"></iframe>
+        marginHeight="0"
+        marginWidth="0"></iframe>
     {/* <GoogleMapReact */}
     {/*   bootstrapURLKeys={{ key: 'AIzaSyCIQHL2VS4DNgYy58XG1KNVQHc468PhGqE' }} */}
     {/*   defaultCenter={location.center} */}

@@ -1,5 +1,5 @@
 .contact-container {
-  padding: 100px 20px 0px 0px;
+  padding: 50px 20px 0px 0px;
   width: 1024px;
   margin: auto;
   font-size: 18px;
@@ -19,6 +19,7 @@
 
 .contact-bottom {
   margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
 }
 .contact-send-btn {
@@ -90,7 +91,7 @@
 }
 
 .contact-showroom {
-  margin: 0px 10px 80px 10px;
+  margin: 0px 10px 30px 10px;
   border: 1px solid #ededed;
   display: flex;
   flex-wrap: wrap;
