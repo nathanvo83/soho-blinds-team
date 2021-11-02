@@ -24,7 +24,7 @@ const renderMobile = () => (
         us.
       </div>
 
-      <div class="sectionA-gallery-image">
+      <div className="sectionA-gallery-image">
         <Grid columns="1" style={{ margin: 0 }}>
           <Grid.Row>
             <Grid.Column>
@@ -195,7 +195,7 @@ const renderTablet = () => (
         us.
       </div>
 
-      <div class="sectionA-gallery-image">
+      <div className="sectionA-gallery-image">
         <Grid columns="1" style={{ margin: 0 }}>
           <Grid.Row>
             <Grid.Column>
@@ -366,7 +366,7 @@ const renderDesktop = () => (
         us.
       </div>
 
-      <div class="sectionA-gallery-image">
+      <div className="sectionA-gallery-image">
         <Grid columns="3">
           <Grid.Row>
             <Grid.Column>

@@ -51,7 +51,7 @@ const Com03 = (props) => {
 
         {/* desktop */}
         <Responsive minWidth={Responsive.onlyComputer.minWidth}>
-          <div class="com03-gallery-image">
+          <div className="com03-gallery-image">
             <Grid columns="4">
               <div className="details-title">Our Collection</div>
               <Grid.Row>
@@ -65,9 +65,9 @@ const Com03 = (props) => {
                       alt={idx}
                     ></img>
                   </div> */}
-                    <div class="com03-img-box">
+                    <div className="com03-img-box">
                       <img key={idx} src={item} alt={idx} />
-                      <div class="com03-transparent-box"></div>
+                      <div className="com03-transparent-box"></div>
                     </div>
                   </Grid.Column>
                 ))}
