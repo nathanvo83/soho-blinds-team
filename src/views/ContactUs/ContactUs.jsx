@@ -30,7 +30,7 @@ const ContactUs = () => {
   const [errorPhone, setErrorPhone] = useState(false);
   useEffect(() => {
     let hash = window.location.hash;
-    let el = document.querySelector(hash);
+    let el = hash ? document.querySelector(hash) : null;
     if (el) {
       window.scrollTo({
         top: el.offsetTop + 70,

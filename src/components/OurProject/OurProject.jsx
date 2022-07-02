@@ -14,12 +14,12 @@ const OurProject = () => {
           See how our customers are transforming their homes with
           made-to-measure blinds, shutters and curtains.
         </div>
-        <div class="gallery-image">
+        <div className="gallery-image">
           <Grid columns="1" style={{ margin: 0 }}>
             <Grid.Row>
               {
                 projects.map((project) => (
-                  <Grid.Column key={project.name}>
+                  <Grid.Column key={project.id}>
                     <ProjectCard {...project} />
                   </Grid.Column>
                 ))
@@ -39,12 +39,12 @@ const OurProject = () => {
           See how our customers are transforming their homes with
           made-to-measure blinds, shutters and curtains.
         </div>
-        <div class="gallery-image">
+        <div className="gallery-image">
           <Grid columns="2" style={{ margin: 0 }}>
             <Grid.Row>
               {
                 projects.map((project) => (
-                  <Grid.Column key={project.name}>
+                  <Grid.Column key={project.id}>
                     <ProjectCard {...project} />
                   </Grid.Column>
                 ))
@@ -65,12 +65,12 @@ const OurProject = () => {
           made-to-measure blinds, shutters and curtains.
         </div>
 
-        <div class="gallery-image">
+        <div className="gallery-image">
           <Grid columns="3">
             <Grid.Row>
               {
                 projects.map((project) => (
-                  <Grid.Column key={project.name}>
+                  <Grid.Column key={project.id}>
                     <ProjectCard {...project} />
                   </Grid.Column>
                 ))

@@ -40,8 +40,13 @@ class ProjectCard extends React.Component {
   render() {
     const props = this.props;
 
-    return (<div className="our-products-card">
-      <div className="ui card" style={{ width: '95%' }}>
+    return (<div
+      id={props.id}
+      className="our-products-card"
+      onClick={() => this.magnificPopup(props)}
+    >
+      <div className="ui card cursor-pointer"
+        style={{ width: '95%' }}>
         <div className="image">
           <img src={props.image} style={{ height:'300px' }} alt='img'/>
         </div>
@@ -51,8 +56,7 @@ class ProjectCard extends React.Component {
           {/* <div className="description">{props.address}</div> */}
         </div>
         <div className="extra">
-          <div id={props.id}
-            onClick={() => this.magnificPopup(props)}>
+          <div>
             <i aria-hidden="true" className="image icon"></i>{props.images.length} Photos
           </div>
         </div>

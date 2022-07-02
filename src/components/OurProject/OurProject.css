@@ -14,6 +14,10 @@ body {
   margin-bottom: 30px;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 /* mobile */
 .our-products-container-m {
   padding: 0px 5px 0px 5px;

@@ -78,6 +78,18 @@ const Navbar = () => {
                 &nbsp; Roller Blinds
               </a>
               <a
+                href={ROUTES.MOTORISED_ROLLER}
+                rel="noopener noreferrer"
+                className={currentPage === ROUTES.MOTORISED_ROLLER ? 'active' : ''}
+                onClick={closeBurgerMenu}
+              >
+                <FontAwesomeIcon
+                  icon={faAngleDoubleRight}
+                  className="pulled"
+                ></FontAwesomeIcon>
+                &nbsp; Motorised Roller Blinds
+              </a>
+              <a
                 href={ROUTES.BLINDS_VENETIAN}
                 rel="noopener noreferrer"
                 className={currentPage === ROUTES.BLINDS_VENETIAN ? 'active' : ''}
@@ -231,6 +243,24 @@ const Navbar = () => {
             onClick={closeBurgerMenu}
           >
             Projects
+          </a>
+
+          <a
+            href={ROUTES.BUYINGGUIDE}
+            rel="noopener noreferrer"
+            className={currentPage === ROUTES.BUYINGGUIDE ? 'active' : ''}
+            onClick={closeBurgerMenu}
+          >
+            Buying Guide
+          </a>
+
+          <a
+            href={ROUTES.SUSTAINABILITY}
+            rel="noopener noreferrer"
+            className={currentPage === ROUTES.SUSTAINABILITY ? 'active' : ''}
+            onClick={closeBurgerMenu}
+          >
+            Sustainability
           </a>
 
           {/* <a

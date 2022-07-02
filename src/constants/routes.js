@@ -14,6 +14,7 @@
 
 export const HOME = "/";
 export const BLINDS_ROLLER = "/product/blinds/roller";
+export const MOTORISED_ROLLER = "/product/blinds/motorised_roller";
 export const BLINDS_VENETIAN = "/product/blinds/venetian";
 export const BLINDS_VERTICAL = "/product/blinds/vertical";
 export const BLINDS_ZEBRA = "/product/blinds/zebra";
@@ -23,6 +24,7 @@ export const SHUTTER_TIMBER = "/product/shutters/timber";
 export const SHUTTER_PVC = "/product/shutters/pvc";
 export const SHUTTER_EXTERIOR = "/product/shutters/exterior";
 export const BUYINGGUIDE = "/buying-guide";
+export const SUSTAINABILITY = "/sustainability";
 export const CONTACTUS = "/contact-us";
 export const SHOWROOM = "/showroom";
 export const PROJECTS = "/projects";

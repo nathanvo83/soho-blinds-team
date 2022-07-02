@@ -3,6 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import * as ROUTES from "../constants/routes";
 
 import { rollerBlinds } from "../data/roller-blinds";
+import { motorisedRollerBlinds } from "../data/motorised-roller-blinds";
 import { zebraBlinds } from "../data/zebra-blinds";
 import { verticalBlinds } from "../data/vertical-blinds";
 import { venetianBlinds } from "../data/venetian-blinds";
@@ -92,6 +93,7 @@ import timber05 from "../assets/images/shutter/timber/timber05.png";
 import Home from "./Home/Home";
 import Product from "./Product/Product";
 import BuyingGuide from "./BuyingGuide/BuyingGuide";
+import Sustainability from "./Sustainability/Sustainability";
 import ContactUs from "./ContactUs/ContactUs";
 import ShowRoom from "./ShowRoom/ShowRoom";
 import Projects from "./Projects/Projects";
@@ -107,6 +109,29 @@ const Main = () => {
       content02={rollerBlinds.description}
       summary={rollerBlinds.summary}
       about={rollerBlinds.about}
+      images={[
+        roller01,
+        roller02,
+        roller03,
+        roller04,
+        roller05,
+        roller06,
+        roller07,
+        roller08,
+        roller09,
+        roller10,
+      ]}
+    ></Product>
+  );
+  const renderProductBlindsMotorisedRoller = () => (
+    <Product
+      title="Motorised Roller Blinds"
+      tab01="OVERVIEW"
+      tab02="DESCRIPTION"
+      content01={motorisedRollerBlinds.overview}
+      content02={motorisedRollerBlinds.description}
+      summary={motorisedRollerBlinds.summary}
+      about={motorisedRollerBlinds.about}
       images={[
         roller01,
         roller02,
@@ -241,6 +266,10 @@ const Main = () => {
         component={renderProductBlindsRoller}
       />
       <Route
+        path={ROUTES.MOTORISED_ROLLER}
+        component={renderProductBlindsMotorisedRoller}
+      />
+      <Route
         path={ROUTES.BLINDS_VENETIAN}
         component={renderProductBlindsVenetian}
       />
@@ -267,6 +296,7 @@ const Main = () => {
 
       {/*  */}
       <Route path={ROUTES.BUYINGGUIDE} component={BuyingGuide} />
+      <Route path={ROUTES.SUSTAINABILITY} component={Sustainability} />
       <Route path={ROUTES.SHOWROOM} component={ShowRoom} />
       <Route path={ROUTES.CONTACTUS} component={ContactUs} />
       <Route path={ROUTES.PROJECTS} component={Projects} />
