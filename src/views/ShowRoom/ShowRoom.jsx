@@ -55,8 +55,7 @@ const ShowRoom = () => {
             293 Dominion Road Mount Eden, Auckland 1024.
           </div>
           <div>
-            <FontAwesomeIcon icon={faClock} className="icon" /> Open from 10:00
-            am - 6:00 pm Monday - Saturday and Sunday by appointment.
+            <FontAwesomeIcon icon={faClock} className="icon" /> Visit by appointment only.
           </div>
         </div>
       </div>
