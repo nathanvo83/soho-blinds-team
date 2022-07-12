@@ -3,13 +3,13 @@ export const motorisedRollerBlinds = {
     titles: [
       "Style and Functionality",
       "Privacy",
-      "UV and Rain Protection",
+      "Convenience",
       "Versatility",
     ],
     contents: [
-      "Roller blinds are the perfect fusion of style and function. Framed, secure, and tidy, their aesthetic adaptability ensures that whatever your interior theme is, there is a roller blind design, pattern and material that will uplift the overall layout of your residential or commercial space.",
+      "Motorised roller blinds are the ultimate in luxury, sophistication, and convenience. They look fantastic, there are no wires or complex installations, and you have complete control over their operation using a remote, a hub device, or your voice.",
       "Certain materials such as block out roller blinds give you total privacy right when you need it.",
-      "Roller blinds such as sunscreens protect you and your family from harmful UVA and UVB rays. Outdoors, it can effectively keep your balcony mostly dry from rains and repels insects.",
+      "Motorised roller blinds are the most convenient and easiest to operate option that you can choose. Operation is via a remote, with a quiet and carefully concealed motor doing the job of either opening or closing your blinds. Opening and closing can even be automated.",
       "Roller blinds are flexible – they can cover multiple windows or individual large ones. They can be synchronised, separated or even operated in sequence. For motorised roller blinds, they can be operated by rechargeable battery or mains power. Either way, they are easy to manage.",
     ],
   },

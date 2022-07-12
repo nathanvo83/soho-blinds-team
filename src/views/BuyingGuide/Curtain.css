@@ -1,0 +1,126 @@
+.sectionCurtain {
+  background-color: #f9f9fb;
+  /* padding: 100px 0px 0px 0px;
+  margin-bottom: 80px; */
+}
+
+/* mobile */
+.sectionCurtain-container-m {
+  padding: 50px 0px 0px 0px;
+  margin: auto;
+}
+
+.col-container-m {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.sectionCurtain-image-m {
+  width: 90vw;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* tablet */
+.sectionCurtain-container-t {
+  padding: 50px 0px 0px 0px;
+  margin: auto;
+}
+
+.col-container-t {
+  width: 95vw;
+  margin: 0 auto;
+}
+
+.sectionCurtain-image-t {
+  width: 95vw;
+  height: 300px;
+  /* border-radius: 10px; */
+  object-fit: cover;
+}
+
+/* desktop */
+.sectionCurtain-container {
+  padding: 50px 0px 50px 0px;
+  /* width: 1024px; */
+  margin: auto;
+}
+
+.sectionCurtain-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  padding-bottom: 25px;
+}
+
+.sectionCurtain-subtitle {
+  font-size: 17px;
+  text-align: center;
+  padding-bottom: 35px;
+}
+
+.sectionCurtain-col-container {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.sectionCurtain-image-box {
+  position: relative;
+}
+
+.sectionCurtain-image {
+  width: 400px;
+  height: 400px;
+  /* border-radius: 10px; */
+  object-fit: cover;
+}
+
+.sectionCurtain-top-right {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 100px;
+}
+
+.sectionCurtain-image-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 420px;
+  color: #ffffff;
+  /* border-radius: 10px; */
+}
+
+.sectionCurtain-image-cover:hover {
+  /* background-color: rgba(0, 0, 0, 0.3); */
+}
+
+.section-header-details {
+  margin: 20px 0px 5px 0px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sectionCurtain-item-details {
+  font-size: 15px;
+  /* text-align: justify; */
+}
+
+.sectionCurtain-linkgroup {
+  margin: 15px 0px 5px 0px;
+}
+
+.sectionCurtain-link {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #523de7;
+  padding: 0px 3px;
+}
+
+.sectionCurtain-link:hover {
+  color: #523de7;
+  background-color: rgba(0, 0, 0, 0.1);
+}

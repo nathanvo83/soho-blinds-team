@@ -4,7 +4,7 @@ import BGuide01 from "./BGuide01";
 import BGuide02 from "./BGuide02";
 import BGuide03 from "./BGuide03";
 import BGuide04 from "./BGuide04";
-import Section03 from "../ShowRoom/Section03";
+import Curtain from "./Curtain";
 
 const BuyingGuide = () => {
   return (
@@ -14,7 +14,7 @@ const BuyingGuide = () => {
       <BGuide02></BGuide02>
       <BGuide03></BGuide03>
       <BGuide04></BGuide04>
-      <Section03></Section03>
+      <Curtain></Curtain>
     </React.Fragment>
   );
 };

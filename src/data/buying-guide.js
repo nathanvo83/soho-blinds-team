@@ -60,4 +60,35 @@ export const buyingGuide = {
     ],
     link: "/product/blinds/zebra"
   },
+  bguideCurtain: {
+    title: "How to choose the perfect curtains for your home",
+    link: "/product/curtains/day",
+    items: [
+      {
+        title: "Think about curtain fullness",
+        content: "Different header types require different levels of fullness. Likewise, a thin sheer fabric may require more fabric – a greater fullness – than a thicker material to achieve a similar look.",
+        image: "",
+      },
+      {
+        title: "Choose how high to hang your curtains",
+        content: "To add to your room’s sense of height, have your curtains fixed several inches above the top of the window frame. You can also take into consideration if there is a radiator near the window which can mean altering the curtain length.",
+      },
+      {
+        title: "Choose the right curtain lining",
+        content: "All of our curtains are lined as standard for a luxurious and full finish. There’s also the option for a thermal curtain lining, which will help insulate the home; or a blackout curtain lining, which will help prevent outside light coming inside through the window.",
+      },
+      {
+        title: "Layer curtains with other window dressings",
+        content: "For added effect, you can layer other products with curtains at your window. This could be for aesthetic or practical reasons. Layering different blinds with curtains is a great way to combine fabrics at a window to create a sense of depth by playing on textures and patterns. Or you might choose a blind to layer with curtains to increase the blackout effect or to enhance sound or heat insulation.",
+      },
+      {
+        title: "Add light and bright Voile curtains",
+        content: "Another option is layering curtains with voiles. The combination of a light voile with a full curtain looks fantastic, adding a delicate touch to a window.",
+      },
+      {
+        title: "Finish with stylish accessories",
+        content: "The finishing touches you choose are every bit as important as the fabric is to the end result. An in-home appointment with a Soho Blinds advisor gives you an opportunity to go through them all with an expert and to get a true understanding of the end result.",
+      },
+    ]
+  },
 };
