@@ -2,10 +2,10 @@ import React from "react";
 import "./Section01.css";
 import { sustainability } from "../../data/sustainability";
 import { Responsive, Grid } from "semantic-ui-react";
-import roller01 from "../../assets/images/sustainability/p0101.png";
-import roller02 from "../../assets/images/sustainability/p0102.jpg";
-import roller03 from "../../assets/images/sustainability/p0103.png";
-import roller04 from "../../assets/images/sustainability/p0104.png";
+import img_p01 from "../../assets/images/sustainability/p01.jpg";
+import img_p02 from "../../assets/images/sustainability/p02.jpg";
+import img_p03 from "../../assets/images/sustainability/p03.png";
+import img_p04 from "../../assets/images/sustainability/p04.jpg";
 
 const renderMobile = () => (
   <div className="section01">
@@ -15,10 +15,10 @@ const renderMobile = () => (
           <Grid.Column>
             <div className="section01-center">
               <div className="section01-image-group-m">
-                <img className="section01-image01-m" src={roller01} alt="" />
-                <img className="section01-image02-m" src={roller02} alt="" />
-                <img className="section01-image03-m" src={roller03} alt="" />
-                <img className="section01-image04-m" src={roller04} alt="" />
+                <img className="section01-image01-m" src={img_p01} alt="" />
+                <img className="section01-image02-m" src={img_p02} alt="" />
+                <img className="section01-image03-m" src={img_p03} alt="" />
+                <img className="section01-image04-m" src={img_p04} alt="" />
               </div>
             </div>
           </Grid.Column>
@@ -46,10 +46,10 @@ const renderTablet = () => (
           <Grid.Column>
             <div className="section01-center">
               <div className="section01-image-group">
-                <img className="section01-image01" src={roller01} alt="" />
-                <img className="section01-image02" src={roller02} alt="" />
-                <img className="section01-image03" src={roller03} alt="" />
-                <img className="section01-image04" src={roller04} alt="" />
+                <img className="section01-image01" src={img_p01} alt="" />
+                <img className="section01-image02" src={img_p02} alt="" />
+                <img className="section01-image03" src={img_p03} alt="" />
+                <img className="section01-image04" src={img_p04} alt="" />
               </div>
             </div>
           </Grid.Column>
@@ -77,10 +77,10 @@ const renderDesktop = () => (
           <Grid.Column>
             <div className="section01-center">
               <div className="section01-image-group">
-                <img className="section01-image01" src={roller01} alt="" />
-                <img className="section01-image02" src={roller02} alt="" />
-                <img className="section01-image03" src={roller03} alt="" />
-                <img className="section01-image04" src={roller04} alt="" />
+                <img className="section01-image01" src={img_p01} alt="" />
+                <img className="section01-image02" src={img_p02} alt="" />
+                <img className="section01-image03" src={img_p03} alt="" />
+                <img className="section01-image04" src={img_p04} alt="" />
               </div>
             </div>
           </Grid.Column>

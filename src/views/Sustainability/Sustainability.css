@@ -1,0 +1,141 @@
+.sustain-container {
+  padding: 50px 20px 0px 0px;
+  width: 1024px;
+  margin: auto;
+  font-size: 18px;
+  /* background-color: seagreen; */
+}
+
+.sustain-container-m {
+  padding: 50px 0px 0px 0px;
+  margin: auto;
+  /* background-color: seagreen; */
+}
+
+.sustain-form {
+  font-family: "Titillium Web", sans-serif;
+  padding-bottom: 10px;
+}
+
+.sustain-bottom {
+  margin-top: 20px;
+  text-align: center;
+}
+.sustain-send-btn {
+  background-color: #00afef !important;
+  color: #f5f5f5 !important;
+}
+
+.sustain-field-title {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.sustain-field {
+  margin: 7px 0px !important;
+  padding: 0px 10px !important;
+  font-size: 15px;
+}
+
+.sustain-details {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  background-color: #ededed;
+}
+
+.sustain-details-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px 0px 10px 0px;
+  /* color: #523de7; */
+}
+
+.sustain-details-subtitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 30px 10px 15px 10px;
+}
+
+.sustain-details-image {
+  max-width: 500px;
+  margin: auto;
+}
+
+.sustain-details-item {
+  margin: 10px;
+  text-align: justify;
+}
+
+.sustain-details-icon {
+  margin-right: 15px;
+  color: #02bbaa;
+}
+
+.sustain-title {
+  font-size: 17px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sustain-subtitle {
+  font-size: 25px;
+  margin: 5px 5px 40px 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.sustain-note {
+  padding: 0px 10px;
+  margin: 70px 0px 20px 0px;
+  text-align: justify;
+  font-size: 15px;
+  color: #6e6d6b;
+}
+
+.sustain-showroom {
+  margin: 0px 10px 80px 10px;
+  border: 1px solid #ededed;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sustain-showroom.m {
+  flex-direction: column;
+}
+
+.sustain-showroom > .title {
+  display: flex;
+  align-items: center;
+
+  background: #02bbaa;
+  color: #fff;
+}
+
+.sustain-showroom .icon {
+  color: #02bbaa;
+}
+
+.sustain-showroom > .title > .text {
+  padding: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.sustain-showroom > .content {
+  padding: 20px;
+  align-items: center;
+  font-size: 20px;
+
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 10px;
+}
+
+.sustain-showroom .address {
+  /*  */
+}
+
+.sustain-showroom .open-time {
+  /*  */
+}

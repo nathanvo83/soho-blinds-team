@@ -1,0 +1,53 @@
+/* mobile */
+.h-header-img-m {
+  height: 120vw;
+  max-height: 85vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* tablet */
+.h-header-img-t {
+  height: 65vw;
+  max-height: 65vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* desktop */
+.h-header-img-d {
+  height: 65vw;
+  min-height: 410px;
+  max-height: 65vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.h-outbound {
+  position: relative;
+}
+.quote-outbound {
+  /* height: 300px; */
+  /* position: relative; */
+}
+.quote-area {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 300px;
+  justify-items: center;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-left: 5px solid rgba(0, 0, 0, 0.3);
+
+  height: 65vw;
+  min-height: 410px;
+  max-height: 65vh;
+}
+
+.sale-area {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
