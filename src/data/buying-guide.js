@@ -60,6 +60,59 @@ export const buyingGuide = {
     ],
     link: "/product/blinds/zebra"
   },
+  bguide05: {
+    title: "Eyelet heading",
+    description: [
+      "Eyelet curtain headings are threaded on to a pole through metal rings, with the curtains hanging in deep, uniform folds from the top to the bottom. This heading type is very fashionable in modern homes.",
+    ],
+    content: [
+      "Great for any style and budget",
+      "Creating simple, but eye-catching clean lines",
+      "Making small rooms look bigger",
+      "Customising colours and finishes",
+    ],
+    link: "/product/curtains/day"
+  },
+  bguide06: {
+    title: "Pencil pleat heading",
+    description: [
+      "Pencil pleat curtain headings gather the fabric into semi-cylindrical rolls that resemble a line of pencils. The curtains will tumble freely to the floor. It’s a classic heading that goes with poles or tracks.",
+    ],
+    content: [
+      "All our made-to-measure curtains are available with a pencil pleat header style",
+      "Extra deep pencil pleat option available for taller windows",
+      "Pencil pleat curtains can be fitted onto a curtain pole or track",
+      "Versatile, budget friendly option",
+    ],
+    link: "/product/curtains/day"
+  },
+  bguide07: {
+    title: "Pinch pleat heading",
+    description: [
+      "Pinch pleat curtain headings draw together lots of fabric, which is gathered in bunches and stitched to create a highly decorative finish featuring elegant folds flowing to the floor. You can have pinch pleat headings with either a pole or a track.",
+    ],
+    content: [
+      "All our made-to-measure curtains are available with a pinch pleat header style",
+      "Options for double pinch pleat and triple pinch pleat header",
+      "Pinch pleat curtains can be fitted onto a curtain pole or track",
+      "A versatile, great value option",
+      "Everything taken care of for you",
+    ],
+    link: "/product/curtains/day"
+  },
+  bguide08: {
+    title: "Wave heading",
+    description: [
+      "Wave curtain headings are perfect for an informal, relaxed feel. The curtain falls in soft, wave-like rippling folds allowing more of the fabric to be seen. Wave curtains are fitted to a slim track.",
+    ],
+    content: [
+      "A wave header style allows curtains to drape in soft, relaxed folds",
+      "Wave curtains are fitted to a specially designed, discreet track",
+      "Wave curtains fall into neat folds so are a good option if you don’t have much space next to your windows",
+      "A versatile, stylish solution to suit all budgets",
+    ],
+    link: "/product/curtains/day"
+  },
   bguideCurtain: {
     title: "How to choose the perfect curtains for your home",
     link: "/product/curtains/day",

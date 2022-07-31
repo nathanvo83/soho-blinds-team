@@ -1,19 +1,19 @@
 import React from "react";
 import Header from "../../components/Header/Header";
-import BGuide01 from "./BGuide01";
-import BGuide02 from "./BGuide02";
-import BGuide03 from "./BGuide03";
-import BGuide04 from "./BGuide04";
+import BGuide05 from "./BGuide05";
+import BGuide06 from "./BGuide06";
+import BGuide07 from "./BGuide07";
+import BGuide08 from "./BGuide08";
 import Curtain from "./Curtain";
 
 const BGuideCurtains = () => {
   return (
     <React.Fragment>
       <Header showQuote={false} showSale={false} showSlogan={false}></Header>
-      <BGuide01></BGuide01>
-      <BGuide02></BGuide02>
-      <BGuide03></BGuide03>
-      <BGuide04></BGuide04>
+      <BGuide05></BGuide05>
+      <BGuide06></BGuide06>
+      <BGuide07></BGuide07>
+      <BGuide08></BGuide08>
       <Curtain></Curtain>
     </React.Fragment>
   );

@@ -275,18 +275,18 @@ const Navbar = () => {
                 ></FontAwesomeIcon>
                 &nbsp; Curtains
               </a>
-              <a
-                href={ROUTES.BUYINGGUIDE_SHUTTERS}
-                rel="noopener noreferrer"
-                className={currentPage === ROUTES.BUYINGGUIDE_SHUTTERS ? 'active' : ''}
-                onClick={closeBurgerMenu}
-              >
-                <FontAwesomeIcon
-                  icon={faAngleDoubleRight}
-                  className="pulled"
-                ></FontAwesomeIcon>
-                &nbsp; Shutters
-              </a>
+              {/* <a */}
+              {/*   href={ROUTES.BUYINGGUIDE_SHUTTERS} */}
+              {/*   rel="noopener noreferrer" */}
+              {/*   className={currentPage === ROUTES.BUYINGGUIDE_SHUTTERS ? 'active' : ''} */}
+              {/*   onClick={closeBurgerMenu} */}
+              {/* > */}
+              {/*   <FontAwesomeIcon */}
+              {/*     icon={faAngleDoubleRight} */}
+              {/*     className="pulled" */}
+              {/*   ></FontAwesomeIcon> */}
+              {/*   &nbsp; Shutters */}
+              {/* </a> */}
             </div>
           </div>
 
