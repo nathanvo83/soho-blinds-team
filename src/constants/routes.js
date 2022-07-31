@@ -23,11 +23,15 @@ export const CURTAIN_NIGHT = "/product/curtains/night";
 export const SHUTTER_TIMBER = "/product/shutters/timber";
 export const SHUTTER_PVC = "/product/shutters/pvc";
 export const SHUTTER_EXTERIOR = "/product/shutters/exterior";
-export const BUYINGGUIDE = "/buying-guide";
 export const SUSTAINABILITY = "/sustainability";
 export const CONTACTUS = "/contact-us";
 export const SHOWROOM = "/showroom";
 export const PROJECTS = "/projects";
+
+export const BUYINGGUIDE = "/buying-guide";
+export const BUYINGGUIDE_BLINDS = "/buying-guide/blinds";
+export const BUYINGGUIDE_CURTAINS = "/buying-guide/curtains";
+export const BUYINGGUIDE_SHUTTERS = "/buying-guide/shutters";
 
 export const HOUZZ_PROJECTS =
   "https://www.houzz.co.nz/professionals/shutters-blinds-and-curtains/soho-blinds-pfvwnz-pf~943228419#Projects";

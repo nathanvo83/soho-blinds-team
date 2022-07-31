@@ -245,14 +245,50 @@ const Navbar = () => {
             Projects
           </a>
 
-          <a
-            href={ROUTES.BUYINGGUIDE}
-            rel="noopener noreferrer"
-            className={currentPage === ROUTES.BUYINGGUIDE ? 'active' : ''}
-            onClick={closeBurgerMenu}
-          >
-            Buying Guide
-          </a>
+          <div className="dropdown">
+            <button className="dropbtn">
+              Buying Guide&nbsp;
+              <FontAwesomeIcon icon={faCaretDown}></FontAwesomeIcon>
+            </button>
+            <div className="dropdown-content">
+              <a
+                href={ROUTES.BUYINGGUIDE_BLINDS}
+                rel="noopener noreferrer"
+                className={currentPage === ROUTES.BUYINGGUIDE_BLINDS ? 'active' : ''}
+                onClick={closeBurgerMenu}
+              >
+                <FontAwesomeIcon
+                  icon={faAngleDoubleRight}
+                  className="pulled"
+                ></FontAwesomeIcon>
+                &nbsp; Blinds
+              </a>
+              <a
+                href={ROUTES.BUYINGGUIDE_CURTAINS}
+                rel="noopener noreferrer"
+                className={currentPage === ROUTES.BUYINGGUIDE_CURTAINS ? 'active' : ''}
+                onClick={closeBurgerMenu}
+              >
+                <FontAwesomeIcon
+                  icon={faAngleDoubleRight}
+                  className="pulled"
+                ></FontAwesomeIcon>
+                &nbsp; Curtains
+              </a>
+              <a
+                href={ROUTES.BUYINGGUIDE_SHUTTERS}
+                rel="noopener noreferrer"
+                className={currentPage === ROUTES.BUYINGGUIDE_SHUTTERS ? 'active' : ''}
+                onClick={closeBurgerMenu}
+              >
+                <FontAwesomeIcon
+                  icon={faAngleDoubleRight}
+                  className="pulled"
+                ></FontAwesomeIcon>
+                &nbsp; Shutters
+              </a>
+            </div>
+          </div>
 
           <a
             href={ROUTES.SUSTAINABILITY}

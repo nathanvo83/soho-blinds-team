@@ -92,11 +92,13 @@ import timber05 from "../assets/images/shutter/timber/timber05.png";
 
 import Home from "./Home/Home";
 import Product from "./Product/Product";
-import BuyingGuide from "./BuyingGuide/BuyingGuide";
 import Sustainability from "./Sustainability/Sustainability";
 import ContactUs from "./ContactUs/ContactUs";
 import ShowRoom from "./ShowRoom/ShowRoom";
 import Projects from "./Projects/Projects";
+import BGuideBlinds from "./BuyingGuide/BGuideBlinds";
+import BGuideCurtains from "./BuyingGuide/BGuideCurtains";
+import BGuideShutters from "./BuyingGuide/BGuideShutters";
 
 const Main = () => {
   // -----blinds-----
@@ -295,7 +297,9 @@ const Main = () => {
       />
 
       {/*  */}
-      <Route path={ROUTES.BUYINGGUIDE} component={BuyingGuide} />
+      <Route path={ROUTES.BUYINGGUIDE_BLINDS} component={BGuideBlinds} />
+      <Route path={ROUTES.BUYINGGUIDE_CURTAINS} component={BGuideCurtains} />
+      <Route path={ROUTES.BUYINGGUIDE_SHUTTERS} component={BGuideShutters} />
       <Route path={ROUTES.SUSTAINABILITY} component={Sustainability} />
       <Route path={ROUTES.SHOWROOM} component={ShowRoom} />
       <Route path={ROUTES.CONTACTUS} component={ContactUs} />
