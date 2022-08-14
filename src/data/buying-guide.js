@@ -113,6 +113,81 @@ export const buyingGuide = {
     ],
     link: "/product/curtains/day"
   },
+  bguide09: {
+    title: "Full height shutters",
+    description: [
+      "Our most popular and versatile shutter style. Each shutter panel is made to the full height of your window. Full height shutters give you a classic and sophisticated look, providing exceptional levels of privacy and light control. They suit all window styles and shapes and can be fitted to large expanses of glass, including patio doors.",
+      "As with all our shutters, you can choose from a range of louvre widths. Smaller windows or period style homes usually suit a slimmer louvre width, whereas large windows in contemporary styled homes benefit from a wider louvre.",
+    ],
+    content: [
+      "Choose from a range of wood stain or painted shades, including custom colours",
+      "Waterproof options available for kitchens and bathrooms",
+      "Louvres in the top and bottom sections can move together or independently",
+      "Choose plantation shutters with louvres or solid shutters",
+      "A versatile, stylish solution to suit all budgets",
+    ],
+    link: "/product/shutters/timber"
+  },
+  bguide10: {
+    title: "Tier-on-tier shutters",
+    description: [
+      "A practical and stylish choice to beat the heat, our quality range of tier-on-tier shutters have top and bottom panels that open independently for great control over light and privacy. Our in-home service includes expert measuring and fitting included for a perfect finish and value you can measure.",
+    ],
+    content: [
+      "Choose from a range of wood stain or painted shades, including custom colours",
+      "Waterproof options available for kitchens and bathrooms",
+      "Top and bottom sections can be adjusted independently",
+      "Choose plantation shutters with louvres or solid shutters",
+      "Reduce light glare, but allow in enough light to help you work or read",
+      "Beneficial for rooms where privacy and light control are important",
+      "Cost effective, sophisticated style",
+    ],
+    link: "/product/shutters/timber"
+  },
+  bguide11: {
+    title: "Solid shutters",
+    description: [
+      "Solid shutters are a refined and elegant choice for any style of home or window. A great way to beat the heat in summer, or add extra insulation to your home in winter without compromising style.",
+    ],
+    content: [
+      "The single panel design blocks out unwanted light during the day",
+      "Adds an extra insulating layer helping to keep the heat in",
+      "Can be added to a track and used as room dividers to provide extra privacy",
+      "Choose plantation shutters with louvres or solid shutters",
+      "A cost effective, sophisticated solution for any home",
+      "Great choice for large expanses of glass such as sliding patio doors",
+      "Create the illusion of a false wall when the shutters are closed",
+    ],
+    link: "/product/shutters/timber"
+  },
+  bguide12: {
+    title: "Tracked shutters",
+    description: [
+      "Beat the heat with Tracked shutters. Ideal for wide windows, sliding or bi-fold doors, they slide open on a specially made track creating a smooth sliding mechanism. Our high quality range includes expert measuring and fitting - that’s what makes us great value.",
+    ],
+    content: [
+      "Great for light and privacy control especially with bi-fold doors, or other expanses of glass",
+      "Waterproof options available for bathroom and kitchens",
+      "Perfect for dividing spaces to separate rooms and providing privacy",
+      "The shutters concertina back neatly, allowing you to fully enjoy the view from your window",
+      "A cost effective, sophisticated style for open plan living",
+    ],
+    link: "/product/shutters/timber"
+  },
+  bguide13: {
+    title: "Shaped shutters",
+    description: [
+      "Beat the heat with shaped shutters. Perfect for transforming arched, triangular, circular or small windows, we can make and fit shutters to any size or shape with our made to measure service. Our shaped shutters come in all colour options, from natural wood stains to custom colours.",
+    ],
+    content: [
+      "Light and privacy control for small or unusually shaped windows",
+      "Completely customisable for almost all non-standard windows",
+      "Waterproof options for kitchens or bathrooms",
+      "Fully guaranteed for five years for peace of mind",
+      "A cost effective, sophisticated solution for any window",
+    ],
+    link: "/product/shutters/timber"
+  },
   bguideCurtain: {
     title: "How to choose the perfect curtains for your home",
     link: "/product/curtains/day",
