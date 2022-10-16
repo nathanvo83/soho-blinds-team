@@ -35,7 +35,7 @@ const renderMobile = () => (
                     <img
                       className="sectionA-top-right"
                       src={sale_off}
-                      alt=""
+                      alt="Up to 50% Sale Logo"
                     ></img>
                     <div className="sectionA-image-cover"></div>
                   </div>
@@ -93,7 +93,7 @@ const renderMobile = () => (
                     <img
                       className="sectionA-top-right"
                       src={sale_off}
-                      alt=""
+                      alt="Up to 50% Sale Logo"
                     ></img>
                     <div className="sectionA-image-cover"></div>
                   </div>
@@ -135,7 +135,7 @@ const renderMobile = () => (
                     <img
                       className="sectionA-top-right"
                       src={sale_off}
-                      alt=""
+                      alt="Up to 50% Sale Logo"
                     ></img>
                     <div className="sectionA-image-cover"></div>
                   </div>
@@ -206,7 +206,7 @@ const renderTablet = () => (
                     <img
                       className="sectionA-top-right"
                       src={sale_off}
-                      alt=""
+                      alt="Up to 50% Sale Logo"
                     ></img>
                     <div className="sectionA-image-cover"></div>
                   </div>
@@ -264,7 +264,7 @@ const renderTablet = () => (
                     <img
                       className="sectionA-top-right"
                       src={sale_off}
-                      alt=""
+                      alt="Up to 50% Sale Logo"
                     ></img>
                     <div className="sectionA-image-cover"></div>
                   </div>
@@ -306,7 +306,7 @@ const renderTablet = () => (
                     <img
                       className="sectionA-top-right"
                       src={sale_off}
-                      alt=""
+                      alt="Up to 50% Sale Logo"
                     ></img>
                     <div className="sectionA-image-cover"></div>
                   </div>
@@ -377,7 +377,7 @@ const renderDesktop = () => (
                     <img
                       className="sectionA-top-right"
                       src={sale_off}
-                      alt=""
+                      alt="Up to 50% Sale Logo"
                     ></img>
                     <div className="sectionA-image-cover"></div>
                   </div>
@@ -432,7 +432,7 @@ const renderDesktop = () => (
                     <img
                       className="sectionA-top-right"
                       src={sale_off}
-                      alt=""
+                      alt="Up to 50% Sale Logo"
                     ></img>
                     <div className="sectionA-image-cover"></div>
                   </div>
@@ -472,7 +472,7 @@ const renderDesktop = () => (
                     <img
                       className="sectionA-top-right"
                       src={sale_off}
-                      alt=""
+                      alt="Up to 50% Sale Logo"
                     ></img>
                     <div className="sectionA-image-cover"></div>
                   </div>

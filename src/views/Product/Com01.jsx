@@ -6,7 +6,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
 const Com01 = props => {
-  const { images } = props;
+  const { images, title } = props;
 
   return (
     <div>
@@ -20,13 +20,13 @@ const Com01 = props => {
           className="com01-content"
         >
           <div>
-            <img className="com01-image-m" src={images[0]} alt="First slide" />
+            <img className="com01-image-m" src={images[0]} alt={title} />
           </div>
           <div>
-            <img className="com01-image-m" src={images[1]} alt="First slide" />
+            <img className="com01-image-m" src={images[1]} alt={title} />
           </div>
           <div>
-            <img className="com01-image-m" src={images[2]} alt="First slide" />
+            <img className="com01-image-m" src={images[2]} alt={title} />
           </div>
         </Carousel>
       </Responsive>
@@ -43,13 +43,13 @@ const Com01 = props => {
           className="com01-content-t"
         >
           <div>
-            <img className="com01-image-t" src={images[0]} alt="First slide" />
+            <img className="com01-image-t" src={images[0]} alt={title} />
           </div>
           <div>
-            <img className="com01-image-t" src={images[1]} alt="First slide" />
+            <img className="com01-image-t" src={images[1]} alt={title} />
           </div>
           <div>
-            <img className="com01-image-t" src={images[2]} alt="First slide" />
+            <img className="com01-image-t" src={images[2]} alt={title} />
           </div>
         </Carousel>
       </Responsive>
@@ -63,13 +63,13 @@ const Com01 = props => {
           className="com01-content-d"
         >
           <div>
-            <img className="com01-image-d" src={images[0]} alt="First slide" />
+            <img className="com01-image-d" src={images[0]} alt={title} />
           </div>
           <div>
-            <img className="com01-image-d" src={images[1]} alt="First slide" />
+            <img className="com01-image-d" src={images[1]} alt={title} />
           </div>
           <div>
-            <img className="com01-image-d" src={images[2]} alt="First slide" />
+            <img className="com01-image-d" src={images[2]} alt={title} />
           </div>
         </Carousel>
       </Responsive>

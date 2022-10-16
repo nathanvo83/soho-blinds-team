@@ -25,7 +25,7 @@ const Product = (props) => {
       {/* phone */}
       <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
         <Promotion></Promotion>
-        <Com01 images={images}></Com01>
+        <Com01 images={images} title={title}></Com01>
         <div className="p-part02-m">
           <Com02
             title={title}
@@ -46,7 +46,7 @@ const Product = (props) => {
         maxWidth={Responsive.onlyTablet.maxWidth}
       >
         <Promotion></Promotion>
-        <Com01 images={images}></Com01>
+        <Com01 images={images} title={title}></Com01>
         <div className="p-part02-m">
           <Com02
             title={title}
@@ -69,7 +69,7 @@ const Product = (props) => {
           <Grid columns="2" style={{ margin: "0px" }}>
             <Grid.Row>
               <Grid.Column>
-                <Com01 images={images}></Com01>
+                <Com01 images={images} title={title}></Com01>
               </Grid.Column>
               <Grid.Column>
                 <Com02

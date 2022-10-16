@@ -166,7 +166,7 @@ const renderDesktop = () => (
               <div className="col-container">
                 <div>
                   <div className="section03-image-box">
-                    <img className="section03-image" src={h_01} alt="" />
+                    <img className="section03-image" src={h_01} alt="Book an Appointment" />
                     <div className="section03-image-cover"></div>
                   </div>
                 </div>
@@ -182,7 +182,7 @@ const renderDesktop = () => (
               <div className="col-container">
                 <div>
                   <div className="section03-image-box">
-                    <img className="section03-image" src={h_02} alt="" />
+                    <img className="section03-image" src={h_02} alt="Get Expert Advice" />
                     <div className="section03-image-cover"></div>
                   </div>
                 </div>
@@ -199,7 +199,7 @@ const renderDesktop = () => (
               <div className="col-container">
                 <div>
                   <div className="section03-image-box">
-                    <img className="section03-image" src={h_03} alt="" />
+                    <img className="section03-image" src={h_03} alt="Professional fitting" />
                     <div className="section03-image-cover"></div>
                   </div>
                 </div>
