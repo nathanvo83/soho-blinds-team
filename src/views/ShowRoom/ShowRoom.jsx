@@ -16,16 +16,26 @@ import {
   Input,
 } from "semantic-ui-react";
 import { faClock, faHeart, faHome } from "@fortawesome/free-solid-svg-icons";
+import Section05 from "./Section05";
 
 const ShowRoom = () => {
   // const [errorQuery, setErrorQuery] = useState(false);
 
-  const renderTitle = () => (
-    <div className="contact-bottom">
-      <a href={ROUTES.CONTACTUS + '#contact-showroom'} rel="noopener noreferrer">
-        <Button className="CustomerFeedback-button">
-          Book A Free Measure & Quote
-        </Button>
+  const renderQuoteButton = () => (
+    // <div className="contact-bottom">
+    //   <a
+    //     href={ROUTES.CONTACTUS + "#contact-showroom"}
+    //     rel="noopener noreferrer"
+    //   >
+    //     <div className="quote-button">Book A Free Measure & Quote</div>
+    //   </a>
+    // </div>
+    <div>
+      <a
+        href={ROUTES.CONTACTUS + "#contact-showroom"}
+        rel="noopener noreferrer"
+      >
+        <div className="quote-button">Book A Free Measure & Quote</div>
       </a>
     </div>
   );
@@ -51,11 +61,12 @@ const ShowRoom = () => {
 
         <div className="content">
           <div>
-            <FontAwesomeIcon icon={faHome} className="icon" /> Auckland Showroom
-            293 Dominion Road Mount Eden, Auckland 1024.
+            <FontAwesomeIcon icon={faHome} className="icon" /> 25/183
+            Karangahape Road, Auckland CBD, Auckland 1010.
           </div>
           <div>
-            <FontAwesomeIcon icon={faClock} className="icon" /> Visit by appointment only.
+            <FontAwesomeIcon icon={faClock} className="icon" /> Visit by
+            appointment only.
           </div>
         </div>
       </div>
@@ -65,11 +76,15 @@ const ShowRoom = () => {
   const renderDesktop = () => (
     <div>
       <Section04 />
+
       <div className="contact-container">
+        {renderQuoteButton()}
         {renderShowRoom("")}
-        {renderTitle()}
       </div>
       <Section01 />
+      <Section05 />
+      {/* <div className="contact-container">{renderTitle()}</div> */}
+
       <Section03 />
     </div>
   );
@@ -77,11 +92,14 @@ const ShowRoom = () => {
   const renderMobile = () => (
     <div>
       <Section04 />
+
       <div className="contact-container-m">
+        {renderQuoteButton()}
         {renderShowRoom("m")}
-        {renderTitle()}
       </div>
       <Section01 />
+      <Section05 />
+
       <Section03 />
     </div>
   );

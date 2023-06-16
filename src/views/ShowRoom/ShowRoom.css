@@ -6,6 +6,14 @@
   /* background-color: seagreen; */
 }
 
+.quote-button {
+  text-align: center;
+  background-color: #eb0143 !important;
+  color: #f5f5f5 !important;
+  margin: 0px 10px 30px 10px;
+  padding: 10px;
+}
+
 .contact-container-m {
   padding: 50px 0px 0px 0px;
   margin: auto;

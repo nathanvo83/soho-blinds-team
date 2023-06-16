@@ -35,8 +35,8 @@ const ContactUs = () => {
       window.scrollTo({
         top: el.offsetTop + 70,
         left: 0,
-        behavior: 'smooth',
-      })
+        behavior: "smooth",
+      });
     }
   });
   // const [errorQuery, setErrorQuery] = useState(false);
@@ -253,12 +253,12 @@ const ContactUs = () => {
 
         <div className="content">
           <div>
-            <FontAwesomeIcon icon={faHome} className="icon" /> Auckland Showroom
-            293 Dominion Road Mount Eden, Auckland 1024.
+            <FontAwesomeIcon icon={faHome} className="icon" /> 25/183
+            Karangahape Road, Auckland CBD, Auckland 1010.
           </div>
           <div>
-            <FontAwesomeIcon icon={faClock} className="icon" /> Open from 10:00
-            am - 6:00 pm Monday - Saturday and Sunday by appointment.
+            <FontAwesomeIcon icon={faClock} className="icon" /> Visit by
+            appointment only.
           </div>
         </div>
       </div>
