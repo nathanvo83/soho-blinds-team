@@ -42,9 +42,12 @@
   /* float: left;
   overflow: hidden; */
   /* width: 125px; */
-  height: 48px;
+  height: 44px;
   /* margin-left: 10px;
   margin-right: 30px; */
+
+  /* margin-top: 4px;
+  margin-bottom: 4px; */
 
   justify-items: center;
   vertical-align: bottom;

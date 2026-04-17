@@ -12,7 +12,7 @@ const Footer = () => {
             src="https://seal.godaddy.com/getSeal?sealID=ZH0XP4n4YVbRh6SDng1WjVb7KxKOhD5oXfZ5ICyYcMVlNGolVnJKMHD3Pw8R"
           ></script>
         </span>
-        © 2019 SohoBlinds NZ | Website by Nathan Vo Design
+        © 2019 All Plus NZ | Designed by Nathan Vo
       </div>
     </React.Fragment>
   );
